@@ -1,0 +1,23 @@
+{
+  "name": "plugin-buddy",
+  "version": "1.0.0",
+  "description": "a plugin checker",
+  "main": "index.js",
+  "scripts": {
+    "start": 
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amiechen/plugin-buddy.git"
+  },
+  "author": "Amie Chen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amiechen/plugin-buddy/issues"
+  },
+  "homepage": "https://github.com/amiechen/plugin-buddy#readme",
+  "dependencies": {
+    "x-ray": "^2.3.2"
+  }
+}

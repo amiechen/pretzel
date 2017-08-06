@@ -4,7 +4,6 @@
   "description": "a plugin checker",
   "main": "index.js",
   "scripts": {
-    "start": 
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +17,7 @@
   },
   "homepage": "https://github.com/amiechen/plugin-buddy#readme",
   "dependencies": {
+    "vue": "^2.4.2",
     "x-ray": "^2.3.2"
   }
 }

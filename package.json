@@ -1,23 +1,25 @@
 {
-  "name": "plugin-buddy",
-  "version": "1.0.0",
-  "description": "a plugin checker",
+  "name": "contextual-shortcuts",
+  "version": "0.0.5",
+  "description": "a contextual shortcut viewing app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/amiechen/plugin-buddy.git"
+    "url": "git+https://github.com/amiechen/contextual-shortcuts.git"
   },
+  "keywords": [
+    "shortcuts"
+  ],
   "author": "Amie Chen",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/amiechen/plugin-buddy/issues"
+    "url": "https://github.com/amiechen/contextual-shortcuts/issues"
   },
-  "homepage": "https://github.com/amiechen/plugin-buddy#readme",
+  "homepage": "https://github.com/amiechen/contextual-shortcuts#readme",
   "dependencies": {
-    "vue": "^2.4.2",
-    "x-ray": "^2.3.2"
+    "active-win": "^3.0.0"
   }
 }

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="UTF-8">
+      <title>contextual shortcuts</title>
+    </head>
+    <body>
+      Current app : <p class="app-name"></p>
+    </body>
+    <script>
+      window.activeWin = require('active-win');
+      (async () => {
+        var el = document.querySelector('.app-name');
+        var result = await activeWin();
+        el.innerHTML = result.title;
+      })();
+    </script>
+  </html>

@@ -1,8 +1,9 @@
-// window.activeWin = require("active-win");
-// (async () => {
-//   var el = document.querySelector(".app-name");
-//   var result = await activeWin();
-//   el.innerHTML = result.title;
-// })();
+const ipcRenderer = require("electron").ipcRenderer;
+const el = document.querySelector(".app-name");
+
+ipcRenderer.on("currentApp", function(currentApp) {
+  el.innerHTML = currentApp;
+  console.log(currentApp);
+});
 
 console.log("a renderer is launched");

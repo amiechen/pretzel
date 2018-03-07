@@ -10,7 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/amiechen/contextual-shortcuts.git"
   },
-  "keywords": ["shortcuts"],
+  "keywords": [
+    "shortcuts"
+  ],
   "author": "Amie Chen",
   "license": "MIT",
   "bugs": {
@@ -18,6 +20,7 @@
   },
   "homepage": "https://github.com/amiechen/contextual-shortcuts#readme",
   "dependencies": {
-    "electron-positioner": "^3.0.0"
+    "electron-positioner": "^3.0.0",
+    "objc": "^0.12.0"
   }
 }

@@ -1,17 +1,11 @@
-const { app, BrowserWindow, ipcMain, Tray } = require("electron");
+const { app, BrowserWindow, ipcMain, Tray, remote } = require("electron");
 const path = require("path");
 const url = require("url");
 const Positioner = require("electron-positioner");
+const objc = require("objc");
 const assetsDirectory = path.join(__dirname, "assets");
 
-function toggleWindow(win) {
-  if (win.isVisible()) {
-    win.hide();
-  } else {
-    win.show();
-    win.focus();
-  }
-}
+objc.import("AppKit");
 
 app.dock.hide();
 
@@ -23,7 +17,8 @@ app.on("ready", () => {
     height: 300,
     frame: false,
     resizable: false,
-    movable: false
+    movable: false,
+    show: false
   });
   const positioner = new Positioner(win);
   const trayBounds = tray.getBounds();
@@ -40,11 +35,24 @@ app.on("ready", () => {
   );
 
   tray.on("click", function(event) {
-    toggleWindow(win);
-    //win.openDevTools({ mode: "detach" });
+    if (win.isVisible()) {
+      win.hide();
+    } else {
+      const { NSWorkspace } = objc;
+      let currentAppProxy = NSWorkspace.sharedWorkspace()
+        .frontmostApplication()
+        .localizedName();
+      let currentApp = currentAppProxy.name;
+      console.log(currentApp);
+
+      win.webContents.send("currentApp", currentApp);
+      win.show();
+      win.focus();
+    }
+    win.openDevTools({ mode: "detach" });
   });
 
-  win.on("show", () => {
+  win.on("show", function(event) {
     tray.setHighlightMode("always");
   });
 
@@ -60,5 +68,6 @@ app.on("ready", () => {
 });
 
 app.on("window-all-closed", () => {
+  tray.destroy();
   app.quit();
 });

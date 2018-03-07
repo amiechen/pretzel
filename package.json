@@ -4,15 +4,13 @@
   "description": "a contextual shortcut viewing app",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "electron ."
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/amiechen/contextual-shortcuts.git"
   },
-  "keywords": [
-    "shortcuts"
-  ],
+  "keywords": ["shortcuts"],
   "author": "Amie Chen",
   "license": "MIT",
   "bugs": {
@@ -20,6 +18,6 @@
   },
   "homepage": "https://github.com/amiechen/contextual-shortcuts#readme",
   "dependencies": {
-    "active-win": "^3.0.0"
+    "electron-positioner": "^3.0.0"
   }
 }

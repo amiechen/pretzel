@@ -1,59 +1,64 @@
-const {app, BrowserWindow, ipcMain, Tray} = require('electron')
-const path = require('path')
-const url = require('url')
-const assetsDirectory = path.join(__dirname, 'assets')
+const { app, BrowserWindow, ipcMain, Tray } = require("electron");
+const path = require("path");
+const url = require("url");
+const Positioner = require("electron-positioner");
+const assetsDirectory = path.join(__dirname, "assets");
 
-// global references
-let tray
-let win
-
-function toggleWindow () {
+function toggleWindow(win) {
   if (win.isVisible()) {
-    win.hide()
+    win.hide();
   } else {
-    win.show()
-    win.focus()
+    win.show();
+    win.focus();
   }
 }
 
-function createTray () {
-  tray = new Tray(path.join(assetsDirectory, 'dot.png'))
-  tray.setTitle('hi')
-  tray.on('right-click', toggleWindow)
-  tray.on('double-click', toggleWindow)
-  tray.on('click', function (event) {
-    toggleWindow()
-    win.openDevTools({mode: 'detach'})
-
-    // Show devtools when command clicked
-    // if (win.isVisible() && process.defaultApp && event.metaKey) {
-    // }
-  })
-}
-
-function createWindow () {
-  win = new BrowserWindow({width: 800, height: 600})
-
-  win.loadURL(url.format({
-    pathname: path.join(__dirname, 'index.html'),
-    protocol: 'file:',
-    slashes: true
-  }))
-
-  win.on('blur', () => {
-    if (!win.webContents.isDevToolsOpened()) {
-      win.hide
-    }
-  })
-}
-
-app.dock.hide()
+app.dock.hide();
 
 // called when Electron has finished initialization and is ready to create browser windows.
-app.on('ready', () => {
-  createTray()
-})
+app.on("ready", () => {
+  const tray = new Tray(path.join(assetsDirectory, "dot.png"));
+  const win = new BrowserWindow({
+    width: 250,
+    height: 300,
+    frame: false,
+    resizable: false,
+    movable: false
+  });
+  const positioner = new Positioner(win);
+  const trayBounds = tray.getBounds();
+  const winPosition = positioner.calculate("trayCenter", trayBounds);
 
-app.on('window-all-closed', () => {
-  app.quit()
-})
+  win.setPosition(winPosition.x, winPosition.y);
+
+  win.loadURL(
+    url.format({
+      pathname: path.join(__dirname, "index.html"),
+      protocol: "file:",
+      slashes: true
+    })
+  );
+
+  tray.on("click", function(event) {
+    toggleWindow(win);
+    //win.openDevTools({ mode: "detach" });
+  });
+
+  win.on("show", () => {
+    tray.setHighlightMode("always");
+  });
+
+  win.on("hide", () => {
+    tray.setHighlightMode("never");
+  });
+
+  win.on("blur", () => {
+    if (!win.webContents.isDevToolsOpened()) {
+      win.hide;
+    }
+  });
+});
+
+app.on("window-all-closed", () => {
+  app.quit();
+});

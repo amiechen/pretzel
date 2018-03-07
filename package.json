@@ -2,7 +2,7 @@
   "name": "contextual-shortcuts",
   "version": "0.0.5",
   "description": "a contextual shortcut viewing app",
-  "main": "main.js",
+  "main": "index.js",
   "scripts": {
     "start": "electron .",
     "test": "mocha"
@@ -11,7 +11,9 @@
     "type": "git",
     "url": "git+https://github.com/amiechen/contextual-shortcuts.git"
   },
-  "keywords": ["shortcuts"],
+  "keywords": [
+    "shortcuts"
+  ],
   "author": "Amie Chen",
   "license": "MIT",
   "bugs": {
@@ -19,7 +21,7 @@
   },
   "homepage": "https://github.com/amiechen/contextual-shortcuts#readme",
   "dependencies": {
-    "electron-positioner": "^3.0.0",
+    "menubar": "^5.2.3",
     "objc": "^0.12.0",
     "underscore": "^1.8.3"
   },

@@ -9,6 +9,5 @@ _.templateSettings = {
 ipcRenderer.on("currentApp", (event, name) => {
   // const shortcuts = findShortcutsByName(name)
   const template = _.template("Hello {{ name }}!");
-
   appName.innerHTML = template({ name: name });
 });

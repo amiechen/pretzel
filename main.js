@@ -50,12 +50,9 @@ app.on("ready", () => {
     win.openDevTools();
   });
 
-  win.on("show", function(event) {
-    tray.setHighlightMode("always");
-  });
-
   win.on("hide", () => {
     tray.setHighlightMode("never");
+    tray.destroy();
   });
 
   win.on("blur", () => {
@@ -66,6 +63,5 @@ app.on("ready", () => {
 });
 
 app.on("window-all-closed", () => {
-  tray.destroy();
   app.quit();
 });

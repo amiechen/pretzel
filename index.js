@@ -38,13 +38,11 @@ app.on("ready", () => {
     if (win.isVisible()) {
       win.hide();
     } else {
-      const { NSWorkspace, wrap } = objc;
+      const { NSWorkspace, js } = objc;
       let currentAppProxy = NSWorkspace.sharedWorkspace()
         .frontmostApplication()
         .localizedName();
-      let currentApp = currentAppProxy;
-
-      console.log(wrap(currentApp));
+      let currentApp = js(currentAppProxy);
 
       win.webContents.send("currentApp", currentApp);
       win.show();

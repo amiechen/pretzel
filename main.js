@@ -38,21 +38,23 @@ app.on("ready", () => {
     if (win.isVisible()) {
       win.hide();
     } else {
-      const { NSWorkspace, js } = objc;
-      let currentAppProxy = NSWorkspace.sharedWorkspace()
-        .frontmostApplication()
-        .localizedName();
-      let currentApp = js(currentAppProxy);
-
-      win.webContents.send("currentApp", currentApp);
       win.show();
     }
+  });
+
+  win.on("show", () => {
+    const { NSWorkspace, js } = objc;
+    let currentAppProxy = NSWorkspace.sharedWorkspace()
+      .frontmostApplication()
+      .localizedName();
+    let currentApp = js(currentAppProxy);
+
+    win.webContents.send("currentApp", currentApp);
     win.openDevTools();
   });
 
   win.on("hide", () => {
     tray.setHighlightMode("never");
-    tray.destroy();
   });
 
   win.on("blur", () => {
@@ -63,5 +65,7 @@ app.on("ready", () => {
 });
 
 app.on("window-all-closed", () => {
-  app.quit();
+  if (process.platform !== "darwin") {
+    app.quit();
+  }
 });

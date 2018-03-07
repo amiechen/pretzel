@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/amiechen/contextual-shortcuts#readme",
   "dependencies": {
+    "js-yaml": "^3.11.0",
     "menubar": "^5.2.3",
     "objc": "^0.12.0",
     "underscore": "^1.8.3"

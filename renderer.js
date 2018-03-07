@@ -1,7 +1,14 @@
 const ipcRenderer = require("electron").ipcRenderer;
-const el = document.querySelector(".app-name");
+const _ = require("underscore");
+const appName = document.querySelector(".app-name");
 
-ipcRenderer.on("currentApp", (event, message) => {
-  el.innerHTML = message;
-  console.log(message);
+_.templateSettings = {
+  interpolate: /\{\{(.+?)\}\}/g
+};
+
+ipcRenderer.on("currentApp", (event, name) => {
+  // const shortcuts = findShortcutsByName(name)
+  const template = _.template("Hello {{ name }}!");
+
+  appName.innerHTML = template({ name: name });
 });

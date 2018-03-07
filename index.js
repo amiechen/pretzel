@@ -11,9 +11,9 @@ app.dock.hide();
 
 // called when Electron has finished initialization and is ready to create browser windows.
 app.on("ready", () => {
-  const tray = new Tray(path.join(assetsDirectory, "dot.png"));
+  const tray = new Tray(path.join(assetsDirectory, "shortcuts@2x.png"));
   const win = new BrowserWindow({
-    width: 250,
+    width: 800, //250,
     height: 300,
     frame: false,
     resizable: false,
@@ -46,9 +46,8 @@ app.on("ready", () => {
 
       win.webContents.send("currentApp", currentApp);
       win.show();
-      win.focus();
     }
-    win.openDevTools({ mode: "detach" });
+    win.openDevTools();
   });
 
   win.on("show", function(event) {

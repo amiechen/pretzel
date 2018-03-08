@@ -1,0 +1,52 @@
+body {
+  background-color: #f6f8fb;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Open Sans",
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  padding: 1rem 1.5rem;
+  margin: 0;
+  box-sizing: border-box;
+  color: #192534;
+}
+
+.app-name {
+  font-size: 1.6rem;
+  font-weight: 800;
+  text-align: center;
+  margin: 0;
+  padding-top: 1.5rem;
+}
+
+.shortcuts__title {
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 2rem 0 0.6rem 0;
+}
+
+.shortcut {
+  display: flex;
+  border-top: 1px solid #dbe7f1;
+  font-size: 0.8rem;
+  color: #5f697b;
+}
+
+.shortcuts__title + .shortcut {
+  border-top: none;
+}
+
+.shortcut > * {
+  flex: 1;
+  padding: 0.7rem 0;
+}
+
+.shortcut:last-child {
+  border-bottom: none;
+}
+
+.shortcut__name {
+  text-align: right;
+  color: #78a6e7;
+}
+
+.shortcut__name:hover {
+  color: #0495f7;
+}

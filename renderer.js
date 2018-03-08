@@ -23,8 +23,8 @@ ipcRenderer.on("currentApp", (event, name) => {
     html += `<h3 class="shortcuts__title">${prop}</h3>`;
     shortcuts[prop].forEach(element => {
       html += `<div class="shortcut">
-        <label for="" class="shortcut__key">${Object.keys(element)}</label>
-        <p for="" class="shortcut__name">${Object.values(element)[0]}</p>
+        <label class="shortcut__key">${Object.keys(element)}</label>
+        <label class="shortcut__name">${Object.values(element)[0]}</label>
       </div>`;
     });
   }
@@ -35,4 +35,6 @@ ipcRenderer.on("currentApp", (event, name) => {
 
 ipcRenderer.on("noShortcuts", (event, name) => {
   console.log("hey do you want to add some shortcuts for us");
+  appNameHTML.innerHTML = name;
+  shortcutsHTML.innerHTML = `<p>There is no shortcuts for your application. Add some here for the future.</p>`;
 });

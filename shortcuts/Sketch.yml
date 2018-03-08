@@ -1,10 +1,7 @@
----
-
-shortcuts:
-  - Editing Layers:
-    - Show Distance to other Layers : Alt
-    - Duplicate (Repeat with ⌘D) : Alt + Drag
-    - Transform : Cmd + T
-  - Arranging Layers, Groups and Artboards:
-    - Bring Forward: Alt + Cmd + ↑
-    - Sent to Back: Control + Alt + Cmd + ↓
+Editing Layers:
+  - Show Distance to other Layers : Alt
+  - Duplicate (Repeat with ⌘D) : Alt + Drag
+  - Transform : Cmd + T
+Arranging Layers, Groups and Artboards:
+  - Bring Forward: Alt + Cmd + ↑
+  - Sent to Back: Control + Alt + Cmd + ↓

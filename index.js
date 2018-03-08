@@ -1,7 +1,9 @@
 const path = require("path");
+const fs = require("fs");
 const url = require("url");
 const objc = require("objc");
 const assetsDirectory = path.join(__dirname, "assets");
+const shortcutsDirectory = path.join(__dirname, "shortcuts");
 const menubar = require("menubar");
 
 let opts = {
@@ -26,7 +28,18 @@ mb.on("show", () => {
     .frontmostApplication()
     .localizedName();
   let currentApp = js(currentAppProxy);
-  mb.window.webContents.send("currentApp", currentApp);
+
+  fs.access(
+    path.join(shortcutsDirectory, `${currentApp}.yml`),
+    fs.constants.R_OK,
+    err => {
+      if (err) {
+        mb.window.webContents.send("noShortcuts", currentApp);
+      } else {
+        mb.window.webContents.send("currentApp", currentApp);
+      }
+    }
+  );
 });
 
 mb.on("after-create-window", () => {

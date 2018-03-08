@@ -32,3 +32,7 @@ ipcRenderer.on("currentApp", (event, name) => {
   appNameHTML.innerHTML = name;
   shortcutsHTML.innerHTML = html;
 });
+
+ipcRenderer.on("noShortcuts", (event, name) => {
+  console.log("hey do you want to add some shortcuts for us");
+});

@@ -9,8 +9,8 @@ let opts = {
   index: path.join("file://", __dirname, "index.html"),
   icon: path.join(assetsDirectory, "shortcuts@2x.png"),
   tooltip: "Shortcuts",
-  width: 800,
-  height: 300,
+  width: 300,
+  height: 500,
   showDockIcon: false,
   resizable: false,
   preloadWindow: true
@@ -21,7 +21,6 @@ let mb = menubar(opts);
 objc.import("AppKit");
 
 mb.on("show", () => {
-  console.log("mb is showing");
   const { NSWorkspace, js } = objc;
   let currentAppProxy = NSWorkspace.sharedWorkspace()
     .frontmostApplication()
@@ -31,5 +30,5 @@ mb.on("show", () => {
 });
 
 mb.on("after-create-window", () => {
-  mb.window.openDevTools();
+  //mb.window.openDevTools();
 });

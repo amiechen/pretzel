@@ -4,30 +4,25 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="main.css">
   <body>
-    <h1 class="app-name">Sketch</h1>
-    <div class="shortcuts-container">
-      <h3 class="shortcuts__title">Editing Layers</h3>
-      <div class="shortcut">
-         <label for="" class="shortcut__key">Show Distance to other Layers</label>
-         <label for="" class="shortcut__name">Alt</label>
-      </div>
-      <div class="shortcut">
-         <label for="" class="shortcut__key">Duplicate (Repeat with ⌘D)</label>
-         <label for="" class="shortcut__name">Alt + Drag</label>
-      </div>
-      <div class="shortcut">
-         <label for="" class="shortcut__key">Transform</label>
-         <label for="" class="shortcut__name">Cmd + T</label>
-      </div>
-      <h3 class="shortcuts__title">Arranging Layers, Groups and Artboards</h3>
-      <div class="shortcut">
-         <label for="" class="shortcut__key">Bring Forward</label>
-         <label for="" class="shortcut__name">Alt + Cmd + ↑</label>
-      </div>
-      <div class="shortcut">
-         <label for="" class="shortcut__key">Sent to Back</label>
-         <label for="" class="shortcut__name">Control + Alt + Cmd + ↓</label>
-      </div>
-    </div>
+      <h1 class="app-name">Sublime Text</h1>
+      <input type="text" id="search">
+      <div class="shortcuts-container"><div class="shortcuts__group"><h3 class="shortcuts__title">Editing</h3><div class="shortcut">
+        <label class="shortcut__key">Cut line</label>
+        <label class="shortcut__name">Ctrl + X</label>
+      </div><div class="shortcut">
+        <label class="shortcut__key">Insert line after</label>
+        <label class="shortcut__name">Ctrl + ↩</label>
+      </div><div class="shortcut">
+        <label class="shortcut__key">Insert line before</label>
+        <label class="shortcut__name">Ctrl + ⇧ + ↩</label>
+      </div></div><div class="shortcuts__group"><h3 class="shortcuts__title">Navigation/Goto Anywhere</h3><div class="shortcut">
+        <label class="shortcut__key">Quick-open files by name</label>
+        <label class="shortcut__name">Ctrl + P</label>
+      </div><div class="shortcut">
+        <label class="shortcut__key">Goto symbol</label>
+        <label class="shortcut__name">Ctrl + R</label>
+      </div></div></div>
+    
+    <script src="./renderer.js"></script>
   </body>
 </html>

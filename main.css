@@ -6,6 +6,11 @@ body {
   margin: 0;
   box-sizing: border-box;
   color: #192534;
+  transition: all 0.3s ease-in;
+}
+
+.hide {
+  display: none;
 }
 
 .app-name {

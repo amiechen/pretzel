@@ -1,3 +1,4 @@
+const { app, globalShortcut } = require("electron");
 const path = require("path");
 const fs = require("fs");
 const url = require("url");
@@ -11,7 +12,7 @@ let opts = {
   index: path.join("file://", __dirname, "index.html"),
   icon: path.join(assetsDirectory, "shortcuts@2x.png"),
   tooltip: "Shortcuts",
-  width: 300,
+  width: 1000,
   height: 500,
   showDockIcon: false,
   resizable: false,
@@ -43,5 +44,12 @@ mb.on("show", () => {
 });
 
 mb.on("after-create-window", () => {
-  //mb.window.openDevTools();
+  mb.window.openDevTools();
+});
+
+// display window on shortcut
+app.on("ready", () => {
+  globalShortcut.register("Command+1", () => {
+    mb.window.isVisible() ? mb.hideWindow() : mb.showWindow();
+  });
 });

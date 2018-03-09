@@ -7,6 +7,8 @@
   * lazy: show a window and ask people to do a pull request
   * scope-creaping: show a form allow user to add their own shortcut file and shortcuts
 * add quick search
+* add a list of apps that currently has shortcuts
+* add a yml template for people to add more shortcuts
 * style/polish the page
 * refactor into helper fucntions
 * unit test

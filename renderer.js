@@ -36,7 +36,6 @@ function toggleTitles() {
     // if all shortcuts are hidden
     // we hide the title
     // otherwise we show the title
-
     if (
       getAll(".shortcut.hide", group).length ===
       getAll(".shortcut", group).length

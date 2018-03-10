@@ -1,4 +1,4 @@
-const { app, globalShortcut } = require("electron");
+const { app, globalShortcut, Menu } = require("electron");
 const path = require("path");
 const fs = require("fs");
 const url = require("url");
@@ -6,8 +6,7 @@ const objc = require("objc");
 const assetsDirectory = path.join(__dirname, "assets");
 const shortcutsDirectory = path.join(__dirname, "shortcuts");
 const menubar = require("menubar");
-
-let opts = {
+let mb = menubar({
   dir: __dirname,
   index: path.join("file://", __dirname, "index.html"),
   icon: path.join(assetsDirectory, "shortcuts@2x.png"),
@@ -17,14 +16,12 @@ let opts = {
   showDockIcon: false,
   resizable: false,
   preloadWindow: true
-};
-
-let mb = menubar(opts);
+});
 
 objc.import("AppKit");
+const { NSWorkspace, js } = objc;
 
 mb.on("show", () => {
-  const { NSWorkspace, js } = objc;
   let currentAppProxy = NSWorkspace.sharedWorkspace()
     .frontmostApplication()
     .localizedName();
@@ -45,6 +42,11 @@ mb.on("show", () => {
 
 mb.on("after-create-window", () => {
   mb.window.openDevTools();
+});
+
+// mimic osx behavior of returning focus back to previous app automatically
+mb.on("after-hide", () => {
+  Menu.sendActionToFirstResponder("hide:");
 });
 
 // display window on shortcut

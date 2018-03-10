@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #f6f8fb;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Open Sans",
@@ -6,7 +10,34 @@ body {
   margin: 0;
   box-sizing: border-box;
   color: #192534;
-  transition: all 0.3s ease-in;
+  transition: all 0.2s ease;
+  text-rendering: optimizeLegibility;
+}
+
+input {
+  color: #5f697b;
+  background: #fff 10px 9px no-repeat;
+  background-image: url("./assets/search.svg");
+  border: 0.05rem solid #d8dce6;
+  border-radius: 100px;
+  display: block;
+  font-size: 0.8rem;
+  height: 2rem;
+  outline: 0;
+  padding: 0 1rem 0 1.8rem;
+  margin-top: 1rem;
+  width: 100%;
+  font-weight: 300;
+}
+
+input:focus {
+  border-color: #68a1f3;
+  box-shadow: 0 0 0 0.1rem rgba(86, 138, 216, 0.2);
+}
+
+::-webkit-input-placeholder {
+  color: #d5d9e4;
+  font-weight: 300;
 }
 
 .hide {
@@ -24,7 +55,7 @@ body {
 .shortcuts__title {
   font-weight: 600;
   font-size: 1rem;
-  margin: 2rem 0 0.6rem 0;
+  margin: 1.6rem 0 0.2rem 0;
 }
 
 .shortcut {
@@ -54,4 +85,8 @@ body {
 
 .shortcut__name:hover {
   color: #0495f7;
+}
+
+.shortcuts__group {
+  margin-bottom: 2rem;
 }

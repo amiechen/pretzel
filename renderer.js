@@ -1,8 +1,8 @@
 const ipcRenderer = require("electron").ipcRenderer;
 const yaml = require("js-yaml");
 const fs = require("fs");
-const appNameHTML = document.querySelector(".app-name");
-const shortcutsHTML = document.querySelector(".shortcuts-container");
+const appName = document.querySelector(".app-name");
+const shortcutsContainer = document.querySelector(".shortcuts-container");
 const input = document.querySelector("#search");
 
 function get(selector, scope) {
@@ -22,10 +22,8 @@ function searchShortcuts() {
   for (var i = 0; i < shortcuts.length; i++) {
     let label = get("label", shortcuts[i]);
     if (label.innerHTML.toUpperCase().indexOf(filter) > -1) {
-      shortcuts[i].style.display = "";
       shortcuts[i].classList.remove("hide");
     } else {
-      shortcuts[i].style.display = "none";
       shortcuts[i].classList.add("hide");
     }
   }
@@ -74,14 +72,14 @@ ipcRenderer.on("currentApp", (event, name) => {
     html += "</div>";
   }
 
-  appNameHTML.innerHTML = name;
-  shortcutsHTML.innerHTML = html;
+  appName.innerHTML = name;
+  shortcutsContainer.innerHTML = html;
 });
 
 ipcRenderer.on("noShortcuts", (event, name) => {
   get("#search").style.display = "none";
-  appNameHTML.innerHTML = name;
-  shortcutsHTML.innerHTML = `<p>There is no shortcuts for your application. Add some here for the future.</p>`;
+  appName.innerHTML = name;
+  shortcutsContainer.innerHTML = `<p>There is no shortcuts for your application. Add some here for the future.</p>`;
 });
 
 input.addEventListener("keyup", () => {

@@ -2,10 +2,7 @@
 
 ## Todo:
 
-* decide what to do when there's no shortcut
-  * preferred: icon grayout, don't show the window (this means I'd need to know what current app is before user clicking, and I constantly watch the app usage.)
-  * lazy: show a window and ask people to do a pull request
-  * scope-creaping: show a form allow user to add their own shortcut file and shortcuts
+* show a window and ask people to do a pull request when no shortcuts
 * add a list of apps that currently has shortcuts
 * add a yml template for people to add more shortcuts
 * style/polish the page
@@ -13,3 +10,19 @@
 * unit test
 * code sign and release to app store
 * create a marketing webpage
+
+Todo:
+1. save the list of shortcuts into memory on `app ready`.
+2. pull every second on `app ready` and check if frontmost app exist
+
+
+
+Future Todo:
+Setup event listener such as below on `app ready`.
+```
+  systemPreferences.subscribeLocalNotification(
+    'NSWorkspaceFrontMostApplicationChanged', (...args) => {
+     //When there's no shortcut the icon should grayout and don't show the window on click 
+  })
+
+```

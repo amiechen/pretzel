@@ -1,4 +1,4 @@
-const { app, globalShortcut, Menu } = require("electron");
+const { app, globalShortcut, Menu, systemPreferences } = require("electron");
 const path = require("path");
 const fs = require("fs");
 const url = require("url");
@@ -44,7 +44,7 @@ mb.on("after-create-window", () => {
   mb.window.openDevTools();
 });
 
-// mimic osx behavior of returning focus back to previous app automatically
+// return window focus back to the previous app, like the behavior on mac app
 mb.on("after-hide", () => {
   Menu.sendActionToFirstResponder("hide:");
 });

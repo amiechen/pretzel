@@ -61,6 +61,8 @@ ipcRenderer.on("currentApp", (event, name) => {
   let html = "";
 
   get("#search").style.display = "";
+  shortcutsContainer.classList.remove('no-shortcuts');
+
   for (var prop in shortcuts) {
     html += `<div class="shortcuts__group"><h3 class="shortcuts__title">${prop}</h3>`;
     shortcuts[prop].forEach(element => {
@@ -78,8 +80,13 @@ ipcRenderer.on("currentApp", (event, name) => {
 
 ipcRenderer.on("noShortcuts", (event, name) => {
   get("#search").style.display = "none";
-  appName.innerHTML = name;
-  shortcutsContainer.innerHTML = `<p>There is no shortcuts for your application. Add some here for the future.</p>`;
+  appName.innerHTML = "Shortcuts Not Found";
+  shortcutsContainer.classList.add('no-shortcuts');
+  shortcutsContainer.innerHTML = `
+    <p class="no-shortcuts__text">Check our list of existing apps, or add one for <span class="label">${name}</span>.</p>
+    <button class="no-shortcuts__button button--primary">See List</button>
+    <button class="no-shortcuts__button button--secondary">Contribute</button>
+  `;
 });
 
 input.addEventListener("keyup", () => {

@@ -7,7 +7,10 @@ const assetsDirectory = path.join(__dirname, "assets");
 const shortcutsDirectory = path.join(__dirname, "shortcuts");
 const availableShortcuts = fs.readdirSync(shortcutsDirectory);
 const menu = new Menu();
+let currentApp;
+let position;
 let win;
+let tray;
 
 // setup objc bridge
 objc.import("AppKit");
@@ -17,7 +20,7 @@ function hasShortcuts() {
   let currentAppProxy = NSWorkspace.sharedWorkspace()
     .frontmostApplication()
     .localizedName();
-  let currentApp = js(currentAppProxy);
+  currentApp = js(currentAppProxy);
 
   // workaround for Electron stealing the app focus
   if (currentApp === "Electron") {
@@ -27,18 +30,50 @@ function hasShortcuts() {
   return availableShortcuts.indexOf(`${currentApp}.yml`) > -1;
 }
 
+function getWindowPosition() {
+  const windowBounds = win.getBounds();
+  const trayBounds = tray.getBounds();
+
+  // Center window horizontally below the tray icon
+  const x = Math.round(
+    trayBounds.x + trayBounds.width / 2 - windowBounds.width / 2
+  );
+
+  // Position window right below the tray icon
+  const y = Math.round(trayBounds.y + trayBounds.height);
+  return { x: x, y: y };
+}
+
 function createWindow() {
-  console.log("create window");
   win = new BrowserWindow({
-    width: 1000,
+    width: 300,
     height: 500,
-    frame: false
+    frame: false,
+    show: false
   });
+
   win.loadURL(
     url.format({
       pathname: path.join("file://", __dirname, "index.html")
     })
   );
+
+  position = getWindowPosition();
+  win.setPosition(position.x, position.y, false);
+
+  win.on("show", () => {
+    fs.access(
+      path.join(shortcutsDirectory, `${currentApp}.yml`),
+      fs.constants.R_OK,
+      err => {
+        if (err) {
+          win.webContents.send("noShortcuts", currentApp);
+        } else {
+          win.webContents.send("currentApp", currentApp);
+        }
+      }
+    );
+  });
 
   win.on("blur", () => {
     Menu.sendActionToFirstResponder("hide:");
@@ -51,21 +86,23 @@ function createWindow() {
 
 function toggleWindow() {
   if (hasShortcuts()) {
-    if (win) {
-      win.isVisible() ? win.hide() : win.show();
-    } else {
-      createWindow();
-    }
+    win.isVisible() ? win.hide() : win.show();
   }
 }
 
+app.dock.hide();
 app.on("ready", () => {
-  const tray = new Tray(path.join(assetsDirectory, "shortcuts@2x.png"));
+  tray = new Tray(path.join(assetsDirectory, "shortcuts-gray@2x.png"));
 
-  // setInterval(() => {
-  //   hasShortcuts();
-  // }, 1000);
+  createWindow();
+  setInterval(() => {
+    hasShortcuts()
+      ? tray.setImage(path.join(assetsDirectory, "shortcuts@2x.png"))
+      : tray.setImage(path.join(assetsDirectory, "shortcuts-gray@2x.png"));
+  }, 1000);
 
+  tray.on("right-click", toggleWindow);
+  tray.on("double-click", toggleWindow);
   tray.on("click", toggleWindow);
   globalShortcut.register("Command+1", toggleWindow);
 });

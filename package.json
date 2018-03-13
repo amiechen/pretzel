@@ -3,7 +3,7 @@
   "productName": "shortcut buddy",
   "version": "0.0.5",
   "description": "a contextual shortcut viewing app",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "start": "electron .",
     "test": "mocha"
@@ -12,7 +12,9 @@
     "type": "git",
     "url": "git+https://github.com/amiechen/contextual-shortcuts.git"
   },
-  "keywords": ["shortcuts"],
+  "keywords": [
+    "shortcuts"
+  ],
   "author": "Amie Chen",
   "license": "MIT",
   "bugs": {

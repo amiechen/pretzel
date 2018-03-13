@@ -1,4 +1,10 @@
-const { app, globalShortcut, Menu, systemPreferences } = require("electron");
+const {
+  app,
+  globalShortcut,
+  Menu,
+  systemPreferences,
+  Tray
+} = require("electron");
 const path = require("path");
 const fs = require("fs");
 const url = require("url");
@@ -7,29 +13,40 @@ const assetsDirectory = path.join(__dirname, "assets");
 const shortcutsDirectory = path.join(__dirname, "shortcuts");
 const menubar = require("menubar");
 let previousApp;
-let mb = menubar({
-    dir: __dirname,
-    index: path.join("file://", __dirname, "index.html"),
-    icon: path.join(assetsDirectory, "shortcuts-gray@2x.png"),
-    tooltip: "Shortcuts",
-    width: 1000,
-    height: 500,
-    showDockIcon: false,
-    resizable: false,
-    preloadWindow: true
-  });
+let opts = {
+  dir: __dirname,
+  index: path.join("file://", __dirname, "index.html"),
+  icon: path.join(assetsDirectory, "shortcuts-gray@2x.png"),
+  tooltip: "Shortcuts",
+  width: 1000,
+  height: 500,
+  showDockIcon: false,
+  resizable: false,
+  activated: false
+};
+let mb = menubar(opts);
 
 objc.import("AppKit");
 const { NSWorkspace, js } = objc;
 
-function activateWindow(currentApp) {
+function activateApp(currentApp) {
+  opts.activated = true;
   mb.tray.setImage(path.join(assetsDirectory, "shortcuts@2x.png"));
   previousApp = currentApp;
 }
 
-function deactivateWindow(currentApp) {
+function deactivateApp(currentApp) {
+  opts.activated = false;
   mb.tray.setImage(path.join(assetsDirectory, "shortcuts-gray@2x.png"));
   previousApp = currentApp;
+}
+
+function activateWindow() {
+  mb.showWindow();
+}
+
+function deactivateWindow() {
+  mb.hideWindow();
 }
 
 mb.on("show", () => {
@@ -63,7 +80,7 @@ mb.on("after-hide", () => {
 app.on("ready", () => {
   const availableShortcuts = fs.readdirSync(shortcutsDirectory);
 
-  // do pulling every second
+  // pull every second for frontmost application
   setInterval(() => {
     let currentAppProxy = NSWorkspace.sharedWorkspace()
       .frontmostApplication()
@@ -71,12 +88,17 @@ app.on("ready", () => {
     let currentApp = js(currentAppProxy);
 
     if (currentApp !== previousApp) {
-      availableShortcuts.indexOf(`${currentApp}.yml`) > -1 ? activateWindow(currentApp) : deactivateWindow(currentApp);
+      availableShortcuts.indexOf(`${currentApp}.yml`) > -1
+        ? activateApp(currentApp)
+        : deactivateApp(currentApp);
     }
   }, 1000);
 
-  // display window on shortcut
+  mb.tray.on("click", () => {
+    opts.activated ? activateWindow() : deactivateWindow();
+  });
+
   globalShortcut.register("Command+1", () => {
-    mb.window.isVisible() ? mb.hideWindow() : mb.showWindow();
+    mb.window.isVisible() ? deactivateWindow() : activateWindow();
   });
 });

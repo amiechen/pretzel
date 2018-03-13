@@ -1,7 +1,48 @@
-Editing Layers:
-  - Show Distance to other Layers : Alt
-  - Duplicate (Repeat with ⌘D) : Alt + Drag
-  - Transform : Cmd + T
-Arranging Layers, Groups and Artboards:
-  - Bring Forward: Alt + Cmd + ↑
-  - Sent to Back: Control + Alt + Cmd + ↓
+General: 
+  - Copy: Cmd + c
+  - Cut: Cmd + x
+  - Paste: Cmd + v
+  - Paste over selction: Shift + Cmd + v
+  - Move Canvas: Space drag
+  - New Page: Shift + Cmd + n
+  - New Document: Cmd + n
+  - Toggle Rulers: Ctrl + r
+  - Toggle Pixels: Ctrl + p
+  - Toggle Pixel Grid: Ctrl + x
+  - Toggle Grid: Ctrl + g
+  - Toggle Layout Guides: Ctrl + l
+  - Undo: Cmd + z
+  - Redo: Shift + Cmd + z
+  - Open Document: Cmd + o
+  - Close Window: Cmd + w
+  - Save Document: Cmd + s
+  - Duplicate Document: Shift + Cmd + s
+  - Save Document as: Alt + Shift + Cmd + s
+  - Page Setup: Shift + Cmd + p
+  - Open Preferences Window: Cmd + ,
+  - Hide Sketch: Cmd + h
+  - Quit Sketch: Cmd + q
+Inserting Layers:
+  - Rectangle: r
+  - Oval: o
+  - Line: l
+  - Rounded Rectangle: u
+  - Vector Tool: v
+  - Pencil Tool: p
+  - Text Tool: t
+  - Artboard: a
+  - Slice Tool: s
+  - Draw Shape From Center: Alt + drag
+  - Lock Ratio of Shape: Shift + drag
+Selecting Layers:
+  - Select: Click
+  - Select Multiple Layers: Click and drag in white Space
+  - Selects Layer Within Drag Bounds: Alt + drag
+  - Select Grouped Layer: Double Click Layer
+  - Select All: Cmd + a
+  - Select All Artboards: Shift + Cmd + a
+  - Select Multiple Layers In Layer List: Shift + Click
+  - Select Next Artboard: fn + right arrow key
+  - Select Previous Artboard: fn + left arrow key
+  - Page Up: fn + up arrow key
+  - Page Down: fn + down arrow key 

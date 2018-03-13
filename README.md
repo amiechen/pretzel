@@ -3,6 +3,46 @@
 ## Todo:
 
 * add a list of apps that currently has shortcuts
+  * wunderlist
+  * omnifocus
+  * illustrator
+  * after effects
+  * sketch
+  * cinema 4d
+  * iterms2
+  * photoshop
+  * indesign
+  * pixelmator
+  * affinity designer
+  * affinity photo
+  * visual studio code
+  * framer
+  * slack
+  * evernote
+  * xcode
+  * microsoft excel
+  * microsoft word
+  * microsoft outlook
+  * atom
+  * principles
+  * utorrent
+  * chrome
+  * firefox
+  * safari
+  * sourcetree
+  * handbrake
+  * final cut pro
+  * pages
+  * numbers
+  * keynote
+  * figma
+  * adobe experience design
+  * ia writer app
+  * skitch
+  * axure
+  * maya
+  * flinto
+  * quartz composer
 * add a yml template for people to add more shortcuts
 * style/polish the page
 * refactor into helper fucntions

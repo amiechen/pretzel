@@ -1,0 +1,12 @@
+Navigation:
+  - Rotate: Alt + left click
+  - Move Side to Side: Alt + middle click
+  - Dolly in and out: Alt + right click
+File:
+  - New: CmdOrCtrl + N
+  - Add: Shift + CmdOrCtrl+ o
+  - Open: CmdOrCtrl + o
+  - Close All: Shift + CmdOrCtrl + W
+  - Save As: Shift + CmdOrCtrl + S
+  - Save: CmdOrCtrl +5
+  - Quit: CmdOrCtrl + Q

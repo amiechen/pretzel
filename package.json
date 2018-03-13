@@ -22,7 +22,9 @@
   },
   "homepage": "https://github.com/amiechen/contextual-shortcuts#readme",
   "dependencies": {
+    "electron-positioner": "^3.0.0",
     "js-yaml": "^3.11.0",
+    "menubar": "^5.2.3",
     "objc": "^0.12.0"
   },
   "devDependencies": {

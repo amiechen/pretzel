@@ -5,6 +5,8 @@ const path = require("path");
 const objc = require("objc");
 const assetsDirectory = path.join(__dirname, "assets");
 const shortcutsDirectory = path.join(__dirname, "shortcuts");
+const inactiveIcon = path.join(assetsDirectory, "shortcuts-gray@2x.png");
+const activeIcon = path.join(assetsDirectory, "shortcuts@2x.png");
 const availableShortcuts = fs.readdirSync(shortcutsDirectory);
 const menu = new Menu();
 let currentApp;
@@ -22,11 +24,11 @@ function hasShortcuts() {
     .localizedName();
   currentApp = js(currentAppProxy);
 
-  // workaround for Electron stealing the app focus
+  // when window is open, currentapp is electron
+  // which prevents the window to hide on clicking app icon
   if (currentApp === "Electron") {
     return true;
   }
-
   return availableShortcuts.indexOf(`${currentApp}.yml`) > -1;
 }
 
@@ -59,9 +61,12 @@ function createWindow() {
   );
 
   position = getWindowPosition();
-  win.setPosition(position.x, position.y, false);
+  win.setPosition(position.x, position.y, true);
 
   win.on("show", () => {
+    win.setVisibleOnAllWorkspaces(true);
+    win.focus();
+
     fs.access(
       path.join(shortcutsDirectory, `${currentApp}.yml`),
       fs.constants.R_OK,
@@ -73,13 +78,16 @@ function createWindow() {
         }
       }
     );
+    console.log("show window");
   });
 
-  win.on("blur", () => {
+  win.on("hide", () => {
+    console.log("hide window");
     Menu.sendActionToFirstResponder("hide:");
   });
 
   win.on("close", () => {
+    console.log("close window");
     delete win;
   });
 }
@@ -92,13 +100,11 @@ function toggleWindow() {
 
 app.dock.hide();
 app.on("ready", () => {
-  tray = new Tray(path.join(assetsDirectory, "shortcuts-gray@2x.png"));
+  tray = new Tray(inactiveIcon);
 
   createWindow();
   setInterval(() => {
-    hasShortcuts()
-      ? tray.setImage(path.join(assetsDirectory, "shortcuts@2x.png"))
-      : tray.setImage(path.join(assetsDirectory, "shortcuts-gray@2x.png"));
+    hasShortcuts() ? tray.setImage(activeIcon) : tray.setImage(inactiveIcon);
   }, 1000);
 
   tray.on("right-click", toggleWindow);

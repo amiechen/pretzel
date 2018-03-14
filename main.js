@@ -1,4 +1,11 @@
-const { app, Menu, Tray, BrowserWindow, globalShortcut } = require("electron");
+const {
+  app,
+  Menu,
+  Tray,
+  BrowserWindow,
+  globalShortcut,
+  ipcMain
+} = require("electron");
 const fs = require("fs");
 const url = require("url");
 const path = require("path");
@@ -61,7 +68,7 @@ function createWindow() {
   );
 
   position = getWindowPosition();
-  win.setPosition(position.x, position.y, true);
+  win.setPosition(position.x, position.y, false);
 
   win.on("show", () => {
     win.setVisibleOnAllWorkspaces(true);
@@ -78,21 +85,19 @@ function createWindow() {
         }
       }
     );
-    console.log("show window");
   });
 
   win.on("hide", () => {
-    console.log("hide window");
     Menu.sendActionToFirstResponder("hide:");
   });
 
   win.on("close", () => {
-    console.log("close window");
     delete win;
   });
 }
 
 function toggleWindow() {
+  console.log(currentApp);
   if (hasShortcuts()) {
     win.isVisible() ? win.hide() : win.show();
   }

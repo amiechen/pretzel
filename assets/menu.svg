@@ -3,12 +3,12 @@
     <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
     <title>Menu</title>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group" fill="#4A90E2">
-            <rect id="Rectangle" x="0" y="0" width="8" height="8" rx="1"></rect>
-            <rect id="Rectangle-Copy" x="11" y="0" width="8" height="8" rx="1"></rect>
-            <rect id="Rectangle-Copy-2" x="11" y="11" width="8" height="8" rx="1"></rect>
-            <rect id="Rectangle-Copy-3" x="0" y="11" width="8" height="8" rx="1"></rect>
+    <g id="recs-group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="recs" fill="#4A90E2">
+            <rect id="rec-topleft" x="0" y="0" width="8" height="8" rx="1"></rect>
+            <rect id="rec-topright" x="11" y="0" width="8" height="8" rx="1"></rect>
+            <rect id="rec-bottomright" x="11" y="11" width="8" height="8" rx="1"></rect>
+            <rect id="rec-bottomleft" x="0" y="11" width="8" height="8" rx="1"></rect>
         </g>
     </g>
 </svg>

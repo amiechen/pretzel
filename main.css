@@ -48,24 +48,6 @@ input:focus {
   font-weight: 300;
 }
 
-.no-shortcuts__button {
-  border: none;
-  padding: 0.35rem 0.4rem;
-  border-radius: 200px;
-  line-height: 1rem;
-  height: 2rem;
-  padding: 0.45rem 1rem 1.5rem 1rem;
-  user-select: none;
-  vertical-align: middle;
-  white-space: nowrap;
-  transition: all 0.2s ease;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-weight: 500;
-  letter-spacing: 1px;
-  outline: 0;
-}
-
 .button--primary {
   background: #5569d9;
   border-color: #486fd6;
@@ -75,7 +57,7 @@ input:focus {
   background: transparent;
   border: 1px solid #486fd6;
   color: #5569d9;
-  margin-left: .5rem;
+  margin-left: 0.5rem;
 }
 
 .hide {
@@ -87,15 +69,10 @@ input:focus {
   font-weight: 800;
   text-align: center;
   margin: 0;
-  padding-top: 1.5rem;
+  padding-top: 2rem;
 }
 
-.shortcuts-container.no-shortcuts {
-  text-align: center;
-}
-
-.shortcuts__title,
-.no-shortcuts__title {
+.shortcuts__title {
   font-weight: 600;
   font-size: 1rem;
   margin: 1.8rem 0 0.3rem 0;
@@ -104,11 +81,6 @@ input:focus {
 .shortcut {
   display: flex;
   border-top: 1px solid #dbe7f1;
-  font-size: 0.8rem;
-  color: #5f697b;
-}
-
-.no-shortcuts__text {
   font-size: 0.8rem;
   color: #5f697b;
 }
@@ -137,4 +109,40 @@ input:focus {
 
 .shortcuts__group {
   margin-bottom: 2rem;
+}
+
+#show-all-apps {
+  position: absolute;
+}
+
+#show-all-apps:hover {
+  cursor: pointer;
+}
+
+#show-all-apps:hover rect {
+  animation: staggering 0.7s forwards ease;
+}
+
+#show-all-apps:hover #rec-topright {
+  opacity: 0;
+  animation-delay: 200ms;
+}
+
+#show-all-apps:hover #rec-bottomleft {
+  opacity: 0;
+  animation-delay: 200ms;
+}
+
+#show-all-apps:hover #rec-bottomright {
+  opacity: 0;
+  animation-delay: 300ms;
+}
+
+@keyframes staggering {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

@@ -1,9 +1,10 @@
-const ipcRenderer = require("electron").ipcRenderer;
+const { ipcRenderer, shell } = require("electron");
 const yaml = require("js-yaml");
 const fs = require("fs");
 const appName = document.querySelector(".app-name");
 const shortcutsContainer = document.querySelector(".shortcuts-container");
 const input = document.querySelector("#search");
+const allAppsBtn = document.querySelector("#show-all-apps");
 
 function get(selector, scope) {
   scope = scope ? scope : document;
@@ -61,7 +62,7 @@ ipcRenderer.on("currentApp", (event, name) => {
   let html = "";
 
   get("#search").style.display = "";
-  shortcutsContainer.classList.remove('no-shortcuts');
+  shortcutsContainer.classList.remove("no-shortcuts");
 
   for (var prop in shortcuts) {
     html += `<div class="shortcuts__group"><h3 class="shortcuts__title">${prop}</h3>`;
@@ -81,7 +82,7 @@ ipcRenderer.on("currentApp", (event, name) => {
 ipcRenderer.on("noShortcuts", (event, name) => {
   get("#search").style.display = "none";
   appName.innerHTML = "Shortcuts Not Found";
-  shortcutsContainer.classList.add('no-shortcuts');
+  shortcutsContainer.classList.add("no-shortcuts");
   shortcutsContainer.innerHTML = `
     <p class="no-shortcuts__text">Check our list of existing apps, or add one for <span class="label">${name}</span>.</p>
     <button class="no-shortcuts__button button--primary">See List</button>
@@ -92,4 +93,8 @@ ipcRenderer.on("noShortcuts", (event, name) => {
 input.addEventListener("keyup", () => {
   searchShortcuts();
   toggleTitles();
+});
+
+allAppsBtn.addEventListener("click", () => {
+  shell.openExternal("https://amie-chen.com/shortcut-buddy");
 });

@@ -1,27 +1,3 @@
-General: 
-  - Copy: Cmd + c
-  - Cut: Cmd + x
-  - Paste: Cmd + v
-  - Paste over selction: Shift + Cmd + v
-  - Move Canvas: Space drag
-  - New Page: Shift + Cmd + n
-  - New Document: Cmd + n
-  - Toggle Rulers: Ctrl + r
-  - Toggle Pixels: Ctrl + p
-  - Toggle Pixel Grid: Ctrl + x
-  - Toggle Grid: Ctrl + g
-  - Toggle Layout Guides: Ctrl + l
-  - Undo: Cmd + z
-  - Redo: Shift + Cmd + z
-  - Open Document: Cmd + o
-  - Close Window: Cmd + w
-  - Save Document: Cmd + s
-  - Duplicate Document: Shift + Cmd + s
-  - Save Document as: Alt + Shift + Cmd + s
-  - Page Setup: Shift + Cmd + p
-  - Open Preferences Window: Cmd + ,
-  - Hide Sketch: Cmd + h
-  - Quit Sketch: Cmd + q
 Inserting Layers:
   - Rectangle: r
   - Oval: o
@@ -30,19 +6,82 @@ Inserting Layers:
   - Vector Tool: v
   - Pencil Tool: p
   - Text Tool: t
-  - Artboard: a
+  - New Artboard: a
   - Slice Tool: s
   - Draw Shape From Center: Alt + drag
   - Lock Ratio of Shape: Shift + drag
-Selecting Layers:
-  - Select: Click
-  - Select Multiple Layers: Click and drag in white Space
-  - Selects Layer Within Drag Bounds: Alt + drag
-  - Select Grouped Layer: Double Click Layer
-  - Select All: Cmd + a
-  - Select All Artboards: Shift + Cmd + a
-  - Select Multiple Layers In Layer List: Shift + Click
-  - Select Next Artboard: fn + right arrow key
-  - Select Previous Artboard: fn + left arrow key
-  - Page Up: fn + up arrow key
-  - Page Down: fn + down arrow key 
+Type:
+  - Bold: Cmd + B
+  - Italic: Cmd + I
+  - Underline: Cmd + U
+  - Increase Font Size: Alt + Cmd (+) +
+  - Decrease Font Size: Alt + Cmd (+) –
+  - Increase Character Spacing: Alt + Ctrl + l
+  - Decrease Character Spacing: Alt + Control + t
+  - Change Font: Cmd + t
+  - Convert Text to Outlines: Shift + Cmd + o
+  - Align Left: Cmd + Shift + {
+  - Align Center: Cmd + Shift + |
+  - Align Right: Cmd + Shift + }
+  - Special Characters: Ctrl + Cmd + Space
+Canvas View:
+  - Zoom In: Cmd (+) +
+  - Zoom Out: Cmd (+) -
+  - Actual Size: Cmd + 0
+  - Center Canvas: Cmd + 1
+  - Zoom Selection: Cmd + 2
+  - Center Selection: Cmd + 3
+  - Temporary Zoom to Actual Size: §
+  - Focus on First Input Field: Alt + Tab
+  - Toggle Rulers: Ctrl + r
+  - Toggle Grid: Ctrl + g
+  - Toggle Layer Guides: Ctrl + l
+  - Toggle Pixels: Ctrl + p
+  - Toggle Selection Handles: Ctrl + h
+  - Toggle Pixel Grid: Ctrl + x
+  - Move canvas: Space + Drag
+Window:
+  - Toggle between Documents: Cmd + ~
+  - Toggle Layers List: Alt + Cmd + 1
+  - Toggle Inspector: Alt + Cmd + 2
+  - Toggle Layers, Inspector: Alt + Cmd + 3
+  - Toggle Toolbar: Alt + Cmd + t
+  - Presentation Mode: Cmd + .
+  - Enter Fullscreen: Ctrl + Cmd + f
+Editing Shapes:
+  - Keep Current Selection: Cmd + Alt
+  - Use as Mask (Works for Layers & Groups): Ctrl + Cmd + m
+  - Union: Alt + Cmd + u
+  - Substract: Alt + Cmd + s
+  - Intersect: Alt + Cmd + i
+  - Difference: Alt + Cmd + x
+  - Change Object Size: Cmd + Arrows
+  - Change Units by 10: Shift + Cmd + Arrows
+  - Change Vector Point Style: 1, 2, 3, 4
+Editing Layers:
+  - Show Distance to other Layers: Alt
+  - Show Distance to other Layers inside Group: Alt + Cmd
+  - Duplicate (Repeat with ⌘D): Alt + Drag
+  - Copy Style: Alt + Cmd + c
+  - Paste Style: Alt + Cmd + v
+  - Color Picker: Ctrl + c
+  - Transform: Cmd + t
+  - Rotate: Shift + Cmd + r
+  - Toggle Fill: f
+  - Toggle Border: B
+Arranging Layers, Groups and Artboards:
+  - Bring Forward: Alt + Cmd + ↑
+  - Bring to Front: Ctrl + Alt + Cmd + ↑
+  - Send Backward: Alt + Cmd + ↓
+  - Sent to Back: Ctrl + Alt + Cmd + ↓
+  - Hide: Shift + Cmd + h
+  - Lock: Shift + Cmd + l
+  - Rename: Cmd + r
+  - Group Layers: Cmd + g
+  - Ungroup Layers: Shift + Cmd + g
+  - Select Above Layer: Shift + Tab
+  - Select Layer Below: Tab
+  - Select Parent Artboard: Esc
+  - Find Layer by Name: Cmd + F
+  - Select Above Page: Fn + ↑
+  - Select Page Below: Fn + ↓

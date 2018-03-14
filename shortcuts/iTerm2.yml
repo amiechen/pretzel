@@ -1,4 +1,39 @@
-Editing:
-  - Open new tab : Cmd + T
-  - Move to the left tab : Cmd + Left
-  - Move to the right tab : Cmd + Right
+Tabs and Windows:
+  - Fullscreen: Cmd + Enter
+  - Previous Tab: Cmd+ Left Arrow
+  - Next Tab: Cmd+ Right Arrow
+  - Go to Tab: Cmd + Number
+  - Go to Window: Cmd + Opt + Number
+  - Go to Split Pane by Direction: Cmd + Opt + Arrow
+  - Go to Split Pane by Order of Use: Cmd + ] , Cmd + [
+  - Split Window Horizontally (same profile): Cmd + Shift + d
+  - Split Window Vertically (same profile): Cmd + d
+  - Split Window Horizontally (new profile): Opt + Cmd + Shift + h
+  - Split Window Vertically (new profile): Opt + Cmd + Shift + v
+  - Set Mark: Cmd + Shift + m
+  - Jump to Mark: Cmd + Shift + j
+Basic Moves:
+  - Move back one character: Ctrl + b
+  - Move forward one character: Ctrl + f
+  - Delete current character: Ctrl + d
+  - Delete previous character: Backspace
+  - Undo: Ctrl + -
+Moving Faster
+  - Move to the start of line: Ctrl + a
+  - Move to the end of line: Ctrl + e
+  - Move forward a word: Opt + f
+  - Move backward a word: Opt + b
+  - Clear the screen: Cmd + k
+Copy and Paste
+  - Copy from cursor to the end of line: Ctrl + k
+  - Copy from cursor to the end of word: Opt + d
+  - Copy from cursor to the start of word: Opt + Backspace
+  - Copy from cursor to previous whitespace: Ctrl + w
+  - Paste the last copied text: Ctrl + w
+  - Loop through and paste previously copy text: Opt + y
+  - Loop through and paste the last argument of previous commands: Opt + .
+Search the Command History:
+  - Search as you type: Ctrl + r and type the search term; Repeat Ctrl + r to loop through result
+  - Search the last remembered search term: Ctrl + r twice
+  - End the search at current history entry: Ctrl + y
+  - Cancel the search and restore original line: Ctrl + g

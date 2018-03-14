@@ -1,0 +1,113 @@
+Popular:
+  - Undo:  CmdOrCtrl + z
+  - Redo:  Shift + CmdOrCtrl + z
+  - Cut: CmdOrCtrl + x
+  - Copy:  CmdOrCtrl + c
+  - Paste: CmdOrCtrl + v
+  - Paste in front:  CmdOrCtrl + f
+  - Paste at back: CmdOrCtrl + b
+  - Paste in place:  Shift + CmdOrCtrl + b
+  - Paste on all artboards:  Alt + Shift + CmdOrCtrl + b
+  - Check spelling:  CmdOrCtrl + i
+  - Open the Color Settings dialog box:  Shift + CmdOrCtrl + k
+  - Open the Keyboard Shortcuts dialog box:  Alt + Shift + CmdOrCtrl + k
+  - Open the Preferences dialog box: CmdOrCtrl + k
+Selecting and Moving:
+  - Switch between Selection and Direct Selection tools:  Cmd + Opt + Tab
+  - Cycle through tools behind column tool:  Opt + click tool
+  - Make copy while dragging: Opt
+  - Add to a selection: Shift
+  - Move Selection: Any arrow key
+  - Move Selection 10 pts: Shift-any arrow key
+  - Lock selected artwork: Cmd + 2
+  - Lock all deselected artwork: Cmd + Opt + Shift + 2
+  - Unlock all artwork:  Cmd + Opt + 2
+  - Hide selected artwork: Cmd + 3
+  - Hide all deselected artwork: Cmd + Opt + Shift + 3
+  - Show all artwork: Cmd + Opt + 3
+Path Editing:
+  - Join and Average at same time: Cmd + Opt + Shift + j
+  - Convert Anchor Point tool from Pen tool: Opt
+  - Switch between Add Anchor Point and Delete Anchor Point tools: Opt
+  - Add Anchor Point tool from Scissors tool: Opt
+  - Move anchor point while drawing with Pen tool: Spacebar
+  - Create closed path with Pencil or Paintbrush tool: When finished drawing, hold Opt and release mouse
+  - Connect to an open (& selected) path with Pencil:  Cmd + drag
+Painting and Transforming:
+  - Eyedropper tool from Live Paint Bucket tool: Opt
+  - Samples intermediate color from gradient, picture, etc. with eyedropper: Shift
+  - Sets center point and shows dialog: Opt + click with Tool
+  - Duplicates and transforms selection: Opt + drag
+  - Transform pattern without transforming object: Tilde(~) + drag
+  - Scale proportionally with Selection tool: Shift + drag bounding box
+  - Scale from center with Selection tool: Opt + drag bounding box
+  - Move mesh point along path with Mesh tool: Shift + drag
+  - Add mesh point with Mesh tool without changing color: Shift + click
+  - Remove mesh point with Mesh tool: Opt + click
+Shapes (While Drawing):
+  - Draw from center: Opt
+  - Draw from center with dialog: Opt + click
+  - Constrain proportion: Shift
+  - Constrain orientation of polygons, stars, spirals: Shift
+  - Move object while drawing: Spacebar
+  - Add/subtract sides, points, spiral segments: Up or Down Arrow
+  - Decrease inner radius: Cmd
+  - Create Continuous duplicates along mouse movement: Hold tilde(~) while Dragging
+Viewing & Guides:
+  - Get Hand Tool (while NOT editing Type): Spacebar
+  - Get Hand Tool (while editing Type): Hold Cmd, then Space. Then continue holding Space but let go of Cmd
+  - Zoom In Tool: Cmd + Spacebar
+  - Zoom Out Tool: Cmd + Opt + Spacebar
+  - Zoom In to exact size: Cmd + Spacebar + drag
+  - Hide/Show all tools and panels: Tab
+  - Hide/Show all panels except toolbox: Shift + Tab
+  - Switch between horizontal/vertical guide: hold Opt while dragging out a new guide
+  - Release Guide (turns it into a regular path): Cmd + Shift + double click
+Type:
+  - Decrease/Increase type size Cmd-Shift-< or >
+  - Decrease/Increase leading Option arrow up or down
+  - Decrease/Increase kerning/tracking  Option arrow left or right
+  - Kerning/tracking x 5  Cmd-Option arrow left or right
+  - Decrease/Increase baseline shift  Shift-Option arrow down or up
+  - Baseline shift x 5  Cmd-Option-Shift arrow down or up
+  - Align type left, right, center  Cmd-Shift-L, R, C
+  - Justify with last line left aligned Cmd-Shift-J
+  - Justify all line  Cmd-Shift-F
+  - Reset horizontal/vertical scale to 100% Cmd-Shift-X
+  - Reset kerning or tracking to 0  Cmd-Option-Q
+Panel Shortcuts / Function Keys:
+  - Show/Hide Brushes: F5
+  - Show/Hide Color: F6
+  - Show/Hide Layers: F7
+  - Show/Hide Info: Cmd + F8
+  - Show/Hide Gradient: Cmd + F9
+  - Show/Hide Stroke: Cmd + F10
+  - Show/Hide Attributes: Cmd + F11
+  - Revert file: F12
+  - Show/Hide Graphic Styles: Shift + F5
+  - Show/Hide Appearance: Shift + F6
+  - Show/Hide Align: Shift + F7
+  - Show/Hide Transform: Shift + F8
+  - Show/Hide Pathfinder: Shift + Cmd + F9
+  - Show/Hide Transparency: Shift + Cmd + F10
+  - Show/Hide Symbols: Shift + Cmd + F11
+Layers Panel Shortcuts:
+  - Create new layer and edit properties: Opt + click new layer button
+  - Toggle layer between Preview/Outline mode: Cmd + click on eye
+  - Show layer while turningoff all others: Opt + click on eye
+  - Select all items on layer: Opt + click layer name
+  - Copy selected item to different layer: Opt + drag selection square in Layers panel
+  - To create the new layer at the top of list: Cmd + click
+  - To create the new layer below selected layer: Cmd + Opt + click
+Color Panel Shortcuts:
+  - Saturate/Desaturate current color: Shift + drag color slider
+  - Change Color Mode: Shift + click color bar
+  - Select compliment of current color: Cmd + click color bar
+Swatches Panel Shortcuts:
+  - Create a swatch as a global color: Hold Cmd + Shift while creating
+  - Replace a swatch with another: Option + drag new swatch over old
+Misc:
+  - (In any panel) Apply a value, but keep value highlighted in panel: Shift + Return
+  - Create New Symbol: F8
+  - Swap Colors in a Gradient: Opt + drag a color stop onto another
+

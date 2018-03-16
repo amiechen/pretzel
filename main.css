@@ -67,7 +67,7 @@ input:focus {
 
 .app-name {
   font-size: 1.4rem;
-  font-weight: 800;
+  font-weight: 600;
   text-align: center;
   margin: 0;
   padding-top: 2rem;
@@ -82,8 +82,9 @@ input:focus {
 
 .shortcut {
   display: flex;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   position: relative;
+  line-height: 1.4;
 }
 
 .shortcut > * {
@@ -102,6 +103,8 @@ input:focus {
 .shortcut__key span {
   padding-right: 0.5rem;
   background-color: #0e2634;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 
 .shortcut:after {
@@ -123,6 +126,8 @@ input:focus {
 .shortcut__name span {
   padding-left: 0.5rem;
   background-color: #0e2634;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 
 .shortcut__name:hover {

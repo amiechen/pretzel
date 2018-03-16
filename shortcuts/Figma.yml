@@ -1,0 +1,54 @@
+File and Properties:
+  - Export: ⌘ + ⇧ + E
+  - Save: ⌘ + S
+  - Place: ⌘ + ⇧ + K
+  - Color Picker: ^ + C or I
+  - Enter Image Crop Mode: Shift + Double Click
+View:
+  - Pan: ⎵ + Drag
+  - Zoom In: +
+  - Zoom Out: –
+  - Zoom to Fit: 1 or 9
+  - Zoom to Selection: 2
+  - Zoom 100%: 0
+  - Rename Layer: ⌘ + R
+  - Show Rulers: ⇧ + R
+  - Pixel Preview: ⌃ + P
+  - Show Layout Grids: ⌃ + G
+  - Show Layers Panel: ⌘ + ⇧ + \
+  - Show Figma UI: ⌘ + \
+  - Show Pixel Grid: ⌘ + '
+  - Show Transparency Checkerboard: ⌃ + ⇧ + '
+  - Outline Mode: ⌘ + Y or ⌃ + ⇧ + 3
+Vector:
+  - Move Tool: V
+  - Pen Tool: P
+  - Paint Bucket: B
+  - Bend Tool: ⌘ + Drag
+  - Join Selection: ⌘ + J
+  - Duplicate: ⌥ + Drag
+  - Exit Vector Edit Mode: ESC or Return
+  - Text:
+  - Type Tool: T
+  - Toggle Underline: ⌘ + U
+  - Toggle Italic: ⌘ + I
+  - Toggle Bold: ⌘ + B
+Object:
+  - Move Tool: V
+  - Pen Tool: P
+  - Rectangle Tool: R
+  - Ellipse Tool: O
+  - Line Tool: L
+  - Frame Tool: A or F
+  - Slice Tool: S
+  - Copy: ⌘ + C
+  - Cut: ⌘ + X
+  - Paste: ⌘ + V
+  - Duplicate: ⌘ + D or ⌥ + Drag
+  - Group Selection: ⌘ + G
+  - Ungroup Selection: ⌘ + ⇧ + G
+  - Toggle Visibility: ⌘ + ⇧ + H
+  - Toggle Lock: ⌘ + ⇧ + L
+  - Flatten Selection: ⌘ + E
+  - Outline Stroke: ⌘ + ⇧ + O
+  - Toggle Mask: ⌥ + ⌘ + M

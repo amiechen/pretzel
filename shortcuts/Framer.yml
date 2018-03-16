@@ -1,0 +1,41 @@
+Tools:
+  - Frame: f
+  - Rectangle: r
+  - Oval: o
+  - Polygon: p
+  - Star: s
+  - Text: t
+  - Vector: v
+  - Zoom: z
+Canvas:
+  - Switch to Code: Cmd + 2
+  - Zoom In: Cmd + (+)
+  - Zoom Out: Cmd + (-)
+  - Actual Size: Cmd + 0
+  - Center Canvas: Cmd + 1
+  - Pan Canvas: Space + Drag
+Editing:
+  - Objects Size: Cmd + Arrows
+  - Units By 10: Shift + Cmd + Arros
+  - Change Opacity: 0 - 9
+  - Show Distance: Alt
+  - Duplicate: Cmd + d
+  - Duplicate: Alt + Drag
+  - Copy Style: Alt + Cmd + c
+  - Paste Style: Alt + Cmd + v
+  - Color Picker: Ctrl + c
+  - Select all layers: Cmd + a
+Arranging:
+  - Bring Forward: Alt + Cmd + ↑
+  - Send Backward: Alt + Cmd + ↓
+  - Hide: Cmd + ;
+  - Lock Selection: Cmd + l
+  - Add Frame: Cmd + Enter
+  - Remove Frame: Cmd + Delete
+  - Add Group: Cmd + g
+  - Un-Group: Cmd + Shift + g
+Type:
+  - Bold: Cmd + b
+  - Italic: Cmd + i
+  - Underline: Cmd + u
+  - Change Font: Cmd + t

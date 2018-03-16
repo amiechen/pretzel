@@ -13,13 +13,13 @@
   - affinity photo
   - final cut pro
   - adobe experience design
+  - visual studio code
 
   * medium
 
   - xcode
   - slack
   - evernote
-  - atom
   - chrome
   - firefox
   - safari
@@ -29,15 +29,9 @@
 
   * tiny wins
 
-  - visual studio code
-  - framer
   - microsoft excel
   - microsoft word
   - microsoft outlook
-  - principles
-  - utorrent
-  - sourcetree
-  - figma
   - ia writer app
   - skitch
   - maya

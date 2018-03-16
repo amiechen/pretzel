@@ -1,0 +1,43 @@
+General:
+  - Toggle command palette: shift + ⌘ + p
+  - Toggle line/selection comment: ⌘ + /
+  - Show available auto-completions: ctrl + space
+File Navigation:
+  - Toggle file finder: ⌘ + p
+  - Goto line: ctrl + g
+  - Goto symbol: ⌘ + r
+  - Previous/next file: shift + ⌘ + { / }
+  - Set bookmark: ⌘ + F2
+  - Goto next bookmark: F2
+View/Window Manipulation:
+  - Toggle tree-view sidebar: ⌘ + \
+  - Toggle fullscreen: ctrl + ⌘ + f
+  - Split pane left/right/up/down: ⌘ + k, left/right/up/down
+  - Focus pane left/right/up/down: ⌘ + k, ⌘ + left/right/up/down
+Find:
+  - Find in file: ⌘ + f
+  - Find next: ⌘ + g
+  - Find in project: shift + ⌘ + f
+  - Use selection for find: ⌘ + e
+Folding:
+  - Fold/unfold current code block: ctrl + ⌘ + [ / ]
+  - Fold/unfold all code blocks: option + shift + ⌘ + [ / ]
+  - Fold code blocks at depth 1-9: ⌘ + 1-9
+Word Manipulation:
+  - Transpose characters either side of cursor: ctrl + t
+  - Delete text to beginning of word: option + backspace
+  - Delete text to end of word: option + delete or fn + option + backspace
+Line Manipulation:
+  - Indent/outdent current line: ⌘ + ] / [
+  - Insert new line after current line: ⌘ + enter
+  - Insert new line before current line: ⌘ + shift + enter
+  - Delete current line: ctrl + shift + k
+  - Move current line up/down: ctrl + ⌘ + up/down
+  - Duplicate current line: shift + ⌘ + d
+  - Join current and next lines: ⌘ + j
+Selection:
+  - Select current word/token: ⌘ + d
+  - Select current line: ⌘ + l
+  - Select to beginning/end of word: option + shift + left/right
+  - Select to first/last character of line: shift + ⌘ + left/right
+  - Select to top/bottom of document: shift + ⌘ + up/down

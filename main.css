@@ -17,8 +17,9 @@ body {
   padding: 1rem 1.5rem;
   margin: 0;
   box-sizing: border-box;
-  color: #192534;
   text-rendering: optimizeLegibility;
+  background-color: #0f2533;
+  color: #f8fafa;
 }
 
 input {
@@ -73,25 +74,20 @@ input:focus {
 }
 
 .shortcuts__title {
-  font-weight: 600;
-  font-size: 1rem;
+  font-weight: 700;
+  font-size: 0.8rem;
   margin: 1.8rem 0 0.3rem 0;
+  color: #7f8ba0;
 }
 
 .shortcut {
   display: flex;
-  border-top: 1px solid #dbe7f1;
   font-size: 0.8rem;
-  color: #5f697b;
-}
-
-.shortcuts__title + .shortcut {
-  border-top: none;
 }
 
 .shortcut > * {
   flex: 1;
-  padding: 0.7rem 0;
+  padding: 0.2rem 0;
 }
 
 .shortcut:last-child {
@@ -133,7 +129,7 @@ input:focus {
   animation-delay: 200ms;
 }
 
-#show-all-apps:hover #rec-bottomright {
+#show-all-apps:hover #rec-topleft {
   opacity: 0;
   animation-delay: 300ms;
 }

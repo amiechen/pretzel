@@ -1,30 +1,30 @@
 Tabs and Windows:
-  - Fullscreen: Cmd + Enter
-  - Previous Tab: Cmd+ Left Arrow
-  - Next Tab: Cmd+ Right Arrow
-  - Go to Tab: Cmd + Number
-  - Go to Window: Cmd + Opt + Number
-  - Go to Split Pane by Direction: Cmd + Opt + Arrow
-  - Go to Split Pane by Order of Use: Cmd + ] , Cmd + [
-  - Split Window Horizontally (same profile): Cmd + Shift + d
-  - Split Window Vertically (same profile): Cmd + d
-  - Split Window Horizontally (new profile): Opt + Cmd + Shift + h
-  - Split Window Vertically (new profile): Opt + Cmd + Shift + v
-  - Set Mark: Cmd + Shift + m
-  - Jump to Mark: Cmd + Shift + j
+  - Fullscreen: ⌘ + ↩
+  - Previous Tab: ⌘ + Left Arrow
+  - Next Tab: ⌘ + Right Arrow
+  - Go to Tab: ⌘ + Number
+  - Go to Window: ⌘ + Opt + Number
+  - Go to Split Pane by Direction: ⌘ + Opt + Arrow
+  - Go to Split Pane by Order of Use: ⌘ + ] , ⌘ + [
+  - Split Window Horizontally (same profile): ⌘ + Shift + d
+  - Split Window Vertically (same profile): ⌘ + d
+  - Split Window Horizontally (new profile): Opt + ⌘ + Shift + h
+  - Split Window Vertically (new profile): Opt + ⌘ + Shift + v
+  - Set Mark: ⌘ + Shift + m
+  - Jump to Mark: ⌘ + Shift + j
 Basic Moves:
   - Move back one character: Ctrl + b
   - Move forward one character: Ctrl + f
   - Delete current character: Ctrl + d
   - Delete previous character: Backspace
   - Undo: Ctrl + -
-Moving Faster
+Moving Faster:
   - Move to the start of line: Ctrl + a
   - Move to the end of line: Ctrl + e
   - Move forward a word: Opt + f
   - Move backward a word: Opt + b
-  - Clear the screen: Cmd + k
-Copy and Paste
+  - Clear the screen: ⌘ + k
+Copy and Paste:
   - Copy from cursor to the end of line: Ctrl + k
   - Copy from cursor to the end of word: Opt + d
   - Copy from cursor to the start of word: Opt + Backspace

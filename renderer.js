@@ -67,8 +67,12 @@ ipcRenderer.on("currentApp", (event, name) => {
     html += `<div class="shortcuts__group"><h3 class="shortcuts__title">${prop}</h3>`;
     shortcuts[prop].forEach(element => {
       html += `<div class="shortcut">
-        <label class="shortcut__key">${Object.keys(element)}</label>
-        <label class="shortcut__name">${Object.values(element)[0]}</label>
+        <label class="shortcut__key"><span>${Object.keys(
+          element
+        )}</span></label>
+        <label class="shortcut__name"><span>${
+          Object.values(element)[0]
+        }</span></label>
       </div>`;
     });
     html += "</div>";

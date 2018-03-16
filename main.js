@@ -56,7 +56,7 @@ function getWindowPosition() {
 function createWindow() {
   win = new BrowserWindow({
     width: 300,
-    height: 500,
+    height: 400,
     frame: false,
     show: false
   });

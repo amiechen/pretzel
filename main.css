@@ -83,20 +83,46 @@ input:focus {
 .shortcut {
   display: flex;
   font-size: 0.8rem;
+  position: relative;
 }
 
 .shortcut > * {
   flex: 1;
-  padding: 0.2rem 0;
+  padding: 0.4rem 0;
 }
 
 .shortcut:last-child {
   border-bottom: none;
 }
 
+.shortcut__key {
+  position: relative;
+}
+
+.shortcut__key span {
+  padding-right: 0.5rem;
+  background-color: #0e2634;
+}
+
+.shortcut:after {
+  content: "";
+  display: block;
+  height: 1px;
+  top: 0.9rem;
+  background-color: #1e3644;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
 .shortcut__name {
-  text-align: right;
   color: #78a6e7;
+  text-align: right;
+}
+
+.shortcut__name span {
+  padding-left: 0.5rem;
+  background-color: #0e2634;
 }
 
 .shortcut__name:hover {

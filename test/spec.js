@@ -1,8 +1,12 @@
-var assert = require("assert");
-describe("Array", function() {
-  describe("#indexOf()", function() {
-    it("should return -1 when the value is not present", function() {
-      assert.equal([1, 2, 3].indexOf(4), -1);
-    });
+const assert = require("assert");
+const renderer = require("../renderer");
+const mainjs = require("../main");
+
+describe("Renderer", function() {
+  it("get should return the first matched element in the scope", function() {
+    assert.equal();
+  });
+  it("getAll should return all matched elements in the scope", function() {
+    assert.equal();
   });
 });

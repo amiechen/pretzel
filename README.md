@@ -7,20 +7,17 @@
   * mega need some scraping
 
   - after effects
-  - cinema 4d
   - indesign
   - affinity designer
+  - adobe experience design
   - affinity photo
   - final cut pro
-  - adobe experience design
-  - visual studio code
 
   * medium
 
   - xcode
   - slack
   - evernote
-  - chrome
   - firefox
   - safari
   - pages

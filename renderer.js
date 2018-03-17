@@ -49,7 +49,7 @@ function toggleTitles() {
 function getShortcutConfig(name) {
   try {
     const config = yaml.safeLoad(
-      fs.readFileSync(`shortcuts/${name}.yml`, "utf8")
+      fs.readFileSync(`shortcuts/${name}`, "utf8")
     );
     return config;
   } catch (e) {
@@ -78,7 +78,7 @@ ipcRenderer.on("currentApp", (event, name) => {
     html += "</div>";
   }
 
-  appName.innerHTML = name;
+  appName.innerHTML = name.split('.yml')[0];
   shortcutsContainer.innerHTML = html;
 });
 

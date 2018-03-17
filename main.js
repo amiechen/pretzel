@@ -10,12 +10,14 @@ const fs = require("fs");
 const url = require("url");
 const path = require("path");
 const objc = require("objc");
+const stringSimilarity = require('string-similarity');
 const assetsDirectory = path.join(__dirname, "assets");
 const shortcutsDirectory = path.join(__dirname, "shortcuts");
 const inactiveIcon = path.join(assetsDirectory, "shortcuts-gray@2x.png");
 const activeIcon = path.join(assetsDirectory, "shortcuts@2x.png");
 const availableShortcuts = fs.readdirSync(shortcutsDirectory);
 const menu = new Menu();
+let currentAppFile;
 let currentApp;
 let position;
 let win;
@@ -25,26 +27,26 @@ let tray;
 objc.import("AppKit");
 const { NSWorkspace, js } = objc;
 
-Array.prototype.containsSubstring = function(needle) {
-  console.log(this);
-  for (i in this) {
-    if (this[i].indexOf(needle) !== -1) return true;
-  }
-  return false;
-};
-
 function hasShortcuts() {
   let currentAppProxy = NSWorkspace.sharedWorkspace()
     .frontmostApplication()
     .localizedName();
   currentApp = js(currentAppProxy);
 
+  let matches = stringSimilarity.findBestMatch(currentApp, availableShortcuts);
   // when window is open, currentapp is electron
   // which prevents the window to hide on clicking app icon
   if (currentApp === "Electron") {
     return true;
   }
-  return availableShortcuts.containsSubstring(`${currentApp}`);
+
+  if (matches.bestMatch.rating > 0.5) {
+    currentAppFile = matches.bestMatch.target;
+    return true;
+  } else {
+    return false
+  }
+  // return availableShortcuts.indexOf(`${currentApp}.yml`) > -1;
 }
 
 function getWindowPosition() {
@@ -83,13 +85,13 @@ function createWindow() {
     win.focus();
 
     fs.access(
-      path.join(shortcutsDirectory, `${currentApp}.yml`),
+      path.join(shortcutsDirectory, currentAppFile),
       fs.constants.R_OK,
       err => {
         if (err) {
-          win.webContents.send("noShortcuts", currentApp);
+          win.webContents.send("noShortcuts", currentAppFile);
         } else {
-          win.webContents.send("currentApp", currentApp);
+          win.webContents.send("currentApp", currentAppFile);
         }
       }
     );
@@ -105,7 +107,6 @@ function createWindow() {
 }
 
 function toggleWindow() {
-  console.log(currentApp);
   if (hasShortcuts()) {
     win.isVisible() ? win.hide() : win.show();
   }

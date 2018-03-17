@@ -25,6 +25,14 @@ let tray;
 objc.import("AppKit");
 const { NSWorkspace, js } = objc;
 
+Array.prototype.containsSubstring = function(needle) {
+  console.log(this);
+  for (i in this) {
+    if (this[i].indexOf(needle) !== -1) return true;
+  }
+  return false;
+};
+
 function hasShortcuts() {
   let currentAppProxy = NSWorkspace.sharedWorkspace()
     .frontmostApplication()
@@ -36,7 +44,7 @@ function hasShortcuts() {
   if (currentApp === "Electron") {
     return true;
   }
-  return availableShortcuts.indexOf(`${currentApp}.yml`) > -1;
+  return availableShortcuts.containsSubstring(`${currentApp}`);
 }
 
 function getWindowPosition() {

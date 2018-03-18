@@ -143,7 +143,7 @@ input:focus {
 }
 
 #show-all-apps:hover {
-  cursor: pointer;
+  cursor: default;
 }
 
 #show-all-apps:hover rect {
@@ -163,6 +163,24 @@ input:focus {
 #show-all-apps:hover #rec-topleft {
   opacity: 0;
   animation-delay: 300ms;
+}
+
+#quit-app {
+  position: absolute;
+  right: 1.5rem;
+  font-size: 0.6rem;
+  font-weight: 300;
+  background-color: #0a1a23;
+  padding: 3px 10px;
+  border-radius: 3px;
+  line-height: 1rem;
+  border: 1px solid #264f81;
+  cursor: default;
+}
+
+#quit-app:hover {
+  border-color: #3972b5;
+  transition: border-color 0.3s ease;
 }
 
 @keyframes staggering {

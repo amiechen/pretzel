@@ -1,20 +1,13 @@
-const {
-  app,
-  Menu,
-  Tray,
-  BrowserWindow,
-  globalShortcut,
-  ipcMain
-} = require("electron");
+const { app, Menu, Tray, BrowserWindow, globalShortcut } = require("electron");
 const fs = require("fs");
 const url = require("url");
 const path = require("path");
 const objc = require("objc");
-const stringSimilarity = require('string-similarity');
+const stringSimilarity = require("string-similarity");
 const assetsDirectory = path.join(__dirname, "assets");
 const shortcutsDirectory = path.join(__dirname, "shortcuts");
-const inactiveIcon = path.join(assetsDirectory, "shortcuts-gray@2x.png");
-const activeIcon = path.join(assetsDirectory, "shortcuts@2x.png");
+const inactiveIcon = path.join(assetsDirectory, "gray@2x.png");
+const activeIcon = path.join(assetsDirectory, "black@2x.png");
 const availableShortcuts = fs.readdirSync(shortcutsDirectory);
 const menu = new Menu();
 let currentAppFile;
@@ -44,9 +37,8 @@ function hasShortcuts() {
     currentAppFile = matches.bestMatch.target;
     return true;
   } else {
-    return false
+    return false;
   }
-  // return availableShortcuts.indexOf(`${currentApp}.yml`) > -1;
 }
 
 function getWindowPosition() {
@@ -124,5 +116,6 @@ app.on("ready", () => {
   tray.on("right-click", toggleWindow);
   tray.on("double-click", toggleWindow);
   tray.on("click", toggleWindow);
+
   globalShortcut.register("Command+1", toggleWindow);
 });

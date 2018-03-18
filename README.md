@@ -2,9 +2,8 @@
 
 ## Todo:
 
-* add a list of apps that currently has shortcuts
-- code sign and release to app store
-- create a marketing webpage
+* code sign and release to app store
+* create a marketing webpage
 
 Todo:
 Setup event listener such as below on `app ready`.

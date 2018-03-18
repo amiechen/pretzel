@@ -1,12 +1,14 @@
 {
   "name": "contextual-shortcuts",
-  "productName": "shortcut buddy",
+  "productName": "Pretzel",
   "version": "0.0.5",
-  "description": "a contextual shortcut viewing app",
+  "description": "a contextual shortcut finder for desktop apps",
+  "author": "Amie Chen",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "test": "mocha"
+    "test": "mocha",
+    "package": "build"
   },
   "repository": {
     "type": "git",
@@ -15,20 +17,21 @@
   "keywords": [
     "shortcuts"
   ],
-  "author": "Amie Chen",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/amiechen/contextual-shortcuts/issues"
   },
   "homepage": "https://github.com/amiechen/contextual-shortcuts#readme",
   "dependencies": {
-    "electron-positioner": "^3.0.0",
     "js-yaml": "^3.11.0",
-    "menubar": "^5.2.3",
     "objc": "^0.12.0",
     "string-similarity": "^1.2.0"
   },
   "devDependencies": {
     "mocha": "^5.0.4"
+  },
+  "build": {
+    "appId": "com.Hyperyolo.Pretzel",
+    "files": "!build-assets{*/}"
   }
 }

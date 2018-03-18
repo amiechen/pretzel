@@ -1,10 +1,11 @@
-const { ipcRenderer, shell } = require("electron");
+const { ipcRenderer, remote, shell } = require("electron");
 const yaml = require("js-yaml");
 const fs = require("fs");
 const appName = document.querySelector(".app-name");
 const shortcutsContainer = document.querySelector(".shortcuts-container");
 const input = document.querySelector("#search");
 const allAppsBtn = document.querySelector("#show-all-apps");
+const quitAppBtn = document.querySelector("#quit-app");
 
 function get(selector, scope) {
   scope = scope ? scope : document;
@@ -48,9 +49,7 @@ function toggleTitles() {
 
 function getShortcutConfig(name) {
   try {
-    const config = yaml.safeLoad(
-      fs.readFileSync(`shortcuts/${name}`, "utf8")
-    );
+    const config = yaml.safeLoad(fs.readFileSync(`shortcuts/${name}`, "utf8"));
     return config;
   } catch (e) {
     console.log(e);
@@ -78,7 +77,7 @@ ipcRenderer.on("currentApp", (event, name) => {
     html += "</div>";
   }
 
-  appName.innerHTML = name.split('.yml')[0];
+  appName.innerHTML = name.split(".yml")[0];
   shortcutsContainer.innerHTML = html;
 });
 
@@ -89,4 +88,8 @@ input.addEventListener("keyup", () => {
 
 allAppsBtn.addEventListener("click", () => {
   shell.openExternal("https://amie-chen.com/shortcut-buddy");
+});
+
+quitAppBtn.addEventListener("click", () => {
+  remote.app.quit();
 });

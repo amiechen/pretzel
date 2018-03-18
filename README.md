@@ -1,7 +1,7 @@
-# Shortcut Buddy
+# Pretzel
+A contextual shortcut finder. Works on all platforms
 
 ## Todo:
-
 * code sign and release to app store
 * create a marketing webpage
 

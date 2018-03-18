@@ -1,0 +1,132 @@
+Hotkeys 1 to 9:
+  - Move camera: hold down 1 and drag
+  - Move camera in direction of view: hold down 2 and drag
+  - Rotate camera: hold down 3 and drag
+  - Move object: hold down 4 and drag
+  - Scale object: hold down 5 and drag
+  - Rotate object: hold down 6 and drag
+  - Move object without Child objects: hold down 7 and drag
+  - Lasso selection: hold down 8 and drag
+  - Live Selection: hold down 9 and drag
+
+Modelling:
+  - Normal rotate: M
+  - Make editable: C
+  - Move: E
+  - Rotate: R
+  - Scale: T
+  - Toggle Active Tool: Space
+  - Toggle Modeling Mode: Enter
+  - Undo (Action): Shift + Z
+  - "X-Axis/Heading": X
+  - "Y-Axis/Pitch": Y
+  - "Z-Axis/Bank": Z
+  - Coordinate System: W
+  - Select All: CmdOrCtrl + A
+  - Deselect All: CmdOrCtrl + Shift + A
+
+File:
+  - New file: CmdOrCtrl + N
+  - Open: CmdOrCtrl + O
+  - Save: CmdOrCtrl + S
+  - Save as: CmdOrCtrl + Shift + S
+  - Close all: CmdOrCtrl + Shift + W
+  - Quit: CmdOrCtrl + Q
+
+Snap:
+  - Enable Snap: Shift + S
+  - Enable Quantizing: Shift + Q
+
+Animate:
+  - Record Active Objects: F9
+  - Autokeying: Cmd + F9
+  - Play Forwards: F8
+  - Play Backwards: F6
+  - Stop: F7
+  - Go to Start: Shift + F
+  - Go to End: Shift + G
+  - Go to Next Frame: G
+  - Go to Previous Frame: F
+  - Go to Next Key: Cmd + G
+  - Go to Previous Key: Cmd + F
+
+Rendering:
+  - Render Settings: CmdOrCtrl + B
+  - Make Preview: Alt + B
+  - Interactive Render Region: Alt + R
+  - Render Active Viewport: CmdOrCtrl + R
+  - Render to Picture Viewer: Shift + R
+  - Render to Picture Viewer (IR): CmdOrCtrl + Shift + R
+
+Script:
+  - Console: Shift + F10
+  - Script Manager: Shift + F11
+
+Object Manager:
+  - New object as child object: Shift + Create object
+  - New object as Parent object: Alt + Create object 
+  - Expand object group: Shift + G
+  - Group objects: Alt + G
+  - Project information: CmdOrCtrl + I
+  - Show fitter: CmdOrCtrl + U
+  - Show search sar: CmdOrCtrl + F
+  - Merge objects: Shift + CmdOrCtrl+ O
+  - Select object including child objects: Click with RMB
+
+Picture Viewer:
+  - Fullscreen mode: CmdOrCtrl+F
+  - Auto zoom: Shift + Create object
+  - Set as preview end: O
+  - Set as preview start: Shift + G
+  - Swap AB: Alt + G
+  - Set as B: CmdOrCtrl + I
+  - Set as A: A
+  - Play: Space
+  - Zoom In/Out: "+/-"
+  - Switch 100% and Fullscreen: Double-click
+
+Motion Tracking:
+  - Zoom: Alt
+  - Lasso selection: LMB
+  - It create user Track: CmdOrCtrl + LMB
+  - Sequence fullscreen: Alt +O
+  - Scale sequence: Alt + RMB
+  - Move sequence: Alt +MMB
+
+Material Manager:
+  - Load materials: Shift + Cut + 0
+  - New material: CmdOrCtrl + N
+  - New PBR material: CmdOrCtrl + Shift + N
+  - Replace material by another: Alt + Drag&Drop
+
+Attribute Manager:
+  - Parameter to default: RMB + Arrow
+  - Increase/decrease parameter change speed with arrows: Alt or Shift
+  - New attribute manager: Shift + F5
+
+Structure Manager:
+  - Jump Home: Home
+  - Jump Page Up: PgUp
+  - Jump Page Down: PgDown
+  - Jump Last Selection: Shift + N
+  - Import ASCII Data: Shift + CmdOrCtrl + 0
+  - Jump End: End
+  - Vertex Map: V
+
+Sculpting:
+  - Smooth for all brushes: Shift
+  - Reverse brush effect: Cut
+  - Switch symmetry mode: Alt + X, Y, Z
+  - Move, scale, rotate template: T + LMB
+
+View:
+  - Hide/Show axes: Alt + 0
+  - Configure: Shift + V
+  - Configure All: Alt + V
+  - Render View: CmdOrCtrl + R
+  - Render to Picture Viewer: Shift + R
+  - Undo View: Shift + CmdOrCtrl+ Z
+  - Redo View: Shift + CmdOrCtrl + Y
+  - Redraw: A
+  - All views: F5
+  - Use Isoline Editing: Alt + A

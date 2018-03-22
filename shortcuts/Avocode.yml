@@ -1,0 +1,27 @@
+General:
+  - New Tab: "CmdOrCtrl + t or CmdOrCtrl + n"
+  - Toggle Settings: CmdOrCtrl + ,
+  - Toggle fuzzy finder: CmdOrCtrl + Shift + p
+  - Show shortcuts: "?"
+Design:
+  - Copy text: CmdOrCtrl + c
+  - Toggle panels: TAB 
+  - Deselect layers: ESC 
+  - Original Zoom: CmdOrCtrl + 1
+  - Zoom In: CmdOrCtrl + (+)
+  - Zoom Out: CmdOrCtrl + (−)
+  - Scroll to layer: Alt + Mouse 
+  - Copy CSS: CmdOrCtrl + Shift + c
+Tools:
+  - Select tool: v
+  - Color Picker: i
+  - Hand tool: h or Space 
+  - Measure tool: r or Alt
+  - Lock measure guides: CmdOrCtrl + l
+Guides:
+  - Toggle guides: CmdOrCtrl + r
+  - Remove selected guides: Del
+Export:
+  - Screenshot of the current document: CmdOrCtrl + p
+  - Export selected layer(s): CmdOrCtrl + s
+  - Export all rules: CmdOrCtrl + Shift + e

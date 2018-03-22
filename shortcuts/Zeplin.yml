@@ -1,0 +1,28 @@
+Project:
+  - Projects: Cmd + Ctrl + A 
+  - Create Project: Cmd + N 
+Dashboard:
+  - Dashboard: Cmd + D 
+  - Styleguide: Cmd + G  
+  - Preview screen in larger window: Screen + Space  
+Screen:
+  - Jump to Next Screen: → 
+  - Jump to Previous Screen: ← 
+  - Jump to Screen: Cmd + J  
+Selection:
+  - Create a new Section from selection: Ctrl + Cmd + N 
+  - Collapse all Sections: Ctrl + Cmd + ↑ 
+  - Expand all Sections: Ctrl + Cmd + ↓  
+Edit:
+  - Edit name of Screen: Cmd + R
+  - Delete Screen: Cmd + Backspace  
+  - Search screen: Cmd + F
+  - Manage tags: Cmd + T
+Zoom:
+  - Zoom In: Cmd + (+)
+  - Zoom Out: Cmd + (-)  
+  - Actual Size: Cmd + 0 
+  - Zoom to Fit: Cmd + 1 
+  - Zoom to Selection: Cmd + 2   
+Grid:
+  - Show/hide screen grid: Alt + Cmd + G

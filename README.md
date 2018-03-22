@@ -1,11 +1,23 @@
 # Pretzel
+
 A contextual shortcut finder. Works on all platforms
 
-## Todo:
-* code sign and release to app store
-* create a marketing webpage
+## Run it locally:
 
-Todo:
+```
+npm install
+npm start
+```
+
+To compile:
+
+```
+npm run build:mac
+npm run build:win
+```
+
+## Notes:
+
 Setup event listener such as below on `app ready`.
 
 ```

@@ -7,6 +7,7 @@ const shortcutsContainer = document.querySelector(".shortcuts-container");
 const input = document.querySelector("#search");
 const allAppsBtn = document.querySelector("#show-all-apps");
 const quitAppBtn = document.querySelector("#quit-app");
+const allAppsUrl = "https://www.amie-chen.com/pretzel/supported-apps";
 
 function get(selector, scope) {
   scope = scope ? scope : document;
@@ -90,7 +91,7 @@ input.addEventListener("keyup", () => {
 });
 
 allAppsBtn.addEventListener("click", () => {
-  shell.openExternal("https://amie-chen.com/shortcut-buddy");
+  shell.openExternal(allAppsUrl);
 });
 
 quitAppBtn.addEventListener("click", () => {

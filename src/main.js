@@ -6,8 +6,8 @@ const objc = require("objc");
 const stringSimilarity = require("string-similarity");
 const assetsDirectory = path.join(__dirname, "assets");
 const shortcutsDirectory = path.join(__dirname, "shortcuts");
-const inactiveIcon = path.join(assetsDirectory, "gray@2x.png");
-const activeIcon = path.join(assetsDirectory, "black@2x.png");
+const inactiveIcon = path.join(assetsDirectory, "icon@2x.png");
+const activeIcon = path.join(assetsDirectory, "icon-black@2x.png");
 const availableShortcuts = fs.readdirSync(shortcutsDirectory);
 const menu = new Menu();
 let currentAppFile;
@@ -27,11 +27,12 @@ function hasShortcuts() {
   currentApp = js(currentAppProxy);
 
   let matches = stringSimilarity.findBestMatch(currentApp, availableShortcuts);
-  // when window is open, currentapp is electron
+  // when window is open, currentapp is Electron(not compiled) or Pretzel(compiled)
   // which prevents the window to hide on clicking app icon
   if (currentApp === "Pretzel") {
     return true;
   }
+  console.log(currentApp);
 
   // console.log(availableShortcuts, __dirname);
   if (matches.bestMatch.rating > 0.5) {

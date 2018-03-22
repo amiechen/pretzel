@@ -119,7 +119,7 @@ input:focus {
 }
 
 .shortcut__name {
-  color: #78a6e7;
+  color: #468ee5;
   text-align: right;
 }
 
@@ -131,7 +131,7 @@ input:focus {
 }
 
 .shortcut__name:hover {
-  color: #0495f7;
+  color: #6090fa;
 }
 
 .shortcuts__group {

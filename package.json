@@ -4,7 +4,7 @@
   "version": "0.0.5",
   "description": "a contextual shortcut finder for desktop apps",
   "author": "Amie Chen",
-  "main": "main.js",
+  "main": "index.js",
   "scripts": {
     "start": "electron .",
     "test": "mocha",
@@ -26,7 +26,10 @@
   "homepage": "https://github.com/amiechen/contextual-shortcuts#readme",
   "dependencies": {
     "electron-debug": "^1.5.0",
+    "electron-log": "^2.2.14",
+    "electron-updater": "^2.21.3",
     "js-yaml": "^3.11.0",
+    "menubar": "^5.2.3",
     "objc": "^0.12.0",
     "string-similarity": "^1.2.0"
   },

@@ -61,8 +61,9 @@ function getShortcutConfig(name) {
 }
 
 ipcRenderer.on("noShortcuts", (event, name) => {
-  let html = "";
-  html += `<h2 class="no-shortcuts">No shrortcuts found <br> for <span class="app-name">${name}</span></h2>`;
+  const html = `<h2 class="no-shortcuts">No shrortcuts found <br> for <span class="app-name">${name}</span></h2>`;
+  appName.style.display = "none";
+  input.style.display = "none";
   shortcutsContainer.innerHTML = html;
 });
 
@@ -89,6 +90,8 @@ ipcRenderer.on("currentApp", (event, name) => {
 
   appName.innerHTML = name.split(".yml")[0];
   shortcutsContainer.innerHTML = html;
+  appName.style.display = "";
+  input.style.display = "";
 });
 
 input.addEventListener("keyup", () => {

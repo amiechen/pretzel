@@ -4,11 +4,11 @@
   "version": "0.0.5",
   "description": "a contextual shortcut finder for desktop apps",
   "author": "Amie Chen",
-  "main": "src/main.js",
+  "main": "main.js",
   "scripts": {
     "start": "electron .",
     "test": "mocha",
-    "build:mac": "electron-packager . Pretzel --platform=darwin --arch=x64 --asar  --icon=icon.icns",
+    "build:mac": "electron-packager . Pretzel --platform=darwin --arch=x64  --icon=icon.icns",
     "build:win": "electron-packager . Pretzel --platform=win32 --arch=x64 --asar  --icon=icon.ico",
     "build:linux": "electron-packager . Pretzel --platform=linux --arch=x64 --asar  --icon=icon.ico"
   },
@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/amiechen/contextual-shortcuts#readme",
   "dependencies": {
+    "electron-debug": "^1.5.0",
     "js-yaml": "^3.11.0",
     "objc": "^0.12.0",
     "string-similarity": "^1.2.0"

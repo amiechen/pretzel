@@ -60,6 +60,12 @@ function getShortcutConfig(name) {
   }
 }
 
+ipcRenderer.on("noShortcuts", (event, name) => {
+  let html = "";
+  html += `<h2 class="no-shortcuts">No shrortcuts found <br> for <span class="app-name">${name}</span></h2>`;
+  shortcutsContainer.innerHTML = html;
+});
+
 ipcRenderer.on("currentApp", (event, name) => {
   const shortcuts = getShortcutConfig(name);
   let html = "";

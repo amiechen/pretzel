@@ -32,9 +32,7 @@ function hasShortcuts() {
   if (currentApp === "Pretzel") {
     return true;
   }
-  console.log(currentApp);
 
-  // console.log(availableShortcuts, __dirname);
   if (matches.bestMatch.rating > 0.5) {
     currentAppFile = matches.bestMatch.target;
     return true;
@@ -74,6 +72,7 @@ function createWindow() {
   position = getWindowPosition();
   win.setPosition(position.x, position.y, false);
   // win.webContents.toggleDevTools();
+
   win.on("show", () => {
     win.setVisibleOnAllWorkspaces(true);
     win.focus();
@@ -119,7 +118,7 @@ app.on("ready", () => {
   tray.on("double-click", toggleWindow);
   tray.on("click", toggleWindow);
 
-  globalShortcut.register("Command+1", toggleWindow);
+  globalShortcut.register("Command+`", toggleWindow);
 });
 
 app.on("will-quit", function() {

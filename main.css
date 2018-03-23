@@ -138,6 +138,12 @@ input:focus {
   margin-bottom: 2rem;
 }
 
+.no-shortcuts {
+  text-align: center;
+  margin-top: 3rem;
+  font-weight: 200;
+}
+
 #show-all-apps {
   position: absolute;
 }

@@ -70,7 +70,7 @@ input:focus {
   font-weight: 600;
   text-align: center;
   margin: 0;
-  padding-top: 2rem;
+  padding-top: 2.5rem;
 }
 
 .shortcuts__title {
@@ -140,8 +140,36 @@ input:focus {
 
 .no-shortcuts {
   text-align: center;
-  margin-top: 3rem;
   font-weight: 200;
+  font-size: 1rem;
+  line-height: 1.8rem;
+  color: #7f8ba0;
+  padding-top: 20%;
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+}
+.no-shortcuts .app-name {
+  color: white;
+}
+
+.no-shortcuts__text {
+  flex-grow: 1;
+  display: flex;
+  margin-top: -3rem;
+}
+.no-shortcuts__text p {
+  margin: auto;
+}
+
+.add-shortcut-btn {
+  margin: auto;
+  text-align: center;
+  padding: 0.2rem 1rem;
+  background-color: #468ee5;
+  border-radius: 3px;
+  font-size: 0.7rem;
+  color: white;
 }
 
 #show-all-apps {

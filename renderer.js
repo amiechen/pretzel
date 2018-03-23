@@ -61,7 +61,12 @@ function getShortcutConfig(name) {
 }
 
 ipcRenderer.on("noShortcuts", (event, name) => {
-  const html = `<h2 class="no-shortcuts">No shrortcuts found <br> for <span class="app-name">${name}</span></h2>`;
+  const html = `<div class="no-shortcuts">
+    <div class="no-shortcuts__text">
+      <p>No shrortcuts found for <br><span class="app-name">${name}</span></p>
+    </div>
+    <div class="add-shortcut-btn">Add Shortcuts for ${name}</div>
+  </div>`;
   appName.style.display = "none";
   input.style.display = "none";
   shortcutsContainer.innerHTML = html;

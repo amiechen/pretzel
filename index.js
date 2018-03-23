@@ -10,7 +10,7 @@ const assetsDirectory = path.join(__dirname, "assets");
 const shortcutsDirectory = path.join(__dirname, "shortcuts");
 const menubar = require("menubar");
 const mb = menubar({
-  icon: path.join(__dirname, "/assets/icon@2x.png"),
+  icon: path.join(__dirname, "/assets/icon.png"),
   width: 300,
   height: 400,
   resizable: false,
@@ -47,6 +47,7 @@ function toggleWindow() {
 }
 
 mb.on("ready", function ready() {
+  // mb.window.webContents.toggleDevTools();
   autoUpdater.checkForUpdatesAndNotify();
   globalShortcut.register("CommandOrControl+`", toggleWindow);
 });
@@ -54,7 +55,7 @@ mb.on("ready", function ready() {
 mb.on("show", () => {
   const currentApp = getCurrentApp();
   const currentAppFile = `${currentApp}.yml`;
-  console.log("showing window", currentApp);
+  mb.tray.setHighlightMode("always");
   fs.access(
     path.join(shortcutsDirectory, currentAppFile),
     fs.constants.R_OK,
@@ -69,6 +70,7 @@ mb.on("show", () => {
 });
 
 mb.on("hide", () => {
+  mb.tray.setHighlightMode("never");
   Menu.sendActionToFirstResponder("hide:");
 });
 

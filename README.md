@@ -1,8 +1,12 @@
-![logo](./screenshot/logo.png)
+<p align="left">
+  <a href="https://www.amie-chen.com/pretzel/" target="_blank">
+    <img alt="Parcel" src="./screenshot/logo.png" width="386">
+  </a>
+</p>
+
+A Smart, contextual shortcut finder that helps you speed up daily tasks. Never need to jump through sites after sites again.
 
 ![app-screen-shot](./screenshot/app-screen.png)
-
-A smart contextual shortcut finder.
 
 ## Links
 

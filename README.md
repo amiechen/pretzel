@@ -1,6 +1,10 @@
-# Pretzel
+![logo](./screenshot/logo.png)
+
+![app-screen-shot](./screenshot/app-screen.png)
 
 A smart contextual shortcut finder.
+
+## Links
 
 [Website](https://www.amie-chen.com/pretzel/)
 [Releases](https://github.com/amiechen/pretzel/releases)

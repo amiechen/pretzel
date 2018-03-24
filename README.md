@@ -1,12 +1,10 @@
 <p align="left">
   <a href="https://www.amie-chen.com/pretzel/" target="_blank">
-    <img alt="Parcel" src="./screenshot/logo.png" width="386">
+    <img alt="Parcel" src="./screenshot/logo.png" width="200">
   </a>
 </p>
 
 A Smart, contextual shortcut finder that helps you speed up daily tasks. Never need to jump through sites after sites again.
-
-![app-screen-shot](./screenshot/app-screen.png)
 
 ## Links
 
@@ -18,6 +16,8 @@ A Smart, contextual shortcut finder that helps you speed up daily tasks. Never n
 * 🔍 In-App quick search: Find your specific shortcut with quick search among hundreds.
 * ⚡ Detects the currently focused app.
 * 🐠 Little distraction from your current task. Clicking on the menubar icon or hit `CmdorCtrl + (backtick)` on keyboard will automatically opens the shortcut panel.
+
+![app-screen-shot](./screenshot/app-screen.png)
 
 ## Run it locally:
 

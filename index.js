@@ -73,3 +73,7 @@ mb.app.on("will-quit", () => {
   globalShortcut.unregisterAll();
   mb.app.quit();
 });
+
+autoUpdater.on("update-downloaded", info => {
+  autoUpdater.quitAndInstall();
+});

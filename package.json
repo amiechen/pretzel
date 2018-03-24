@@ -1,13 +1,14 @@
 {
   "name": "pretzel",
   "productName": "Pretzel",
-  "version": "0.0.7",
+  "version": "0.0.1",
   "description": "a contextual shortcuts finder",
   "author": "Amie Chen",
   "main": "index.js",
   "scripts": {
     "start": "electron .",
     "package": "build",
+    "publish": "build -p always",
     "build:mac":
       "electron-packager . Pretzel --platform=darwin --arch=x64 --asar  --icon=icon.icns",
     "build:win":

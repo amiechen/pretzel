@@ -5,6 +5,12 @@ A smart contextual shortcut finder.
 [Website](https://www.amie-chen.com/pretzel/)
 [Releases](https://github.com/amiechen/pretzel/releases)
 
+## Features
+
+* 🔍 In-App quick search: Find your specific shortcut with quick search among hundreds.
+* ⚡ Detects the currently focused app.
+* 🐠 Little distraction from your current task. Clicking on the menubar icon or hit `CmdorCtrl + (backtick)` on keyboard will automatically opens the shortcut panel.
+
 ## Run it locally:
 
 ```

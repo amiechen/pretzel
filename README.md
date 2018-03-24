@@ -4,7 +4,7 @@
   </a>
 </p>
 
-A Smart, contextual shortcut finder that helps you speed up daily tasks. Never need to jump through sites after sites again. [Checkout the website here](https://www-amie-chen.com/pretzel)
+A Smart, contextual shortcut finder that helps you speed up daily tasks. Never need to jump through sites after sites again. [Checkout the lading page here.](https://www-amie-chen.com/pretzel)
 
 ## Features
 
@@ -14,7 +14,11 @@ A Smart, contextual shortcut finder that helps you speed up daily tasks. Never n
 
 ![app-screen-shot](./screenshot/app-screen.png)
 
-## Run it locally:
+## Download for Mac
+
+[Download the latest release](https://github.com/amiechen/pretzel/releases/tag/v0.5.0)
+
+## Run it locally (if you are curious):
 
 ```
 npm install
@@ -35,3 +39,7 @@ npm run build:win
 3.  Find your app's shortcuts on the web and add them to your `.yml` file, in the same format as the files in `/shortcuts` folder.
 4.  Make a PR and I will merge it in and let you know.
 5.  Once it's released, if you already have pretzel installed the app will notify you to install an update. If not, download [the Pretzel page]() for the latest release.
+
+## License
+
+MIT © [Amie Chen](https://amie-chen.com)

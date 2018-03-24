@@ -1,7 +1,7 @@
 {
   "name": "pretzel",
   "productName": "Pretzel",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a contextual shortcuts finder",
   "author": "Amie Chen",
   "main": "index.js",

@@ -4,12 +4,7 @@
   </a>
 </p>
 
-A Smart, contextual shortcut finder that helps you speed up daily tasks. Never need to jump through sites after sites again.
-
-## Links
-
-[Website](https://www.amie-chen.com/pretzel/)
-[Releases](https://github.com/amiechen/pretzel/releases)
+A Smart, contextual shortcut finder that helps you speed up daily tasks. Never need to jump through sites after sites again. [Checkout the website here](https://www-amie-chen.com/pretzel)
 
 ## Features
 

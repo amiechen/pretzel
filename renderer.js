@@ -8,7 +8,7 @@ const input = document.querySelector("#search");
 const allAppsBtn = document.querySelector("#show-all-apps");
 const quitAppBtn = document.querySelector("#quit-app");
 const readmeUrl =
-  "https://github.com/amiechen/pretzel/blob/master/README.md#run-it-locally";
+  "https://github.com/amiechen/pretzel/blob/master/README.md#add-a-shortcut";
 const allAppsUrl = "https://www.amie-chen.com/pretzel/supported-apps";
 
 function get(selector, scope) {

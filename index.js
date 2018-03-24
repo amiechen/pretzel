@@ -1,6 +1,5 @@
 const { Menu, globalShortcut } = require("electron");
 const autoUpdater = require("electron-updater").autoUpdater;
-// const log = require("electron-log");
 const fs = require("fs");
 const url = require("url");
 const path = require("path");
@@ -17,10 +16,6 @@ const mb = menubar({
   showDockIcon: false,
   preloadWindow: true
 });
-
-// autoUpdater.logger = log;
-// autoUpdater.logger.transports.file.level = "info";
-// log.info("App starting...");
 
 // setup objc bridge
 objc.import("AppKit");

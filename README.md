@@ -25,16 +25,3 @@ npm run build:win
 5.  Once it's released, the app your notify you to update your app.
 
 Or, you could also just email me :)
-
-## Notes:
-
-Setup event listener such as below on `app ready`.
-
-```
-  systemPreferences.subscribeLocalNotification(
-    'NSWorkspaceFrontMostApplicationChanged', (...args) => {
-     //When there's no shortcut the icon should grayout and don't show the window on click
-  })
-```
-
-current solution is to do pulling every second. no major performance issue.

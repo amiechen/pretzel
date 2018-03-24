@@ -1,32 +1,31 @@
 {
   "name": "pretzel",
   "productName": "Pretzel",
-  "version": "0.0.5",
-  "description": "a contextual shortcut finder for desktop apps",
+  "version": "0.0.6",
+  "description": "a contextual shortcuts finder",
   "author": "Amie Chen",
   "main": "index.js",
   "scripts": {
     "start": "electron .",
-    "test": "mocha",
-    "build:mac": "electron-packager . Pretzel --platform=darwin --arch=x64  --icon=icon.icns",
-    "build:win": "electron-packager . Pretzel --platform=win32 --arch=x64 --asar  --icon=icon.ico",
-    "build:linux": "electron-packager . Pretzel --platform=linux --arch=x64 --asar  --icon=icon.ico"
+    "package": "build",
+    "build:mac":
+      "electron-packager . Pretzel --platform=darwin --arch=x64 --asar  --icon=icon.icns",
+    "build:win":
+      "electron-packager . Pretzel --platform=win32 --arch=x64 --asar  --icon=icon.ico",
+    "build:linux":
+      "electron-packager . Pretzel --platform=linux --arch=x64 --asar  --icon=icon.ico"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/amiechen/contextual-shortcuts.git"
   },
-  "keywords": [
-    "shortcuts"
-  ],
+  "keywords": ["shortcuts"],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/amiechen/contextual-shortcuts/issues"
   },
   "homepage": "https://github.com/amiechen/contextual-shortcuts#readme",
   "dependencies": {
-    "electron-debug": "^1.5.0",
-    "electron-log": "^2.2.14",
     "electron-updater": "^2.21.3",
     "js-yaml": "^3.11.0",
     "menubar": "^5.2.3",
@@ -35,6 +34,9 @@
   },
   "devDependencies": {
     "electron": "^1.8.4",
-    "mocha": "^5.0.4"
+    "electron-builder": "^20.6.2"
+  },
+  "build": {
+    "appId": "com.Hyperyolo.Pretzel"
   }
 }

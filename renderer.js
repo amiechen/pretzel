@@ -7,6 +7,8 @@ const shortcutsContainer = document.querySelector(".shortcuts-container");
 const input = document.querySelector("#search");
 const allAppsBtn = document.querySelector("#show-all-apps");
 const quitAppBtn = document.querySelector("#quit-app");
+const readmeUrl =
+  "https://github.com/amiechen/pretzel/blob/master/README.md#run-it-locally";
 const allAppsUrl = "https://www.amie-chen.com/pretzel/supported-apps";
 
 function get(selector, scope) {
@@ -65,12 +67,18 @@ ipcRenderer.on("noShortcuts", (event, name) => {
     <div class="no-shortcuts__text">
       <p>No shrortcuts found for <br><span class="app-name">${name}</span></p>
     </div>
-    <div class="add-shortcut-btn">Add Shortcuts for ${name}</div>
+    <div class="add-shortcut-btn" onClick="openReadmeURL()">Add Shortcuts for ${name}</div>
   </div>`;
+  const addShortcutBtn = document.querySelector(".add-shortcut-btn");
+
   appName.style.display = "none";
   input.style.display = "none";
   shortcutsContainer.innerHTML = html;
 });
+
+function openReadmeURL() {
+  shell.openExternal(readmeUrl);
+}
 
 ipcRenderer.on("currentApp", (event, name) => {
   const shortcuts = getShortcutConfig(name);

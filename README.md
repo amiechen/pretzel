@@ -4,7 +4,7 @@
   </a>
 </p>
 
-A Smart, contextual shortcut finder that helps you speed up daily tasks. Never need to jump through sites after sites again. [Checkout the lading page here.](https://www-amie-chen.com/pretzel)
+Pretzel is Mac desktop app that shows and search keyboard shortcuts based on your current app. [Checkout the lading page here.](https://www.amie-chen.com/pretzel)
 
 ## Features
 

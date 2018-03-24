@@ -80,6 +80,11 @@ function openReadmeURL() {
   shell.openExternal(readmeUrl);
 }
 
+ipcRenderer.on("version", (event, version) => {
+  const versionBox = document.getElementById("version");
+  versionBox.innerHTML = version;
+});
+
 ipcRenderer.on("currentApp", (event, name) => {
   const shortcuts = getShortcutConfig(name);
   let html = "";

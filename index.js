@@ -56,8 +56,14 @@ mb.on("show", () => {
     fs.constants.R_OK,
     err => {
       if (err) {
+        // send versioning to index.html
+        const version = mb.app.getVersion();
+        mb.window.webContents.send("version", version);
         mb.window.webContents.send("noShortcuts", currentApp);
       } else {
+        // send versioning to index.html
+        const version = mb.app.getVersion();
+        mb.window.webContents.send("version", version);
         mb.window.webContents.send("currentApp", currentAppFile);
       }
     }
@@ -72,8 +78,4 @@ mb.on("hide", () => {
 mb.app.on("will-quit", () => {
   globalShortcut.unregisterAll();
   mb.app.quit();
-});
-
-autoUpdater.on("update-downloaded", info => {
-  autoUpdater.quitAndInstall();
 });

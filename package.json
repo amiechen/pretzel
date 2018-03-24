@@ -1,7 +1,7 @@
 {
   "name": "pretzel",
   "productName": "Pretzel",
-  "version": "1.0.2",
+  "version": "0.5.0",
   "description": "a contextual shortcuts finder",
   "author": "Amie Chen",
   "main": "index.js",
@@ -18,14 +18,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/amiechen/contextual-shortcuts.git"
+    "url": "git+https://github.com/amiechen/pretzel.git"
   },
   "keywords": ["shortcuts"],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/amiechen/contextual-shortcuts/issues"
+    "url": "https://github.com/amiechen/pretzel/issues"
   },
-  "homepage": "https://github.com/amiechen/contextual-shortcuts#readme",
+  "homepage": "https://github.com/amiechen/pretzel#readme",
   "dependencies": {
     "electron-updater": "^2.21.3",
     "js-yaml": "^3.11.0",
@@ -38,6 +38,7 @@
     "electron-builder": "^20.6.2"
   },
   "build": {
-    "appId": "com.Hyperyolo.Pretzel"
+    "appId": "com.Hyperyolo.Pretzel",
+    "copyright": "Copyright © Amie Chen"
   }
 }

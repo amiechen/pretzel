@@ -34,13 +34,13 @@ npm run build:win
 
 ## Add a shortcut:
 
-If you **have** github account, please read [the Contributing doc here](./docs/CONTRIBUTING.md)
+If you **have** github account, please [check the roadmap first](https://github.com/amiechen/pretzel/projects/1?add_cards_query=is%3Aopen) then read [the Contributing doc here](./docs/CONTRIBUTING.md)
 
-If you **don't have** a github account, please follow these steps:
+If you **don't have** a github account, please check the [roadmap first](https://github.com/amiechen/pretzel/projects/1?add_cards_query=is%3Aopen). If you don't see desired apps under development, follow these steps:
 
-* 1.  Create a text file with <your-app-name>.yml as the file name. For example, `Photoshop.yml`.
-* 2.  Find your app's shortcuts on the web and add them to your `.yml` file, in the same format as the files in `/shortcuts` folder.
-* 3.  Send me the `.yml` file so I could add it in.
+1.  Create a text file with <your-app-name>.yml as the file name. For example, `Photoshop.yml`.
+2.  Find your app's shortcuts on the web and add them to your `.yml` file, in the same format as the files in `/shortcuts` folder.
+3.  Send me the `.yml` file so I could add it in.
 
 ## License
 

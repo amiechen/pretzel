@@ -65,9 +65,9 @@ function getShortcutConfig(name) {
 ipcRenderer.on("noShortcuts", (event, name) => {
   const html = `<div class="no-shortcuts">
     <div class="no-shortcuts__text">
-      <p>No shrortcuts found for <br><span class="app-name">${name}</span></p>
+      <p>No shortcuts found for <br><span class="app-name">${name}</span></p>
     </div>
-    <div class="add-shortcut-btn" onClick="openReadmeURL()">Add Shortcuts for ${name}</div>
+    <div class="add-shortcut-btn" onClick="openReadmeURL()">Add shortcuts for ${name}</div>
   </div>`;
   const addShortcutBtn = document.querySelector(".add-shortcut-btn");
 

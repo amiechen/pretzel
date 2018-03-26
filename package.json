@@ -9,18 +9,17 @@
     "start": "electron .",
     "package": "build",
     "publish": "build -p always",
-    "build:mac":
-      "electron-packager . Pretzel --platform=darwin --arch=x64 --asar  --icon=icon.icns",
-    "build:win":
-      "electron-packager . Pretzel --platform=win32 --arch=x64 --asar  --icon=icon.ico",
-    "build:linux":
-      "electron-packager . Pretzel --platform=linux --arch=x64 --asar  --icon=icon.ico"
+    "build:mac": "electron-packager . Pretzel --platform=darwin --arch=x64 --asar  --icon=icon.icns",
+    "build:win": "electron-packager . Pretzel --platform=win32 --arch=x64 --asar  --icon=icon.ico",
+    "build:linux": "electron-packager . Pretzel --platform=linux --arch=x64 --asar  --icon=icon.ico"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/amiechen/pretzel.git"
   },
-  "keywords": ["shortcuts"],
+  "keywords": [
+    "shortcuts"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/amiechen/pretzel/issues"

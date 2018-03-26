@@ -34,11 +34,13 @@ npm run build:win
 
 ## Add a shortcut:
 
-1.  Fork the repo on github. If you don't have a github account, feel free to do send me the `.yml` file once you finish step 2 and 3.
-2.  Create a text file with <your-app-name>.yml as the file name. For example, `Photoshop.yml`.
-3.  Find your app's shortcuts on the web and add them to your `.yml` file, in the same format as the files in `/shortcuts` folder.
-4.  Make a PR and I will merge it in and let you know.
-5.  Once it's released, if you already have pretzel installed the app will notify you to install an update. If not, download [the Pretzel page]() for the latest release.
+If you **have** github account, please read [the Contributing doc here](./docs/CONTRIBUTING.md)
+
+If you **don't have** a github account, please follow these steps:
+
+* 1.  Create a text file with <your-app-name>.yml as the file name. For example, `Photoshop.yml`.
+* 2.  Find your app's shortcuts on the web and add them to your `.yml` file, in the same format as the files in `/shortcuts` folder.
+* 3.  Send me the `.yml` file so I could add it in.
 
 ## License
 

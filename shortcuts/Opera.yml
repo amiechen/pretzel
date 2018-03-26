@@ -1,51 +1,51 @@
 Command the browser:
-  - Open Downloads page: ⌘+J
-  - Open Extensions page: ⌘+Shift+E
-  - Open History page: 	⌘+Shift+H
-  - Open local file: ⌘+O
-  - Open location: ⌘+L
-  - Open Preferences page: ⌘+,
-  - Print current page: ⌘+P
-  - Quit Opera: ⌘+Q
-  - Save a page locally: ⌘+S
+  - Open Downloads page: ⌘ + J
+  - Open Extensions page: ⌘ + Shift + E
+  - Open History page: 	⌘ + Shift + H
+  - Open local file: ⌘ + O
+  - Open location: ⌘ + L
+  - Open Preferences page: "⌘+,"
+  - Print current page: ⌘ + P
+  - Quit Opera: ⌘ + Q
+  - Save a page locally: ⌘ + S
 Find text on the page:
-  - Find on page: ⌘+F
-  - Find next: ⌘+G
-  - Find previous: ⌘+Shift+G
+  - Find on page: ⌘ + F
+  - Find next: ⌘ + G
+  - Find previous: ⌘ + Shift + G
 Navigate Pages:
   - Cycle forward through page elements: Tab
-  - Cycle back through page elements: Shift+Tab
-  - Go forward one page: ⌘+→
-  - Go back one page: ⌘+←
+  - Cycle back through page elements: Shift + Tab
+  - Go forward one page: "⌘ + →"
+  - Go back one page: "⌘ + ←"
   - Go to bottom of page: ⌘+↓
   - Go to top of page: ⌘+↑
   - Page down: Space
-  - Page up: Shift⇧+Space
-  - Reload the current page: ⌘+R
-  - View current page source: ⌘+U
+  - Page up: Shift + Space
+  - Reload the current page: ⌘ + R
+  - View current page source: ⌘ + U
 Control tabs and windows:
-  - Activate tab menu: Ctrl+M
-  - Close current tab/window: ⌘+W
-  - Cycle forward through open tabs: Ctrl+Tab
-  - Cycle back through open tabs: Shift+Ctrl+Tab
-  - Cycle through open windows: ⌘+`
-  - Minimize a window: ⌘+M
-  - Open new tab: ⌘+T
-  - Open new window: ⌘+N
-  - Open new private window: ⌘+Shift+N
-  - Reopen last closed tab: ⌘+Shift+T
-  - Toggle tab menu: Ctrl+M
-  - View previous active tab: Ctrl+`
+  - Activate tab menu: Ctrl + M
+  - Close current tab/window: ⌘ + W
+  - Cycle forward through open tabs: Ctrl + Tab
+  - Cycle back through open tabs: Shift + Ctrl + Tab
+  - Cycle through open windows: "⌘ + `"
+  - Minimize a window: ⌘ + M
+  - Open new tab: ⌘ + T
+  - Open new window: ⌘ + N
+  - Open new private window: ⌘ + Shift + N
+  - Reopen last closed tab: ⌘ + Shift + T
+  - Toggle tab menu: Ctrl + M
+  - View previous active tab: "Ctrl + `"
 Manipulate text:
-  - Copy: ⌘+C
-  - Cut: ⌘+X
-  - Paste: ⌘+V
-  - Select All: ⌘+A
+  - Copy: ⌘ + C
+  - Cut: ⌘ + X
+  - Paste: ⌘ + V
+  - Select All: ⌘ + A
   - Undo: ⌘+Z
-  - Redo: ⌘+Shift ⇧+Z
+  - Redo: ⌘ + Shift + Z
 Zoom in and out:
-  - Enter full-screen mode: Ctrl+Shift+F
-  - Enter presentation mode: ⌘+Shift+F
-  - Zoom in: ⌘++
-  - Zoom out: ⌘+-
-  - Reset zoom to 100%: ⌘+0
+  - Enter full-screen mode: Ctrl + Shift + F
+  - Enter presentation mode: ⌘ + Shift + F
+  - Zoom in: ⌘ + (+)
+  - Zoom out: ⌘ + (-)
+  - Reset zoom to 100%: ⌘ + 0

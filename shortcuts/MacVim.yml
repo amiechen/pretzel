@@ -9,8 +9,8 @@ Navigation Shortcuts:
   - Jump to end of next word (spaces): E
   - Jump to start of line: 0
   - Jump to end of line (similar to regex: $
-  - Go To specified line number: #G
-  - Jump between parentheses or braces: %
+  - Go To specified line number: Shift + G
+  - Jump between parentheses or braces: "%"
 Insert Mode:
   - Invoke Insert mode at cursor’s location: i
   - Insert at the beginning of the current line: I
@@ -28,7 +28,7 @@ Editing:
   - Delete character under cursor, insert text: s
   - Delete current line, insert text: S
   - Undo last action: u
-  - Redo last action: -
+  - Redo last action: "-"
 Select Text Visual Mode:
   - Enter Visual Mode, from Command Mode: v
   - Enter Visual Mode (line-wise): V
@@ -42,22 +42,22 @@ Select Text Visual Mode:
   - Select (…) block, excluding parentheses: ib
   - Select {…} block, excluding curly braces: iB
 Exiting (Command Mode):
-  - Write / save file, without exiting: :w
-  - Write / save file, and exit vi: :wq
-  - Quit (error if there are pending changes): :q
-  - Force quit, discarding changes: :q!
+  - Write / save file, without exiting: ":w"
+  - Write / save file, and exit vi: ":wq"
+  - Quit (error if there are pending changes): ":q"
+  - Force quit, discarding changes: ":q!"
 Search / Replace:
-  - Search for a regex pattern (forward): /pattern
-  - Search for a regex pattern (backward): ?pattern
+  - Search for a regex pattern (forward): "/pattern"
+  - Search for a regex pattern (backward): "?pattern"
   - Find next search result: n
   - Find previous search result: N
-  - Replace all old with new (with prompt): :%s/old/new/g
-  - Replace all old with new (no prompts): :%s/old/new/gc
+  - Replace all old with new (with prompt): ":%s/old/new/g"
+  - Replace all old with new (no prompts): ":%s/old/new/gc"
 Multi-file Editin:
-  - Re-open the current file: :e filename
-  - Move to next buffer: :bnext (:bn)
-  - Move to previous buffer: :bprev (:bp)
-  - Delete the current buffer (close file): :bd
+  - Re-open the current file: ":e filename"
+  - Move to next buffer: ":bnext (:bn)"
+  - Move to previous buffer: ":bprev (:bp)"
+  - Delete the current buffer (close file): ":bd"
   - Open file in new window: ctrl + ⌘ + up/down
-  - Duplicate current line: :sp filename
-  - Split windows: Ctrl+ws
+  - Duplicate current line: ":sp filename"
+  - Split windows: Ctrl + ws

@@ -1,0 +1,47 @@
+General:
+- Switch to an account based on its order: ⌘ + 1 through ⌘ + 9
+- Switch to All inboxes: ⌘ + 0
+- Undo the last action: ⌘ + Z
+- Open new email window: ⌘ + N	
+- Show keyboard shortcuts for this screen: ⌘ + .	
+Inbox:
+- Archive a highlighted email or selected emails: E
+- Delete a highlighted email or selected emails: Delete Key
+- Star/Unstar: S
+- Mark as Read/Unread: Shift + U
+- Move to folder: M
+- Select the highlighted email: Spacebar
+- Select all emails: ⌘ + A
+- Select the highlighted email: ⌘ + Click
+- Starred filter: 8
+- Unread filter: 9
+- Search: ⌘ + F
+- Mark all as read: Shift + ⌘ + U
+
+Conversation:
+-  Key: Delete: Delete
+-  Star/Unstar: S
+-  Mark as Unread: U
+-  Move to folder: M
+-  Reply: R
+-  Reply All: A
+-  Forward: F
+-  Older/Newer email: Right/Left arrow keys
+-  Go back to Inbox: ESC Key
+-  To print last mail: ⌘ + P
+
+Compose:
+- Bold: ⌘ + B
+- Italic: ⌘ + I
+- Underline: ⌘ + U
+- Send: ⌘ + Return/Enter
+- Hyperlink the selected text: ⌘ + K
+- Remove Hyperlink: ⌘ + L
+- Numbered List: Shift + ⌘ + 7
+- Bulleted List: Shift + ⌘ + 8
+- Format text block to Quote: Shift + ⌘ + 9
+- Clear Formatting: ⌘ + \
+- Insert Emoji: ⌘ + Ctrl + Spacebar
+- Attach Files: Shift + Spacebar + A
+- Save the draft and close the window: ⌘ + W
+- Discard draft: Shift + ⌘ + D

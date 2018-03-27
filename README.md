@@ -4,7 +4,7 @@
   </a>
 </p>
 
-Pretzel is Mac desktop app that shows and search keyboard shortcuts based on your current app. [Checkout the lading page here.](https://www.amie-chen.com/pretzel)
+Pretzel is Mac desktop app that shows and search keyboard shortcuts based on your current app. [Checkout the landing page here.](https://www.amie-chen.com/pretzel)
 
 ## Features
 

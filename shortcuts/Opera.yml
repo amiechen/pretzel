@@ -17,8 +17,8 @@ Navigate Pages:
   - Cycle back through page elements: Shift + Tab
   - Go forward one page: "⌘ + →"
   - Go back one page: "⌘ + ←"
-  - Go to bottom of page: ⌘+↓
-  - Go to top of page: ⌘+↑
+  - Go to bottom of page: ⌘ + ↓
+  - Go to top of page: ⌘ + ↑
   - Page down: Space
   - Page up: Shift + Space
   - Reload the current page: ⌘ + R
@@ -41,7 +41,7 @@ Manipulate text:
   - Cut: ⌘ + X
   - Paste: ⌘ + V
   - Select All: ⌘ + A
-  - Undo: ⌘+Z
+  - Undo: ⌘ + Z
   - Redo: ⌘ + Shift + Z
 Zoom in and out:
   - Enter full-screen mode: Ctrl + Shift + F

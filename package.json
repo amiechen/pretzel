@@ -10,7 +10,7 @@
     "package": "build",
     "publish": "build -p always",
     "build:mac":
-      "electron-packager . Pretzel --platform=darwin --arch=x64 --asar  --icon=icon.icns",
+      "electron-packager . Pretzel --platform=darwin --arch=x64 --asar  --icon='./build/icon.icns' --osx-sign",
     "build:win":
       "electron-packager . Pretzel --platform=win32 --arch=x64 --asar  --icon=icon.ico",
     "build:linux":

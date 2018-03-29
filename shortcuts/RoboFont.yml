@@ -1,0 +1,58 @@
+File:
+  - Create a new font: "Cmd + N"
+  - Open an existing document: "Cmd + O"
+  - Save the document: "Cmd + S"
+  - Save document under another name: "Shift + Cmd + S"
+  - Close the current document: "Cmd + W"
+
+Edit:
+  - Undo the last action: "Cmd + Z"
+  - Redo the last action: "Shift + Cmd + Z"
+  - Cut the current selection to the clipboard: "Cmd + X"
+  - Copy the current selection to the clipboard: "Cmd + C"
+  - Copy the selected glyph to the clipboard as a component: "Opt + Cmd + C"
+  - Paste the clipboard contents into the current document: "Cmd + V"
+  - Select all contours: "Cmd + A"
+  - Select all objects in the glyph: "Opt + Cmd + A"
+  - Deselect: "Shift + Cmd + A"
+  - Apply the last transformation again: "Cmd + D"
+
+Font:
+  - Show Adding Glyphs sheet: "Ctrl + Cmd + G"
+  - Show Font Info sheet: "Opt + Cmd + I"
+  - Find glyph: "Cmd + F"
+
+Glyph:
+  - Go to next glyph: "Cmd + )"
+  - Go to previous glyph: "Cmd + ("
+  - Selects the Editing Tool: "Cmd + 1"
+  - Selects the Bezier Tool: "Cmd + 2"
+  - Selects the Slice Tool: "Cmd + 3"
+  - Activate Transform mode: "Cmd + T"
+  - Jump to next layer (up): "Opt + Cmd + ↑"
+  - Jump to previous layer (down): "Opt + Cmd + ↓"
+  - Create a new layer: "Opt + Shift + N"
+
+Scripting Window:
+  - Open a Scripting Window: "Opt + Cmd + R"
+  - Open the Output Window: "Opt + Cmd + O"
+  - Execute script: "Cmd + R"
+  - Indent selected code: "Cmd + ]"
+  - Dedent selected code: "Cmd + ["
+  - Comment selected code: "Cmd + }"
+  - Uncomment selected code: "Cmd + {"
+  - Wrap words: "Opt + Shift + Cmd + W"
+  - Jump to line number: "Cmd + J"
+  - Jump to definition match: "Opt + Cmd + J"
+  - Jump back to previous definition match: "Shift + Cmd + J"
+
+Window:
+  - Show/hide Tab bar: "Shift + Cmd + T"
+  - Open the Inspector: "Cmd + I"
+  - Open the Space Center: "Opt + Cmd + S"
+  - Minize window: "Cmd + M"
+  - Enter Full Screen mode: "Ctrl + Cmd + F"
+  - Zoom in: "Cmd + (+)"
+  - Zoom out: "Cmd + (-)"
+  - Zoom to fit: "Cmd + 0" 
+  - Jump to glyph: "Cmd + J"

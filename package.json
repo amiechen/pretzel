@@ -1,7 +1,7 @@
 {
   "name": "pretzel",
   "productName": "Pretzel",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "a contextual shortcuts finder",
   "author": "Amie Chen",
   "main": "index.js",
@@ -9,25 +9,26 @@
     "start": "electron .",
     "package": "build",
     "publish": "build -p always",
-    "build:mac":
-      "electron-packager . Pretzel --platform=darwin --arch=x64 --asar  --icon='./build/icon.icns' --osx-sign",
-    "build:win":
-      "electron-packager . Pretzel --platform=win32 --arch=x64 --asar  --icon=icon.ico",
-    "build:linux":
-      "electron-packager . Pretzel --platform=linux --arch=x64 --asar  --icon=icon.ico"
+    "build:mac": "electron-packager . Pretzel --platform=darwin --arch=x64 --asar  --icon='./build/icon.icns' --osx-sign",
+    "build:win": "electron-packager . Pretzel --platform=win32 --arch=x64 --asar  --icon=icon.ico",
+    "build:linux": "electron-packager . Pretzel --platform=linux --arch=x64 --asar  --icon=icon.ico"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/amiechen/pretzel.git"
   },
-  "keywords": ["shortcuts"],
+  "keywords": [
+    "shortcuts"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/amiechen/pretzel/issues"
   },
   "homepage": "https://github.com/amiechen/pretzel#readme",
   "dependencies": {
+    "electron-settings": "^3.1.4",
     "electron-updater": "^2.21.3",
+    "hotkeys-js": "^3.1.1",
     "js-yaml": "^3.11.0",
     "menubar": "^5.2.3",
     "objc": "^0.12.0",
@@ -39,6 +40,11 @@
   },
   "build": {
     "appId": "com.Hyperyolo.Pretzel",
+    "files": [
+      "**/*",
+      "!screenshot/${/*}",
+      "!docs${/*}"
+    ],
     "copyright": "Copyright © Amie Chen"
   }
 }

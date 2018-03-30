@@ -1,12 +1,17 @@
-const { ipcRenderer, remote, shell } = require("electron");
-const yaml = require("js-yaml");
 const path = require("path");
 const fs = require("fs");
+
+const { ipcRenderer, remote, shell } = require("electron");
+const yaml = require("js-yaml");
+const hotkeys = require("hotkeys-js");
+
+const setting = require("./setting");
 const appName = document.querySelector(".app-name");
 const shortcutsContainer = document.querySelector(".shortcuts-container");
 const input = document.querySelector("#search");
 const allAppsBtn = document.querySelector("#show-all-apps");
 const quitAppBtn = document.querySelector("#quit-app");
+const settingAppBtn = document.querySelector("#setting-app");
 const readmeUrl =
   "https://github.com/amiechen/pretzel/blob/master/README.md#add-a-shortcut";
 const allAppsUrl = "https://www.amie-chen.com/pretzel/supported-apps";
@@ -118,4 +123,9 @@ allAppsBtn.addEventListener("click", () => {
 
 quitAppBtn.addEventListener("click", () => {
   remote.app.quit();
+});
+
+settingAppBtn.addEventListener("click", () => {
+  get(".user-settings").style.display = "block";
+  setting.setShortcut("Cmd+1");
 });

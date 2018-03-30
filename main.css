@@ -24,10 +24,7 @@ body {
 
 input {
   color: #5f697b;
-  background: #fff 10px 9px no-repeat;
-  background-image: url("./assets/search.svg");
-  border: 0.05rem solid #d8dce6;
-  border-radius: 100px;
+
   display: block;
   font-size: 0.8rem;
   height: 2rem;
@@ -42,6 +39,23 @@ input:focus {
   border-color: #68a1f3;
   box-shadow: 0 0 0 0.1rem rgba(86, 138, 216, 0.2);
   transition: all 0.2s ease;
+}
+
+input#search {
+  border-radius: 100px;
+  background: #fff 10px 9px no-repeat;
+  background-image: url("./assets/search.svg");
+  border: 0.05rem solid #d8dce6;
+}
+
+input#custom-shortcut {
+  background-color: #102f40;
+  background-image: none;
+  border: none;
+  border-radius: 0;
+  height: 2.4rem;
+  padding-left: 0.5rem;
+  border-bottom: 1px solid white;
 }
 
 ::-webkit-input-placeholder {
@@ -199,9 +213,8 @@ input:focus {
   animation-delay: 300ms;
 }
 
-#quit-app {
+.button {
   position: absolute;
-  right: 1.5rem;
   font-size: 0.6rem;
   font-weight: 300;
   background-color: #0a1a23;
@@ -212,9 +225,43 @@ input:focus {
   cursor: default;
 }
 
-#quit-app:hover {
+.button:hover {
   border-color: #3972b5;
   transition: border-color 0.3s ease;
+}
+
+#quit-app {
+  right: 1.5rem;
+}
+
+#setting-app {
+  left: 3.4rem;
+  margin-top: 2px;
+  position: absolute;
+}
+
+#setting-app:hover #sliders {
+  stroke: rgb(104, 166, 241);
+  transition: 0.1s ease-in-out;
+}
+
+.user-settings {
+  /*display: none;*/
+  background-color: #112e40;
+  border-radius: 3px;
+}
+
+.user-settings ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.user-settings .button {
+  position: relative;
+  display: inline-block;
+  margin: 0 0 2rem 1.5rem;
 }
 
 @keyframes staggering {

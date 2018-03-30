@@ -1,5 +1,7 @@
 const { Menu, globalShortcut } = require("electron");
+const setting = require("./setting");
 const autoUpdater = require("electron-updater").autoUpdater;
+const settings = require("electron-settings");
 const fs = require("fs");
 const url = require("url");
 const path = require("path");
@@ -10,7 +12,7 @@ const shortcutsDirectory = path.join(__dirname, "shortcuts");
 const menubar = require("menubar");
 const mb = menubar({
   icon: path.join(__dirname, "/assets/icon.png"),
-  width: 300,
+  width: 800,
   height: 400,
   resizable: false,
   showDockIcon: false,
@@ -42,9 +44,12 @@ function toggleWindow() {
 }
 
 mb.on("ready", function ready() {
-  // mb.window.webContents.toggleDevTools();
+  mb.window.webContents.toggleDevTools();
+  // debug settings.deleteAll();
+  let pretzelShortcut = setting.getShortcut() || "CommandOrControl+`";
+
   autoUpdater.checkForUpdatesAndNotify();
-  globalShortcut.register("CommandOrControl+`", toggleWindow);
+  globalShortcut.register(pretzelShortcut, toggleWindow);
 });
 
 mb.on("show", () => {

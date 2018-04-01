@@ -4,14 +4,16 @@ const fs = require("fs");
 const { ipcRenderer, remote, shell } = require("electron");
 const yaml = require("js-yaml");
 const hotkeys = require("hotkeys-js");
-
 const setting = require("./setting");
-const appName = document.querySelector(".app-name");
-const shortcutsContainer = document.querySelector(".shortcuts-container");
-const input = document.querySelector("#search");
-const allAppsBtn = document.querySelector("#show-all-apps");
-const quitAppBtn = document.querySelector("#quit-app");
-const settingAppBtn = document.querySelector("#setting-app");
+const appName = get(".app-name");
+const shortcutsContainer = get(".shortcuts-container");
+const input = get("#search");
+const allAppsBtn = get("#show-all-apps");
+const quitAppBtn = get("#quit-app");
+const settingAppBtn = get("#setting-app");
+const nightModeBtn = get(".toggle");
+const cancelSettingBtn = get(".cancel");
+const saveAndRelaunchBtn = get(".save-and-relaunch");
 const readmeUrl =
   "https://github.com/amiechen/pretzel/blob/master/README.md#add-a-shortcut";
 const allAppsUrl = "https://www.amie-chen.com/pretzel/supported-apps";
@@ -67,6 +69,23 @@ function getShortcutConfig(name) {
   }
 }
 
+function openReadmeURL() {
+  shell.openExternal(readmeUrl);
+}
+
+function onChange(event) {
+  if (event.target.classList.contains("active")) {
+    this.classList.remove("active");
+  } else {
+    var toggledItems = getAll(".toggle.active");
+
+    if (toggledItems.length >= 2) {
+      toggledItems[Math.floor(Math.random() * 2)].classList.remove("active");
+    }
+    this.classList.add("active");
+  }
+}
+
 ipcRenderer.on("noShortcuts", (event, name) => {
   const html = `<div class="no-shortcuts">
     <div class="no-shortcuts__text">
@@ -80,10 +99,6 @@ ipcRenderer.on("noShortcuts", (event, name) => {
   input.style.display = "none";
   shortcutsContainer.innerHTML = html;
 });
-
-function openReadmeURL() {
-  shell.openExternal(readmeUrl);
-}
 
 ipcRenderer.on("currentApp", (event, name) => {
   const shortcuts = getShortcutConfig(name);
@@ -127,5 +142,24 @@ quitAppBtn.addEventListener("click", () => {
 
 settingAppBtn.addEventListener("click", () => {
   get(".user-settings").style.display = "block";
+  get("body").style.overflow = "hidden";
   setting.setShortcut("Cmd+1");
+});
+
+nightModeBtn.addEventListener("click", () => {});
+
+cancelSettingBtn.addEventListener("click", () => {
+  console.log("wipe out all the input");
+  get("body").style.overflow = "auto";
+  get(".user-settings").style.display = "none";
+});
+
+saveAndRelaunchBtn.addEventListener("click", () => {
+  console.log("saved");
+  get("body").style.overflow = "auto";
+  get(".user-settings").style.display = "none";
+});
+
+Array.from(getAll(".toggle")).forEach(function(toggle) {
+  return toggle.addEventListener("click", onChange);
 });

@@ -8,18 +8,18 @@
   display: flex;
   flex-direction: column;
   height: 90vh;
-}
-.no-shortcuts .app-name {
-  color: white;
+  .app-name {
+    color: white;
+  }
 }
 
 .no-shortcuts__text {
   flex-grow: 1;
   display: flex;
   margin-top: -3rem;
-}
-.no-shortcuts__text p {
-  margin: auto;
+  p {
+    margin: auto;
+  }
 }
 
 .app-name {

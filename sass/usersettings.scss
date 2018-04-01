@@ -1,22 +1,37 @@
 .user-settings {
-  /*display: none;*/
+  display: none;
   background-color: #112e40;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-}
-
-.user-settings ul {
-  list-style: none;
-  padding-left: 0;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-.user-settings .button {
-  position: relative;
-  display: inline-block;
-  margin: 0 0 2rem 1.5rem;
+  z-index: 1;
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  li {
+    margin-bottom: 1.5rem;
+  }
+  label {
+    flex-grow: 1;
+    font-size: 0.8rem;
+  }
+  .flexbox:last-of-type {
+    flex-direction: column;
+  }
+  .user-settins-buttons {
+    margin-left: 2rem;
+    position: fixed;
+    bottom: 2rem;
+    .button:last-of-type {
+      right: 2rem;
+      position: fixed;
+      background-color: $blue-2;
+      border: none;
+    }
+  }
 }

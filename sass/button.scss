@@ -1,27 +1,23 @@
-.button--primary {
-  background: #5569d9;
-  border-color: #486fd6;
-  color: #fff;
-}
-.button--secondary {
-  background: transparent;
-  border: 1px solid #486fd6;
-  color: #5569d9;
-  margin-left: 0.5rem;
-}
 .button {
-  position: absolute;
-  font-size: 0.6rem;
   font-weight: 300;
-  background-color: #0a1a23;
-  padding: 3px 10px;
+  background-color: $blue-11;
   border-radius: 3px;
-  line-height: 1rem;
-  border: 1px solid #264f81;
+  border: 1px solid $blue-6;
   cursor: default;
+  &:hover {
+    border-color: $blue-3;
+    transition: border-color 0.3s ease;
+  }
 }
-
-.button:hover {
-  border-color: #3972b5;
-  transition: border-color 0.3s ease;
+.button--xs {
+  font-size: 0.6rem;
+  padding: 3px 10px;
+  line-height: 1rem;
+}
+.button--sm {
+  font-size: 0.8rem;
+  padding: 0.4rem 1rem;
+}
+.button--quit {
+  position: absolute;
 }

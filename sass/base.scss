@@ -13,15 +13,14 @@ body {
 }
 
 body {
-  background-color: #f6f8fb;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Open Sans",
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   padding: 1rem 1.5rem;
   margin: 0;
   box-sizing: border-box;
   text-rendering: optimizeLegibility;
-  background-color: #0f2533;
-  color: #f8fafa;
+  background-color: $blue-10;
+  color: $body-text;
 }
 
 input {
@@ -34,38 +33,43 @@ input {
   margin-top: 1rem;
   width: 100%;
   font-weight: 300;
-}
-
-input:focus {
-  border-color: #68a1f3;
-  box-shadow: 0 0 0 0.1rem rgba(86, 138, 216, 0.2);
-  transition: all 0.2s ease;
-}
-
-input#search {
-  border-radius: 100px;
-  background: #fff 10px 9px no-repeat;
-  background-image: url("./assets/search.svg");
-  border: 0.05rem solid #d8dce6;
-}
-
-input#custom-shortcut {
-  background-color: #164158;
-  background-image: none;
-  border: none;
-  height: 2rem;
-  padding-left: 0.8rem;
-  border-bottom: 1px solid white;
-  margin-top: 0.6rem;
-  border-radius: 3px 3px 0 0;
-  color: #71bbfb;
+  &:focus {
+    transition: all 0.2s ease;
+  }
+  &#search {
+    border-radius: 100px;
+    background: #fff 10px 9px no-repeat;
+    background-image: url("./assets/search.svg");
+    border: 1px solid $blue-2;
+  }
+  &#custom-shortcut {
+    background-color: $blue-9;
+    background-image: none;
+    border: 1px solid $blue-9;
+    height: 2rem;
+    padding-left: 0.8rem;
+    margin-top: 0.5rem;
+    border-radius: 3px;
+    color: $blue-1;
+    &:focus {
+      border-color: $blue-6;
+    }
+  }
 }
 
 ::-webkit-input-placeholder {
-  color: #d5d9e4;
+  color: $blue-5;
   font-weight: 300;
+}
+
+.show {
+  display: block !important;
 }
 
 .hide {
   display: none !important;
+}
+
+.flexbox {
+  display: flex;
 }

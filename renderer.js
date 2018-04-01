@@ -147,8 +147,10 @@ saveAndRelaunchBtn.addEventListener("click", () => {
 
 toggleBtn.addEventListener("click", event => {
   if (event.target.classList.contains("active")) {
+    get("body").classList.add("light-mode");
     event.target.classList.remove("active");
   } else {
     event.target.classList.add("active");
+    get("body").classList.remove("light-mode");
   }
 });

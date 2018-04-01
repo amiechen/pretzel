@@ -18,6 +18,25 @@ body {
   text-rendering: optimizeLegibility;
   background-color: #0f2533;
   color: #f8fafa; }
+  body.light-mode {
+    background-color: #f6f8fb;
+    color: #0f2533; }
+    body.light-mode .shortcut:after {
+      background-color: #e6eaee; }
+    body.light-mode .shortcut__key span,
+    body.light-mode .shortcut__name span {
+      background-color: #f6f8fb; }
+    body.light-mode .user-settings {
+      background-color: #f6f8fb;
+      color: #0f2533; }
+      body.light-mode .user-settings .user-settins-buttons .button:last-of-type {
+        background-color: #0f2533;
+        color: #f6f8fb; }
+    body.light-mode .button {
+      background-color: #f6f8fb; }
+    body.light-mode input#custom-shortcut {
+      background-color: #e6eaee;
+      color: #0f2533; }
 
 input {
   color: #5f697b;

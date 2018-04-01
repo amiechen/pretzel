@@ -21,6 +21,32 @@ body {
   text-rendering: optimizeLegibility;
   background-color: $blue-10;
   color: $body-text;
+  &.light-mode {
+    background-color: $blue-1;
+    color: $blue-10;
+    .shortcut:after {
+      background-color: #e6eaee;
+    }
+    .shortcut__key span,
+    .shortcut__name span {
+      background-color: $blue-1;
+    }
+    .user-settings {
+      background-color: $blue-1;
+      color: $blue-10;
+      .user-settins-buttons .button:last-of-type {
+        background-color: $blue-10;
+        color: $blue-1;
+      }
+    }
+    .button {
+      background-color: $blue-1;
+    }
+    input#custom-shortcut {
+      background-color: #e6eaee;
+      color: $blue-10;
+    }
+  }
 }
 
 input {

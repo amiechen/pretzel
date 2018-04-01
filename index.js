@@ -1,15 +1,18 @@
-const { Menu, globalShortcut } = require("electron");
-const setting = require("./setting");
-const autoUpdater = require("electron-updater").autoUpdater;
-const settings = require("electron-settings");
+// default node packages
 const fs = require("fs");
 const url = require("url");
 const path = require("path");
+// third party
+const { Menu, globalShortcut } = require("electron");
+const autoUpdater = require("electron-updater").autoUpdater;
+const settings = require("electron-settings");
 const objc = require("objc");
 const stringSimilarity = require("string-similarity");
+const menubar = require("menubar");
+const setting = require("./setting");
+// variables
 const assetsDirectory = path.join(__dirname, "assets");
 const shortcutsDirectory = path.join(__dirname, "shortcuts");
-const menubar = require("menubar");
 const mb = menubar({
   icon: path.join(__dirname, "/assets/icon.png"),
   width: 800,
@@ -47,15 +50,21 @@ mb.on("ready", function ready() {
   mb.window.webContents.toggleDevTools();
   // debug settings.deleteAll();
   let pretzelShortcut = setting.getShortcut() || "CommandOrControl+`";
-
   autoUpdater.checkForUpdatesAndNotify();
   globalShortcut.register(pretzelShortcut, toggleWindow);
+
+  // mb.window.webContents.on("did-finish-load", function() {
+  //   let pretzelTheme = setting.getTheme() || "dark";
+  //   console.log(pretzelTheme);
+  //   mb.window.webContents.send("setTheme", pretzelTheme);
+  // });
 });
 
 mb.on("show", () => {
   const currentApp = getCurrentApp();
   const currentAppFile = `${currentApp}.yml`;
   mb.tray.setHighlightMode("always");
+
   fs.access(
     path.join(shortcutsDirectory, currentAppFile),
     fs.constants.R_OK,

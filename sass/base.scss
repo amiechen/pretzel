@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  transition: all 0.2s ease;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -19,9 +18,11 @@ body {
   margin: 0;
   box-sizing: border-box;
   text-rendering: optimizeLegibility;
-  background-color: $blue-10;
-  color: $body-text;
-  &.light-mode {
+  &.dark {
+    background-color: $blue-10;
+    color: $body-text;
+  }
+  &.light {
     background-color: $blue-1;
     color: $blue-10;
     .shortcut:after {

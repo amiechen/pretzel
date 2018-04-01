@@ -13,6 +13,7 @@ const quitAppBtn = get("#quit-app");
 const settingAppBtn = get("#setting-app");
 const toggleBtn = get(".toggle-container");
 const cancelSettingBtn = get(".cancel");
+const body = get("body");
 const saveAndRelaunchBtn = get(".save-and-relaunch");
 const readmeUrl =
   "https://github.com/amiechen/pretzel/blob/master/README.md#add-a-shortcut";
@@ -71,6 +72,13 @@ function getShortcutConfig(name) {
 
 function openReadmeURL() {
   shell.openExternal(readmeUrl);
+}
+
+function setPretzelTheme() {
+  const theme = setting.getTheme() || "dark";
+  body.classList = "";
+  body.classList.add(theme);
+  theme === "dark" ? get(".toggle").classList.add("active") : null;
 }
 
 ipcRenderer.on("noShortcuts", (event, name) => {
@@ -140,17 +148,25 @@ cancelSettingBtn.addEventListener("click", () => {
 });
 
 saveAndRelaunchBtn.addEventListener("click", () => {
-  console.log("saved");
+  get("body").classList.contains("light")
+    ? setting.setTheme("light")
+    : setting.setTheme("dark");
   get("body").style.overflow = "auto";
   get(".user-settings").style.display = "none";
+  remote.app.relaunch();
+  remote.app.exit(0);
 });
 
 toggleBtn.addEventListener("click", event => {
   if (event.target.classList.contains("active")) {
-    get("body").classList.add("light-mode");
+    get("body").classList.remove("dark");
+    get("body").classList.add("light");
     event.target.classList.remove("active");
   } else {
     event.target.classList.add("active");
-    get("body").classList.remove("light-mode");
+    get("body").classList.remove("light");
+    get("body").classList.add("dark");
   }
 });
+
+setPretzelTheme();

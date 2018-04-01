@@ -9,5 +9,15 @@ const setShortcut = function(shortcut) {
   settings.set("user-shortcut", shortcut);
 };
 
+const getTheme = function() {
+  return settings.get("theme");
+};
+
+const setTheme = function(theme) {
+  settings.set("theme", theme);
+};
+
 exports.getShortcut = getShortcut;
 exports.setShortcut = setShortcut;
+exports.getTheme = getTheme;
+exports.setTheme = setTheme;

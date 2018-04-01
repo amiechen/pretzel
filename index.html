@@ -47,10 +47,24 @@
       <h1 class="app-name"></h1>
       <div class="user-settings">
         <ul>
-          <li>Night Mode</li>
-          <li><input type="text" placeholder="type your custom shortcut" id="custom-shortcut"/></li>
+          <li>
+            <div class="item-container">
+              <label>Night Mode</label>
+              <div class="item active">
+                <div class="toggle">
+                  <div class="ball"></div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <label>Shortcut to Open Pretzel</label>
+            <input type="text" placeholder="type your custom shortcut" id="custom-shortcut"/></li>
         </ul>
-        <div class="button">Save and Relaunch</div>
+        <div class="item-container">        
+          <div class="button">Cancel</div>
+          <div class="button">Save and Relaunch</div>
+        </div>
       </div>
       <input type="text" id="search" placeholder="Search..." />
       <div class="shortcuts-container"></div>

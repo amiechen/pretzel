@@ -1,0 +1,41 @@
+#show-all-apps {
+  position: absolute;
+}
+
+#show-all-apps:hover {
+  cursor: default;
+}
+
+#show-all-apps:hover rect {
+  animation: staggering 0.7s forwards ease;
+}
+
+#show-all-apps:hover #rec-topright {
+  opacity: 0;
+  animation-delay: 200ms;
+}
+
+#show-all-apps:hover #rec-bottomleft {
+  opacity: 0;
+  animation-delay: 200ms;
+}
+
+#show-all-apps:hover #rec-topleft {
+  opacity: 0;
+  animation-delay: 300ms;
+}
+
+#quit-app {
+  right: 1.5rem;
+}
+
+#setting-app {
+  left: 3.4rem;
+  margin-top: 2px;
+  position: absolute;
+}
+
+#setting-app:hover #sliders {
+  stroke: rgb(104, 166, 241);
+  transition: 0.1s ease-in-out;
+}

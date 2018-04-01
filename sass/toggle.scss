@@ -1,12 +1,7 @@
 .toggle-container {
   transition: all 0.2s;
   cursor: pointer;
-  user-select: none;
-  .toggle {
-    border-radius: 3rem;
-    background-color: #e6eaee;
-    transition: all 0.2s;
-  }
+  width: 32px;
   .ball {
     height: 1rem;
     width: 1rem;
@@ -16,13 +11,15 @@
     background-color: #fff;
     transition: all 0.3s ease-out;
   }
-  &.active {
-    color: #253368;
-    .toggle {
+  .toggle {
+    border-radius: 3rem;
+    background-color: #e6eaee;
+    transition: all 0.2s;
+    &.active {
       background-color: $blue-2;
-    }
-    .ball {
-      margin-left: 1rem;
+      .ball {
+        margin-left: 1rem;
+      }
     }
   }
 }

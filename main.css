@@ -206,11 +206,7 @@ input {
 .toggle-container {
   transition: all 0.2s;
   cursor: pointer;
-  user-select: none; }
-  .toggle-container .toggle {
-    border-radius: 3rem;
-    background-color: #e6eaee;
-    transition: all 0.2s; }
+  width: 32px; }
   .toggle-container .ball {
     height: 1rem;
     width: 1rem;
@@ -219,12 +215,14 @@ input {
     box-shadow: 0 3px 6px 0 rgba(0, 35, 11, 0.2);
     background-color: #fff;
     transition: all 0.3s ease-out; }
-  .toggle-container.active {
-    color: #253368; }
-    .toggle-container.active .toggle {
+  .toggle-container .toggle {
+    border-radius: 3rem;
+    background-color: #e6eaee;
+    transition: all 0.2s; }
+    .toggle-container .toggle.active {
       background-color: #68a1f3; }
-    .toggle-container.active .ball {
-      margin-left: 1rem; }
+      .toggle-container .toggle.active .ball {
+        margin-left: 1rem; }
 
 #show-all-apps {
   position: absolute; }

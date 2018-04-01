@@ -11,7 +11,7 @@ const input = get("#search");
 const allAppsBtn = get("#show-all-apps");
 const quitAppBtn = get("#quit-app");
 const settingAppBtn = get("#setting-app");
-const nightModeBtn = get(".toggle");
+const toggleBtn = get(".toggle-container");
 const cancelSettingBtn = get(".cancel");
 const saveAndRelaunchBtn = get(".save-and-relaunch");
 const readmeUrl =
@@ -71,19 +71,6 @@ function getShortcutConfig(name) {
 
 function openReadmeURL() {
   shell.openExternal(readmeUrl);
-}
-
-function onChange(event) {
-  if (event.target.classList.contains("active")) {
-    this.classList.remove("active");
-  } else {
-    var toggledItems = getAll(".toggle.active");
-
-    if (toggledItems.length >= 2) {
-      toggledItems[Math.floor(Math.random() * 2)].classList.remove("active");
-    }
-    this.classList.add("active");
-  }
 }
 
 ipcRenderer.on("noShortcuts", (event, name) => {
@@ -146,8 +133,6 @@ settingAppBtn.addEventListener("click", () => {
   setting.setShortcut("Cmd+1");
 });
 
-nightModeBtn.addEventListener("click", () => {});
-
 cancelSettingBtn.addEventListener("click", () => {
   console.log("wipe out all the input");
   get("body").style.overflow = "auto";
@@ -160,6 +145,10 @@ saveAndRelaunchBtn.addEventListener("click", () => {
   get(".user-settings").style.display = "none";
 });
 
-Array.from(getAll(".toggle")).forEach(function(toggle) {
-  return toggle.addEventListener("click", onChange);
+toggleBtn.addEventListener("click", event => {
+  if (event.target.classList.contains("active")) {
+    event.target.classList.remove("active");
+  } else {
+    event.target.classList.add("active");
+  }
 });

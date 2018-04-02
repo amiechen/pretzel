@@ -13,10 +13,10 @@
   }
   .toggle {
     border-radius: 3rem;
-    background-color: #e6eaee;
+    background-color: $light-gray;
     transition: all 0.2s;
     &.active {
-      background-color: $blue-2;
+      background-color: $medium-blue-1;
       .ball {
         margin-left: 1rem;
       }

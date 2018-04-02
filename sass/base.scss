@@ -19,46 +19,46 @@ body {
   box-sizing: border-box;
   text-rendering: optimizeLegibility;
   &.dark {
-    background-color: $blue-10;
+    background-color: $dark-blue-2;
     color: $body-text;
   }
   &.light {
-    background-color: $blue-1;
-    color: $blue-10;
+    background-color: $light-blue-1;
+    color: $dark-blue-2;
     .shortcut:after {
-      background-color: #e6eaee;
+      background-color: $light-gray;
     }
     .shortcut__key span,
     .shortcut__name span {
-      background-color: $blue-1;
+      background-color: $light-blue-1;
     }
     .user-settings {
-      background-color: $blue-1;
-      color: $blue-10;
+      background-color: $light-blue-1;
+      color: $dark-blue-2;
       .user-settins-buttons .button:last-of-type {
-        background-color: $blue-10;
-        color: $blue-1;
+        background-color: $dark-blue-2;
+        color: $light-blue-1;
       }
     }
     .button {
-      background-color: $blue-1;
-      border-color: #dadada;
+      background-color: $light-blue-1;
+      border-color: $gray;
     }
     .cancel:hover {
-      background-color: #e6eaee;
+      background-color: $light-gray;
     }
     .save-and-relaunch:hover {
-      background-color: #e6eaee;
+      background-color: $light-gray;
     }
     input#keycode {
-      background-color: #fff;
-      color: $blue-10;
+      background-color: white;
+      color: $dark-blue-2;
     }
   }
 }
 
 input {
-  color: #5f697b;
+  color: $dark-gray;
   display: block;
   font-size: 0.8rem;
   height: 2rem;
@@ -72,9 +72,9 @@ input {
   }
   &#search {
     border-radius: 100px;
-    background: #fff 10px 9px no-repeat;
+    background: white 10px 9px no-repeat;
     background-image: url("./assets/search.svg");
-    border: 1px solid $blue-2;
+    border: 1px solid $medium-blue-1;
   }
   &#keycode {
     padding-left: 0.5rem;
@@ -82,7 +82,7 @@ input {
     border-radius: 3px;
     margin-left: 0.6rem;
     width: 3rem;
-    border: solid 1px #dadada;
+    border: solid 1px $gray;
     height: 1.8rem;
     font-weight: 500;
   }
@@ -90,10 +90,10 @@ input {
 
 .select_style {
   background: white;
-  color: $blue-9;
+  color: $dark-blue-1;
   border-radius: 4px;
   box-shadow: 0 0 5px rgba(123, 123, 123, 0.2);
-  border: solid 1px #dadada;
+  border: solid 1px $gray;
   position: relative;
   cursor: pointer;
   padding-right: 20px;
@@ -124,7 +124,7 @@ input {
 }
 
 ::-webkit-input-placeholder {
-  color: $blue-5;
+  color: $light-blue-2;
   font-weight: 300;
 }
 

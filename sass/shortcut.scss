@@ -2,7 +2,7 @@
   font-weight: 700;
   font-size: 0.8rem;
   margin: 1.8rem 0 0.3rem 0;
-  color: #7f8ba0;
+  color: $medium-blue-4;
 }
 .shortcut {
   display: flex;
@@ -21,7 +21,7 @@
     display: block;
     height: 1px;
     top: 0.9rem;
-    background-color: #1e3644;
+    background-color: $dark-blue-1;
     width: 100%;
     position: absolute;
     z-index: -1;
@@ -31,22 +31,22 @@
   position: relative;
   span {
     padding-right: 0.5rem;
-    background-color: #0e2634;
+    background-color: $dark-blue-2;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
   }
 }
 .shortcut__name {
-  color: #468ee5;
+  color: $medium-blue-1;
   text-align: right;
   span {
     padding-left: 0.5rem;
-    background-color: #0e2634;
+    background-color: $dark-blue-2;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
   }
   &:hover {
-    color: #6090fa;
+    color: $neon;
   }
 }
 

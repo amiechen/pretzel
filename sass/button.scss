@@ -1,11 +1,11 @@
 .button {
   font-weight: 300;
   border-radius: 3px;
-  border: 1px solid $blue-6;
+  border: 1px solid $medium-blue-3;
   cursor: default;
   font-weight: 500;
   &:hover {
-    border-color: $blue-3;
+    border-color: $medium-blue-2;
     transition: border-color 0.3s ease;
   }
 }

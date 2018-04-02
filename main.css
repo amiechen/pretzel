@@ -1,3 +1,6 @@
+/* light blue */
+/* medium blue */
+/* dark blue */
 * {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -40,7 +43,7 @@ body {
     body.light .save-and-relaunch:hover {
       background-color: #e6eaee; }
     body.light input#keycode {
-      background-color: #fff;
+      background-color: white;
       color: #0f2533; }
 
 input {
@@ -57,7 +60,7 @@ input {
     transition: all 0.2s ease; }
   input#search {
     border-radius: 100px;
-    background: #fff 10px 9px no-repeat;
+    background: white 10px 9px no-repeat;
     background-image: url("./assets/search.svg");
     border: 1px solid #68a1f3; }
   input#keycode {
@@ -72,7 +75,7 @@ input {
 
 .select_style {
   background: white;
-  color: #164158;
+  color: #112e40;
   border-radius: 4px;
   box-shadow: 0 0 5px rgba(123, 123, 123, 0.2);
   border: solid 1px #dadada;
@@ -178,7 +181,7 @@ input {
     display: block;
     height: 1px;
     top: 0.9rem;
-    background-color: #1e3644;
+    background-color: #112e40;
     width: 100%;
     position: absolute;
     z-index: -1; }
@@ -187,16 +190,16 @@ input {
   position: relative; }
   .shortcut__key span {
     padding-right: 0.5rem;
-    background-color: #0e2634;
+    background-color: #0f2533;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
 
 .shortcut__name {
-  color: #468ee5;
+  color: #68a1f3;
   text-align: right; }
   .shortcut__name span {
     padding-left: 0.5rem;
-    background-color: #0e2634;
+    background-color: #0f2533;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
   .shortcut__name:hover {
@@ -236,7 +239,7 @@ input {
   margin: auto;
   text-align: center;
   padding: 0.2rem 1rem;
-  background-color: #468ee5;
+  background-color: #68a1f3;
   border-radius: 3px;
   font-size: 0.7rem;
   color: white; }

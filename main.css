@@ -29,6 +29,8 @@ body {
     body.light .shortcut__key span,
     body.light .shortcut__name span {
       background-color: #f6f8fb; }
+    body.light .no-shortcuts .app-name {
+      color: #7f8ba0; }
     body.light .user-settings {
       background-color: #f6f8fb;
       color: #0f2533; }

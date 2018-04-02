@@ -32,6 +32,9 @@ body {
     .shortcut__name span {
       background-color: $light-blue-1;
     }
+    .no-shortcuts .app-name {
+      color: $medium-blue-4;
+    }
     .user-settings {
       background-color: $light-blue-1;
       color: $dark-blue-2;

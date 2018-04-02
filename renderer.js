@@ -4,7 +4,6 @@ const fs = require("fs");
 // third party
 const { ipcRenderer, remote, shell } = require("electron");
 const yaml = require("js-yaml");
-const hotkeys = require("hotkeys-js");
 const setting = require("./setting");
 // variables
 const appName = get(".app-name");

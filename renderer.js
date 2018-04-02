@@ -13,7 +13,7 @@ const search = get("#search");
 const allAppsBtn = get("#show-all-apps");
 const quitAppBtn = get("#quit-app");
 const settingAppBtn = get("#setting-app");
-const toggleBtn = get(".toggle-container");
+const modeBtn = get(".mode");
 const cancelSettingBtn = get(".cancel");
 const body = get("body");
 const saveAndRelaunchBtn = get(".save-and-relaunch");
@@ -79,7 +79,7 @@ function setPretzelTheme() {
   const theme = setting.getTheme() || "dark";
   body.classList = "";
   body.classList.add(theme);
-  theme === "dark" ? get(".toggle").classList.add("active") : null;
+  theme === "dark" ? get(".mode").classList.add("active") : null;
 }
 
 ipcRenderer.on("noShortcuts", (event, name) => {
@@ -165,13 +165,13 @@ saveAndRelaunchBtn.addEventListener("click", () => {
   remote.app.exit(0);
 });
 
-toggleBtn.addEventListener("click", event => {
-  if (event.target.classList.contains("active")) {
+modeBtn.addEventListener("click", event => {
+  if (event.currentTarget.classList.contains("active")) {
     body.classList.remove("dark");
     body.classList.add("light");
-    event.target.classList.remove("active");
+    event.currentTarget.classList.remove("active");
   } else {
-    event.target.classList.add("active");
+    event.currentTarget.classList.add("active");
     body.classList.remove("light");
     body.classList.add("dark");
   }

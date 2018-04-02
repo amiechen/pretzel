@@ -15,7 +15,7 @@ const assetsDirectory = path.join(__dirname, "assets");
 const shortcutsDirectory = path.join(__dirname, "shortcuts");
 const mb = menubar({
   icon: path.join(__dirname, "/assets/icon.png"),
-  width: 800,
+  width: 300,
   height: 400,
   resizable: false,
   showDockIcon: false,
@@ -47,7 +47,7 @@ function toggleWindow() {
 }
 
 mb.on("ready", function ready() {
-  mb.window.webContents.toggleDevTools();
+  // mb.window.webContents.toggleDevTools();
   // settings.deleteAll();
   autoUpdater.checkForUpdatesAndNotify();
   globalShortcut.register(

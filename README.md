@@ -16,13 +16,19 @@ Pretzel is Mac desktop app that shows and search keyboard shortcuts based on you
 
 ## Download for Mac
 
-[Download the latest release](https://github.com/amiechen/pretzel/releases/tag/v0.5.0)
+[Download the latest release](https://github.com/amiechen/pretzel/releases)
 
 ## Run it locally (if you are curious):
 
 ```
 npm install
 npm start
+```
+
+Compile Scss
+
+```
+sass --watch sass/main.ss:main.css
 ```
 
 To compile:

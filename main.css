@@ -261,7 +261,7 @@ input {
     margin: 0 auto;
     padding: 2rem; }
   .user-settings li {
-    margin-bottom: 1.5rem; }
+    margin-bottom: 0.5rem; }
   .user-settings label {
     flex-grow: 1;
     font-size: 0.8rem; }
@@ -295,6 +295,14 @@ input {
       background-color: #68a1f3; }
       .toggle-container .toggle.active .ball {
         margin-left: 1rem; }
+
+.mode {
+  margin-top: -0.3rem;
+  cursor: pointer; }
+  .mode #moon {
+    stroke: #68a1f3; }
+  .mode.active #moon {
+    fill: #68a1f3; }
 
 #show-all-apps {
   position: absolute; }

@@ -43,7 +43,7 @@ body {
     .button {
       background-color: $blue-1;
     }
-    input#custom-shortcut {
+    input#keycode {
       background-color: #e6eaee;
       color: $blue-10;
     }
@@ -69,15 +69,15 @@ input {
     background-image: url("./assets/search.svg");
     border: 1px solid $blue-2;
   }
-  &#custom-shortcut {
+  &#keycode {
     background-color: $blue-9;
-    background-image: none;
     border: 1px solid $blue-9;
-    height: 2rem;
-    padding-left: 0.8rem;
+    padding-left: 0.5rem;
     margin-top: 0.5rem;
     border-radius: 3px;
     color: $blue-1;
+    margin-left: 1rem;
+    width: 3rem;
     &:focus {
       border-color: $blue-6;
     }
@@ -99,4 +99,12 @@ input {
 
 .flexbox {
   display: flex;
+}
+
+.flexbox--row {
+  flex-direction: row;
+}
+
+.flexbox--column {
+  flex-direction: column;
 }

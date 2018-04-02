@@ -34,7 +34,7 @@ body {
         color: #f6f8fb; }
     body.light .button {
       background-color: #f6f8fb; }
-    body.light input#custom-shortcut {
+    body.light input#keycode {
       background-color: #e6eaee;
       color: #0f2533; }
 
@@ -55,16 +55,16 @@ input {
     background: #fff 10px 9px no-repeat;
     background-image: url("./assets/search.svg");
     border: 1px solid #68a1f3; }
-  input#custom-shortcut {
+  input#keycode {
     background-color: #164158;
-    background-image: none;
     border: 1px solid #164158;
-    height: 2rem;
-    padding-left: 0.8rem;
+    padding-left: 0.5rem;
     margin-top: 0.5rem;
     border-radius: 3px;
-    color: #f6f8fb; }
-    input#custom-shortcut:focus {
+    color: #f6f8fb;
+    margin-left: 1rem;
+    width: 3rem; }
+    input#keycode:focus {
       border-color: #264f81; }
 
 ::-webkit-input-placeholder {
@@ -79,6 +79,12 @@ input {
 
 .flexbox {
   display: flex; }
+
+.flexbox--row {
+  flex-direction: row; }
+
+.flexbox--column {
+  flex-direction: column; }
 
 .button {
   font-weight: 300;
@@ -210,8 +216,6 @@ input {
   .user-settings label {
     flex-grow: 1;
     font-size: 0.8rem; }
-  .user-settings .flexbox:last-of-type {
-    flex-direction: column; }
   .user-settings .user-settins-buttons {
     margin-left: 2rem;
     position: fixed;

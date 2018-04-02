@@ -1,13 +1,15 @@
+// default node packages
 const path = require("path");
 const fs = require("fs");
-
+// third party
 const { ipcRenderer, remote, shell } = require("electron");
 const yaml = require("js-yaml");
 const hotkeys = require("hotkeys-js");
 const setting = require("./setting");
+// variables
 const appName = get(".app-name");
 const shortcutsContainer = get(".shortcuts-container");
-const input = get("#search");
+const search = get("#search");
 const allAppsBtn = get("#show-all-apps");
 const quitAppBtn = get("#quit-app");
 const settingAppBtn = get("#setting-app");
@@ -18,6 +20,7 @@ const saveAndRelaunchBtn = get(".save-and-relaunch");
 const readmeUrl =
   "https://github.com/amiechen/pretzel/blob/master/README.md#add-a-shortcut";
 const allAppsUrl = "https://www.amie-chen.com/pretzel/supported-apps";
+let shortcutArray = "";
 
 function get(selector, scope) {
   scope = scope ? scope : document;
@@ -30,7 +33,7 @@ function getAll(selector, scope) {
 }
 
 function searchShortcuts() {
-  let filter = input.value.toUpperCase();
+  let filter = search.value.toUpperCase();
   let shortcuts = getAll(".shortcut");
 
   for (var i = 0; i < shortcuts.length; i++) {
@@ -45,9 +48,7 @@ function searchShortcuts() {
 
 function toggleTitles() {
   getAll(".shortcuts__group").forEach(group => {
-    // if all shortcuts are hidden
-    // we hide the title
-    // otherwise we show the title
+    // hide the title if all shortcuts are hidden
     if (
       getAll(".shortcut.hide", group).length ===
       getAll(".shortcut", group).length
@@ -91,7 +92,7 @@ ipcRenderer.on("noShortcuts", (event, name) => {
   const addShortcutBtn = document.querySelector(".add-shortcut-btn");
 
   appName.style.display = "none";
-  input.style.display = "none";
+  search.style.display = "none";
   shortcutsContainer.innerHTML = html;
 });
 
@@ -99,7 +100,7 @@ ipcRenderer.on("currentApp", (event, name) => {
   const shortcuts = getShortcutConfig(name);
   let html = "";
 
-  get("#search").focus();
+  search.focus();
 
   for (var prop in shortcuts) {
     html += `<div class="shortcuts__group"><h3 class="shortcuts__title">${prop}</h3>`;
@@ -119,10 +120,10 @@ ipcRenderer.on("currentApp", (event, name) => {
   appName.innerHTML = name.split(".yml")[0];
   shortcutsContainer.innerHTML = html;
   appName.style.display = "";
-  input.style.display = "";
+  search.style.display = "";
 });
 
-input.addEventListener("keyup", () => {
+search.addEventListener("keyup", () => {
   searchShortcuts();
   toggleTitles();
 });
@@ -137,21 +138,28 @@ quitAppBtn.addEventListener("click", () => {
 
 settingAppBtn.addEventListener("click", () => {
   get(".user-settings").style.display = "block";
-  get("body").style.overflow = "hidden";
-  setting.setShortcut("Cmd+1");
+  body.style.overflow = "hidden";
 });
 
 cancelSettingBtn.addEventListener("click", () => {
-  console.log("wipe out all the input");
-  get("body").style.overflow = "auto";
+  get("#keymodifier").value = setting.getKeymodifier();
+  get("#keycode").value = setting.getKeycode();
+  body.style.overflow = "auto";
   get(".user-settings").style.display = "none";
 });
 
 saveAndRelaunchBtn.addEventListener("click", () => {
-  get("body").classList.contains("light")
+  const keymodifier = get("#keymodifier").options[
+    get("#keymodifier").selectedIndex
+  ].value;
+  const keycode = get("#keycode").value;
+  setting.setKeycode(keycode);
+  setting.setKeymodifier(keymodifier);
+
+  body.classList.contains("light")
     ? setting.setTheme("light")
     : setting.setTheme("dark");
-  get("body").style.overflow = "auto";
+  body.style.overflow = "auto";
   get(".user-settings").style.display = "none";
   remote.app.relaunch();
   remote.app.exit(0);
@@ -159,14 +167,16 @@ saveAndRelaunchBtn.addEventListener("click", () => {
 
 toggleBtn.addEventListener("click", event => {
   if (event.target.classList.contains("active")) {
-    get("body").classList.remove("dark");
-    get("body").classList.add("light");
+    body.classList.remove("dark");
+    body.classList.add("light");
     event.target.classList.remove("active");
   } else {
     event.target.classList.add("active");
-    get("body").classList.remove("light");
-    get("body").classList.add("dark");
+    body.classList.remove("light");
+    body.classList.add("dark");
   }
 });
 
 setPretzelTheme();
+get("#keymodifier").value = setting.getKeymodifier();
+get("#keycode").value = setting.getKeycode();

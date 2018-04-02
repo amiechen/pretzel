@@ -55,9 +55,19 @@
               </div>
             </div>
           </li>
-          <li class="flexbox">
+          <li class="flexbox flexbox--column">
             <label>Shortcut to Open Pretzel</label>
-            <input type="text" placeholder="type your custom shortcut" id="custom-shortcut"/></li>
+            <div class="flexbox">
+              <select id="keymodifier">
+                <option value="Cmd">Command</option>
+                <option value="Ctrl">Control</option>
+                <option value="Alt">Alt</option>
+                <option value="Option">Option</option>
+                <option value="Shift">Shift</option>
+              </select>
+              <input type="text" id="keycode" maxlength="1"/>
+            </div>
+          </li>
         </ul>
         <div class="flexbox user-settins-buttons">        
           <div class="button button--sm cancel">Cancel</div>

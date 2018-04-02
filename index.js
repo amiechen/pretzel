@@ -48,16 +48,12 @@ function toggleWindow() {
 
 mb.on("ready", function ready() {
   mb.window.webContents.toggleDevTools();
-  // debug settings.deleteAll();
-  let pretzelShortcut = setting.getShortcut() || "CommandOrControl+`";
+  // settings.deleteAll();
   autoUpdater.checkForUpdatesAndNotify();
-  globalShortcut.register(pretzelShortcut, toggleWindow);
-
-  // mb.window.webContents.on("did-finish-load", function() {
-  //   let pretzelTheme = setting.getTheme() || "dark";
-  //   console.log(pretzelTheme);
-  //   mb.window.webContents.send("setTheme", pretzelTheme);
-  // });
+  globalShortcut.register(
+    `${setting.getKeymodifier()}+${setting.getKeycode()}`,
+    toggleWindow
+  );
 });
 
 mb.on("show", () => {

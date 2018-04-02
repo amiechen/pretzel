@@ -57,21 +57,24 @@
           </li>
           <li class="flexbox flexbox--column">
             <label>Shortcut to Open Pretzel</label>
-            <div class="flexbox">
-              <select id="keymodifier">
-                <option value="Cmd">Command</option>
-                <option value="Ctrl">Control</option>
-                <option value="Alt">Alt</option>
-                <option value="Option">Option</option>
-                <option value="Shift">Shift</option>
-              </select>
+            <div class="flexbox select__group">
+              <div class="select_style">
+                <select id="keymodifier">
+                  <option value="Cmd">Command</option>
+                  <option value="Ctrl">Control</option>
+                  <option value="Alt">Alt</option>
+                  <option value="Option">Option</option>
+                  <option value="Shift">Shift</option>
+                </select>
+                <span></span>
+              </div>
               <input type="text" id="keycode" maxlength="1"/>
             </div>
           </li>
         </ul>
         <div class="flexbox user-settins-buttons">        
           <div class="button button--sm cancel">Cancel</div>
-          <div class="button button--sm save-and-relaunch">Save and Relaunch</div>
+          <div class="button button--sm button--primary save-and-relaunch">Save and Relaunch</div>
         </div>
       </div>
       <input type="text" id="search" placeholder="Search..." />

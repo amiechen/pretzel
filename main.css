@@ -33,9 +33,14 @@ body {
         background-color: #0f2533;
         color: #f6f8fb; }
     body.light .button {
-      background-color: #f6f8fb; }
+      background-color: #f6f8fb;
+      border-color: #dadada; }
+    body.light .cancel:hover {
+      background-color: #e6eaee; }
+    body.light .save-and-relaunch:hover {
+      background-color: #e6eaee; }
     body.light input#keycode {
-      background-color: #e6eaee;
+      background-color: #fff;
       color: #0f2533; }
 
 input {
@@ -56,16 +61,48 @@ input {
     background-image: url("./assets/search.svg");
     border: 1px solid #68a1f3; }
   input#keycode {
-    background-color: #164158;
-    border: 1px solid #164158;
     padding-left: 0.5rem;
     margin-top: 0.5rem;
     border-radius: 3px;
-    color: #f6f8fb;
-    margin-left: 1rem;
-    width: 3rem; }
-    input#keycode:focus {
-      border-color: #264f81; }
+    margin-left: 0.6rem;
+    width: 3rem;
+    border: solid 1px #dadada;
+    height: 1.8rem;
+    font-weight: 500; }
+
+.select_style {
+  background: white;
+  color: #164158;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(123, 123, 123, 0.2);
+  border: solid 1px #dadada;
+  position: relative;
+  cursor: pointer;
+  padding-right: 20px; }
+
+.select_style span {
+  position: absolute;
+  right: 10px;
+  width: 8px;
+  height: 8px;
+  background: url("./assets/arrow.png") no-repeat;
+  top: 50%;
+  margin-top: -4px;
+  background-size: contain; }
+
+.select_style select {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 120%;
+  background: none;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 7px 10px;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: bold; }
 
 ::-webkit-input-placeholder {
   color: #d5d9e4;
@@ -88,13 +125,20 @@ input {
 
 .button {
   font-weight: 300;
-  background-color: #0a1a23;
   border-radius: 3px;
   border: 1px solid #264f81;
-  cursor: default; }
+  cursor: default;
+  font-weight: 500; }
   .button:hover {
     border-color: #3972b5;
     transition: border-color 0.3s ease; }
+
+.button--primary {
+  border: none;
+  background: linear-gradient(45deg, #68a1f3, #5361ca);
+  transition: 10ms; }
+  .button--primary:hover {
+    background: linear-gradient(225deg, #68a1f3, #5361ca); }
 
 .button--xs {
   font-size: 0.6rem;
@@ -216,15 +260,15 @@ input {
   .user-settings label {
     flex-grow: 1;
     font-size: 0.8rem; }
+  .user-settings .select__group {
+    align-items: flex-end; }
   .user-settings .user-settins-buttons {
     margin-left: 2rem;
     position: fixed;
     bottom: 2rem; }
     .user-settings .user-settins-buttons .button:last-of-type {
       right: 2rem;
-      position: fixed;
-      background-color: #68a1f3;
-      border: none; }
+      position: fixed; }
 
 .toggle-container {
   transition: all 0.2s;

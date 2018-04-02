@@ -1,12 +1,20 @@
 .button {
   font-weight: 300;
-  background-color: $blue-11;
   border-radius: 3px;
   border: 1px solid $blue-6;
   cursor: default;
+  font-weight: 500;
   &:hover {
     border-color: $blue-3;
     transition: border-color 0.3s ease;
+  }
+}
+.button--primary {
+  border: none;
+  background: linear-gradient(45deg, #68a1f3, #5361ca);
+  transition: 10ms;
+  &:hover {
+    background: linear-gradient(225deg, #68a1f3, #5361ca);
   }
 }
 .button--xs {

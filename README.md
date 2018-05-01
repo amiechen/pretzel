@@ -28,7 +28,7 @@ npm start
 Compile Scss
 
 ```
-sass --watch sass/main.ss:main.css
+sass --watch sass/main.scss:main.css
 ```
 
 To compile:

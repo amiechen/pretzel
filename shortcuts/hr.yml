@@ -1,0 +1,31 @@
+General:
+  - "Back": "Cmd + ["
+  - "Help": "Cmd + ?"
+  - "Menu": "Opt + Cmd + M"
+  - "Preferences": "Cmd + ,"
+  - "Quit": "Cmd + Q"
+  - "Select All": "Cmd + A"
+
+Categories:
+  - "Archive Category": "Ctrl + Cmd + A"
+  - "Create New Category": "Cmd + N"
+  - "Delete Category": "delete"
+  - "Unarchive Category": "Ctrl + Cmd + U"
+
+Tasks:
+  - "Create New Task": "Cmd + N"
+  - "Decrease Priority": "Cmd + -"
+  - "Delete Task": "delete"
+  - "Increase Priority": "Cmd + +"
+  - "Mark/Unmark Task as Complete": "Opt + Cmd + C"
+  - "Show/Hide Complete Tasks": "Shift + Cmd + C"
+  - "Start": "Space"
+
+Sessions:
+  - "Delete Session": "delete"
+  - "View: Sessions": "Cmd + 1"
+  - "View: Task Properties": "Cmd + 2"
+
+Timer:
+  - "Pause": "Space"
+  - "Stop": "Cmd + ."

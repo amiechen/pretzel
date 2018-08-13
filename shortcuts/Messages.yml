@@ -1,84 +1,22 @@
-
-Open Messages preferences
-
-Command-Comma (,)
-
-Hide Messages
-
-Command-H
-
-Hide everything except Messages
-
-Option-Command-H
-
-Quit Messages
-
-Command-Q
-
-Start a new message
-
-Command-N
-
-Go to a chat room
-
-Command-R
-
-Open the Messages window
-
-Command-0
-
-Close the Messages window
-
-Command-W
-
-Print the conversation
-
-Command-P
-
-Search all conversations for matching text
-
-Command-F
-
-Clear the transcript (delete a conversation without closing it)
-
-Option-Command-K
-
-Open the Emoji & Symbols window
-
-Control-Command-Space
-
-Minimize a window
-
-Command-M
-
-Minimize all windows
-
-Option-Command-M
-
-Open the buddy list window
-
-Command-1
-
-Open the File Transfers window
-
-Option-Command-L
-
-Enter full-screen view
-
-Control-Command-F
-
-Set your status to Offline in the buddy list
-
-Control-Command-O
-
-Set your status to Invisible in the buddy list
-
-Control-Command-I
-
-Set your status to Available in the buddy list
-
-Control-Command-A
-
-Set your status to Away in the buddy list
-
-Control-Command-W
+General:
+  - "Open Messages preferences": "Cmd + ,":
+  - "Hide Messages": "Cmd + H"
+  - "Hide everything except Messages": "Option + Cmd + H"
+  - "Quit Messages": "Cmd + Q"
+  - "Start a new message": "Cmd + N"
+  - "Go to a chat room": "Cmd + R"
+  - "Open the Messages window": "Cmd + 0"
+  - "Close the Messages window": "Cmd + W"
+  - "Print the conversation": "Cmd + P"
+  - "Search all conversations for matching text": "Cmd + F"
+  - "Clear the transcript (delete a conversation without closing it)": "Option + Cmd + K"
+  - "Open the Emoji & Symbols window": "Control + Cmd + Space"
+  - "Minimize a window": "Cmd + M"
+  - "Minimize all windows": "Option + Cmd + M"
+  - "Open the buddy list window": "Cmd + 1"
+  - "Open the File Transfers window": "Option + Cmd + L"
+  - "Enter full + screen view": "Control + Cmd + F"
+  - "Set your status to Offline in the buddy list": "Control + Cmd + O"
+  - "Set your status to Invisible in the buddy list": "Control + Cmd + I"
+  - "Set your status to Available in the buddy list": "Control + Cmd + A"
+  - "Set your status to Away in the buddy list": "Control + Cmd + W"

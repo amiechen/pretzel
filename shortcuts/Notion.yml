@@ -1,0 +1,59 @@
+Main:
+  - Create a new page: Cmd + N
+  - When creating a new page, select where to add the page: Cmd + Shift + P
+  - Open a new window: Cmd + Shift + N
+  - Quick Find: Cmd + P
+  - Go back: Cmd + [
+  - Go forward: Cmd + ]
+  - Go up to the parent page: Cmd + U
+  - Toggle dark mode: Cmd + Shift + L
+  - Toggle sidebar: Cmd + \
+
+Content Creation and Editing:
+  - insert text: Enter
+  - Create a comment: cmd + shift + M
+  - Create a divider: ---
+  - Bold selected text: cmd + B
+  - Italicize selcted text: cmd + I
+  - Strike-trough selcted text: cmd + shift + S
+  - Create a link with the selected text: cmd + K
+  - Create a inline code with selected text: cmd + E
+  - Create text: cmd + shift + 0
+  - Create a heading 1: cmd + shift + 1
+  - Create a heading 2: cmd + shift + 2
+  - Create a heading 3: cmd + shift + 3
+  - Create a to-do: cmd + shift + 4
+  - Create a bulleted list: cmd + shift + 5
+  - Create a numbered list: cmd + shift + 6
+  - Create a toggle list: cmd + shift + 7
+  - Create a code block: cmd + shift + 8
+  - Create a page block: cmd + shift 9
+
+  While Dragging:
+  - Duplicate: alt
+
+  While Typing:
+  - Select the block you are editing: Esc
+  - Indent: Insert the block into the previous block: Tab
+  - Un-indent: Shift + Tab
+
+  While Blocks are selcted:
+  - Activate buttons/pages and checks/un-check checkboxes, toggle to-dos, or enter full screen on embeds/images: Cmd + Enter
+  - Expand the selection up or down: Cmd + Shift + Left/Right
+  - Open a page in a new tab: Cmd + Shift + Enter
+  - Rename the current selection Cmd + Shift + R
+  - Enter fullscreen (while on an image): Space
+  - Change the selection: Arrows
+  - Expand the selection up or down by one block: Shift + Up/Down
+  - Select all blocks in the page: Cmd + A
+  - Toggle selection of a block: Cmd + Shift + (click)
+  - Select another block and all blocks in-between: Shift + (click)
+  - Clear the selected blocks: Esc
+  - Delete the selected blocks: Del/Bksp
+  - Duplicate the blocks you have selected. Cmd + D
+  - Edit the block you have selected. If the block has no text, something else might happen: Enter
+  - Copy the link to the Notion page you are on: Cmd + L
+  - Select a few blocks, then edit blocks all at once: Cmd + /
+  - Select multiple cards in a board view, then move or edit them all at once: Cmd + /
+  - Hold, then use the arrow keys to change the position of a block: Cmd + Shift
+  - Expand/close all toggles: Cmd + Alt + T

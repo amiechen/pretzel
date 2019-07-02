@@ -64,7 +64,7 @@ Script:
 
 Object Manager:
   - New object as child object: Shift + Create object
-  - New object as Parent object: Alt + Create object 
+  - New object as Parent object: Alt + Create object
   - Expand object group: Shift + G
   - Group objects: Alt + G
   - Project information: CmdOrCtrl + I

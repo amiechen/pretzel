@@ -5,17 +5,17 @@ General:
   - Show shortcuts: "?"
 Design:
   - Copy text: CmdOrCtrl + c
-  - Toggle panels: TAB 
-  - Deselect layers: ESC 
+  - Toggle panels: TAB
+  - Deselect layers: ESC
   - Original Zoom: CmdOrCtrl + 1
   - Zoom In: CmdOrCtrl + (+)
   - Zoom Out: CmdOrCtrl + (−)
-  - Scroll to layer: Alt + Mouse 
+  - Scroll to layer: Alt + Mouse
   - Copy CSS: CmdOrCtrl + Shift + c
 Tools:
   - Select tool: v
   - Color Picker: i
-  - Hand tool: h or Space 
+  - Hand tool: h or Space
   - Measure tool: r or Alt
   - Lock measure guides: CmdOrCtrl + l
 Guides:

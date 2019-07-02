@@ -23,7 +23,7 @@ Projects:
   - "Find in Project panel": "Command+F"
   - "Cycle through color bit depths for project": "Option-click bit-depth button at bottomof Project panel"
   - "Open Project Settings dialog box": "Click bit-depth button at bottom of Projectpanel"
-Preferences: 
+Preferences:
   - "Open Preferences dialog box": "Command+Option+; (semicolon)"
   - "Restore default preferences settings": "Hold down Command+Option+Shift while startingAfter Effects"
 Panels, viewers, workspaces, and windows:

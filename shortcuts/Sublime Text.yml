@@ -1,9 +1,9 @@
 Editing:
-  - Cut line: CmdOrCtrl + X  
+  - Cut line: CmdOrCtrl + X
   - Insert line after: CmdOrCtrl + ↩
   - Insert line before: CmdOrCtrl + Shift + ↩
   - Move line/selection up: CmdOrCtrl + Shift + ↑
-  - Move line/selection down: CmdOrCtrl + Shift + ↓ 
+  - Move line/selection down: CmdOrCtrl + Shift + ↓
   - Select line - Repeat to select next lines: CmdOrCtrl + L
   - Select word - Repeat select others occurrences: CmdOrCtrl + D
   - Jump to closing parentheses Repeat to jump to opening parentheses: CmdOrCtrl + M
@@ -44,7 +44,7 @@ Find/Replace:
   - Find in files: CmdOrCtrl + Shift + F
 Split window:
   - Revert view to single column: Alt + Shift + 1
-  - Split view into two columns: Alt + Shift + 2 
+  - Split view into two columns: Alt + Shift + 2
   - Split view into three columns: Alt + Shift + 3
   - Split view into four columns: Alt + Shift + 4
   - Set view to grid (4 groups): Alt + Shift + 5

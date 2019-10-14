@@ -1,0 +1,32 @@
+General:
+  - "Create or join a server": "Cmd + Shift + N"
+  - "Create a private group": "Cmd + Shift + T"
+Navigation:
+  - "Toggle Quickswitcher": "Cmd + K"
+  - "Navigate between servers": "Cmd + Opt + Up/Down"
+  - "Navigate between channels": "Opt + Up/Down"
+  - "Navigate between unread channels": "Shift + Opt + Up/Down"
+  - "Navigate between unread channels with mentions": "Shift + Cmd + Opt + Up/Down"
+  - "Toggle between last server and DMs": "Cmd + Opt + right"
+  - "Scroll chat up": "Page Up"
+  - "Scroll chat down": "Page Down"
+  - "Jump to oldest unread message": "Shift + Page Up"
+  - "Focus text area": "Any Key"
+Marking:
+  - "Mark server as read": "Shift + Esc"
+  - "Mark channel as read": "Esc"
+Menus:
+  - "Toggle pins": "Cmd + I"
+  - "Toggle mentions": "Cmd + U"
+  - "Toggle emoji picker": "Cmd + E"
+  - "Toggle gif picker": "Cmd + G"
+  - "Upload a file": "Cmd + Shift + U"
+  - "Search": "Cmd + f"
+  - "Get Help": "Cmd + Shift + H"
+Audio:
+  - "Toggle mute": "Cmd + Shift + M"
+  - "Toggle deafen": "Cmd + Shift + D"
+Calling:
+  - "Answer incoming call": "Cmd + Return"
+  - "Decline incoming call": "Esc"
+  - "Start a call in private message/group": "Ctrl + `"

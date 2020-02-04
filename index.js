@@ -5,7 +5,6 @@ const path = require("path");
 // third party
 const { Menu, globalShortcut } = require("electron");
 const autoUpdater = require("electron-updater").autoUpdater;
-const settings = require("electron-settings");
 const objc = require("objc");
 const stringSimilarity = require("string-similarity");
 const menubar = require("menubar");
@@ -48,7 +47,6 @@ function toggleWindow() {
 
 mb.on("ready", function ready() {
   // mb.window.webContents.toggleDevTools();
-  // settings.deleteAll();
   autoUpdater.checkForUpdatesAndNotify();
   globalShortcut.register(
     `${setting.getKeymodifier()}+${setting.getKeycode()}`,

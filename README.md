@@ -20,7 +20,14 @@ Pretzel is Mac desktop app that shows and search keyboard shortcuts based on you
 
 ## Run it locally (if you are curious):
 
+### Important: Use v8 Node
+Because Pretzel has a dependency [node-ffi](https://github.com/node-ffi/node-ffi) that requires node v8, until `node-ffi` is compaitable with 
+latest node, you should use `nvm` to install node v8 to run Pretzel locally. Otherwise, `npm install` would give you some error regarding node-gyp.
+
 ```
+nvm install 8.11.3 # I personally use this version
+nvm ls # to make sure we are currently using node v8
+
 npm install
 npm start
 ```
@@ -28,7 +35,7 @@ npm start
 Compile Scss
 
 ```
-sass --watch sass/main.ss:main.css
+sass --watch sass/main.scss:main.css
 ```
 
 To compile:

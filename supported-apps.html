@@ -1,0 +1,27 @@
+---
+layout: project
+title: Pretzel
+description: A Smart, contextual shortcut finder that helps you speed up daily tasks. Never need to find that shortcut again
+css: pretzel
+social-image: ''
+---
+
+<nav class="header">
+  <div class="nav">
+    <a class="nav__item" href="/{{page.css}}">Download</a>
+    <a class="nav__item selected" href="/{{page.css}}/supported-apps">Apps</a>
+    <a class="nav__item" href="/{{page.css}}/faq">FAQ</a>
+  </div>
+</nav>
+<section class="pretzel-container topaligned">
+  <h2 class="pretzel-title">Supported Apps</h2>
+  <ul class="pretzel-apps">
+    {% assign apps = site.data.pretzel-supported-apps | sort: 'name' %}
+    {% for app in apps %}
+      <li class="pretzel-supported-app">
+        <img src="{{ app.image }}" alt="">
+        <p>{{ app.name }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

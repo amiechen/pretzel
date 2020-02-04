@@ -1,0 +1,31 @@
+---
+layout: project
+title: Pretzel
+description: A Smart, contextual shortcut finder that helps you speed up daily tasks. Never need to find that shortcut again
+css: pretzel
+social-image: ''
+questions:
+  - q: Why does it call Pretzel?
+    a: Because the only shortcut symbol I could ever remember is the command key, which is also called "Pretzel" key.
+  - q: There are so many shortcut apps out there, why did you make another one?
+    a: I was frustrated by not being able to press a button and see all the shortcuts of my currently using app. The closest I found and loved was CheatSheet, but since I still have some minor complaints about it (such as not being able to see all the shortcuts of Adobe apps) so decided to make my own.
+  - q: What is the next step for Pretzel?
+    a: One thing I have in mind is to be able to execute the command on click. Feel free to email/twitter DM me if you have any suggestion.
+---
+
+<nav class="header">
+  <div class="nav">
+    <a class="nav__item" href="/{{page.css}}">Download</a>
+    <a class="nav__item" href="/{{page.css}}/supported-apps">Apps</a>
+    <a class="nav__item selected" href="/{{page.css}}/faq">FAQ</a>
+  </div>
+</nav>
+<section class="pretzel-container topaligned">
+  <h2 class="pretzel-title">FAQ</h2>
+  {% for question in page.questions %}
+  <div class="pretzel-faq">
+    <h3>{{ question.q }}</h3>
+    <p>{{ question.a }}</p>
+  </div>
+  {% endfor %}
+</section>

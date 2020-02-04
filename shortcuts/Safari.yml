@@ -1,0 +1,28 @@
+Tab Management:
+ - Open new tab: ⌘ + T
+ - Switch to next tab: Ctrl + Tab
+ - Switch to previous tab: Ctrl + ⇧ + Tab
+ - Close current tab: ⌘ + W
+ - Re-open closed tab: ⌘ + Z
+ - Close all tabs except active tab: ⌘ + ⌥ + w
+
+Window Management:
+ - Open new Safari window: ⌘ + N
+ - Open new private Safari window: ⌘ + ⇧ + N
+ - Minimize current window: ⌘ + M
+ - Hide all Safari windows: ⌘ + H
+ - Close current Safari window: ⌘ + ⇧ W
+ - Jump to the next Safari window: ⌘ + ⇧ `
+ - Quit Safari: ⌘ + Q
+
+Page Management:
+ - Zoom in: ⌘ + +
+ - Zoom out: ⌘ + -
+ - Default size: ⌘ + 0
+ 
+Bookmarks:
+ - Show Top Sites: ⌥ ⌘ + 1
+ - Show Collections (history, bookmarks, ...): ⌥ ⌘ + 2
+ - Bookmark Page: ⌘ + D
+ - Jump to bookmark: ⌘ + 1...9
+ - Show Sidebar (to display Bookmarks, Reading List, and Shared Links pane): ⌘ + ⇧ + L

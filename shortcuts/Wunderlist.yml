@@ -11,14 +11,14 @@ Mac:
   - Minified View: Cmd + 3
 
 Windows 10:
-- Add a New To-do: Ctrl + n
-- Add a New List: Ctrl + Shift + l
-- Completed Selected To-dos: Ctrl + d
-- Star Selected To-dos: Ctrl + s
-- Search: Ctrl + f
-- Sync: r
-- Show Activities: Ctrl + q
-- Show Preferences: Ctrl + p
-- Normal View: Ctrl + 1
-- Collapsed View: Ctrl + 2
-- Minified View: Ctrl + 3
+  - Add a New To-do: Ctrl + n
+  - Add a New List: Ctrl + Shift + l
+  - Completed Selected To-dos: Ctrl + d
+  - Star Selected To-dos: Ctrl + s
+  - Search: Ctrl + f
+  - Sync: r
+  - Show Activities: Ctrl + q
+  - Show Preferences: Ctrl + p
+  - Normal View: Ctrl + 1
+  - Collapsed View: Ctrl + 2
+  - Minified View: Ctrl + 3

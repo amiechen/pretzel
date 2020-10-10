@@ -1,5 +1,5 @@
 Layers:
-  - Add rectangle: R (Alt + R to add as child) 
+  - Add rectangle: R (Alt + R to add as child)
   - Add Text: T (Alt + T to add as child)
   - Add Artboard: A
   - Group: Cmd + G
@@ -37,13 +37,13 @@ Driver Navigation:
 Animate Navigation:
   - Pan: Space + drag
 Selection:
-  - Select Parent: Esc 
-  - Select Child: Enter 
-  - Select Next Sibling: Tab 
-  - Select Previous Sibling: Shift+Tab 
-  - Select all Siblings: Cmd + A 
+  - Select Parent: Esc
+  - Select Child: Enter
+  - Select Next Sibling: Tab
+  - Select Previous Sibling: Shift+Tab
+  - Select all Siblings: Cmd + A
 Preview:
   - Change cursor type: View->Toggle Preview Cursor Type
   - Rewind Prototype: W
-  - Start recording video: Ctrl+V 
+  - Start recording video: Ctrl+V
   - Start recording video without cursor: Ctrl + alt + V 

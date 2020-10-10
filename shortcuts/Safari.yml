@@ -1,28 +1,56 @@
 Tab Management:
- - Open new tab: ⌘ + T
- - Switch to next tab: Ctrl + Tab
- - Switch to previous tab: Ctrl + ⇧ + Tab
- - Close current tab: ⌘ + W
- - Re-open closed tab: ⌘ + Z
- - Close all tabs except active tab: ⌘ + ⌥ + w
+  - "Open new tab": "Cmd + T"
+  - "Close current tab": "Cmd + W"
+  - "Re-open closed tab": "Cmd + Shift + T"
+  - "Switch to next tab": "Ctrl + Tab"
+  - "Switch to previous tab": "Ctrl + Shift + Tab"
+  - "Close all tabs except active tab": "Cmd + Opt + w"
+  - "Scroll Down by Full Screen": "Space"
+  - "Scroll Up by Full Screen": "Shift + Space"
+  - "Go to Address Bar": "Cmd + L"
 
 Window Management:
- - Open new Safari window: ⌘ + N
- - Open new private Safari window: ⌘ + ⇧ + N
- - Minimize current window: ⌘ + M
- - Hide all Safari windows: ⌘ + H
- - Close current Safari window: ⌘ + ⇧ W
- - Jump to the next Safari window: ⌘ + ⇧ `
- - Quit Safari: ⌘ + Q
+  - "Open new Safari window": "Cmd + N"
+  - "Open new private Safari window": "Cmd + Shift + N"
+  - "Minimize current window": "Cmd + M"
+  - "Hide all Safari windows": "Cmd + H"
+  - "Close current Safari window": "Cmd + Shift + W"
+  - "Jump to the next Safari window": "Cmd + Shift + `"
+  - "Quit Safari": "Cmd + Q"
 
-Page Management:
- - Zoom in: ⌘ + +
- - Zoom out: ⌘ + -
- - Default size: ⌘ + 0
- 
+Reading & Viewing Page Management:
+  - "Zoom in": "Cmd + +"
+  - "Zoom out": "Cmd + -"
+  - "Default size": "Cmd + 0"
+  - "Strip Styling and View in Reader": "Cmd + Shift + R"
+  - "Enter or Exit Full Screen": "Cmd + Esc"
+  - "Open Home Page": "Cmd + Shift + H"
+  - "Mail Link to Current Page": "Cmd + Shift + I"
+
 Bookmarks:
- - Show Top Sites: ⌥ ⌘ + 1
- - Show Collections (history, bookmarks, ...): ⌥ ⌘ + 2
- - Bookmark Page: ⌘ + D
- - Jump to bookmark: ⌘ + 1...9
- - Show Sidebar (to display Bookmarks, Reading List, and Shared Links pane): ⌘ + ⇧ + L
+  - "Show Top Sites": "Opt + Cmd + 1"
+  - "Show Collections (history, bookmarks, ...)": "Opt + Cmd + 2"
+  - "Bookmark Page": "Cmd + D"
+  - "Jump to bookmark": "Cmd + 1...9"
+  - "Show Sidebar (to display Bookmarks, Reading List, and Shared Links pane)": "Cmd + Shift + L"
+
+Toolbars, History, and Reading List:
+  - "Hide or Show Toolbar": "Cmd + I"
+  - "Hide or Show Bookmarks Bar": "Cmd + Shift + B"
+  - "Hide or Show Status Bar": "Cmd + /"
+  - "Show Top Sites": "Cmd + Opt + 1"
+  - "Show History": "Cmd + Opt + 2"
+  - "Show Reading List": "Cmd + Shift + L"
+  - "Show Downloads": "Cmd + Opt + L"
+
+Caches, Loading Pages, Source, and Pop Ups:
+  - "Empty Browser Cache": "Cmd + Opt + E"
+  - "Reload Page": "Cmd + R"
+  - "Stop Loading Page": "Cmd + ."
+  - "View Page Source": "Cmd + Opt + U"
+  - "Disable Pop Up Windows": "Cmd + Shift + K"
+
+Finding and Navigating Found Items:
+  - "Find Text on Page": "Cmd + F"
+  - "Navigate Found Items Forward": "Enter"
+  - "Navigate Found Items Backwards": "Shift + Enter"

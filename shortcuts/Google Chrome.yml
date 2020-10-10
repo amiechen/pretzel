@@ -1,80 +1,65 @@
 Tab and window shortcuts:
-  - Open a new window: CtrlOrCmd + n
-  - Open a new window in Incognito mode: CtrlOrCmd + Shift + n
-  - Open a new tab, and jump to it: CtrlOrCmd + t
-  - Reopen the last closed tab, and jump to it: CtrlOrCmd + Shift + t
-  - Jump to the next open tab: CtrlOrCmd + Option + Right arrow
-  - Jump to the previous open tab: CtrlOrCmd + Option + Left arrow
-  - Jump to a specific tab: CtrlOrCmd + 1 through CtrlOrCmd + 8
-  - Jump to the last tab: CtrlOrCmd + 9
-  - Open the previous page in your browsing history for the current tab: CtrlOrCmd + [ or CtrlOrCmd + Left arrow
-  - Open the next page in your browsing history for the current tab: CtrlOrCmd + ] or CtrlOrCmd + Right arrow
-  - Closes the current tab or pop-up: CtrlOrCmd + w
-  - Closes the current window: CtrlOrCmd + Shift + w
-  - Minimize the window: CtrlOrCmd + m
-  - Hide Google Chrome: CtrlOrCmd + h
-  - Quit Google Chrome: CtrlOrCmd + q
+  - "Open a new window": "Cmd + N"
+  - "Open a new window in Incognito mode": "Cmd + Shift + N"
+  - "Open a new tab, and jump to it": "Cmd + T"
+  - "Reopen the last closed tab, and jump to it": "Cmd + Shift + T"
+  - "Jump to the next open tab": "Cmd + Opt + Right Arrow"
+  - "Jump to the previous open tab": "Cmd + Opt + Left Arrow"
+  - "Jump to a specific tab": "Cmd + 1...9"
+  - "Open the previous page in your browsing history for the current tab": "Cmd + ["
+  - "Open the next page in your browsing history for the current tab": "Cmd + ]"
+  - "Closes the current tab or pop-up": "Cmd + W"
+  - "Closes the current window": "Cmd + Shift + W"
+  - "Minimize the window": "Cmd + M"
+  - "Hide Google Chrome": "Cmd + H"
+  - "Quit Google Chrome": "Cmd + Q"
 
 Google Chrome feature shortcuts:
-  - Show or hide the Bookmarks Bar: CtrlOrCmd + Shift + b
-  - Open the Bookmark Manager: CtrlOrCmd + Option + b
-  - Open the Settings page in a new tab: CtrlOrCmd + ,
-  - Open the History page in a new tab: CtrlOrCmd + y
-  - Open the Downloads page in a new tab: CtrlOrCmd + Shift + j
-  - Open the Find Bar to search the current page: CtrlOrCmd + f
-  - Jump to the next match to your Find Bar search: CtrlOrCmd + g
-  - Jump to the previous match to your Find Bar search: CtrlOrCmd + Shift + g
-  - When Find Bar is open, search for selected text: CtrlOrCmd + e
-  - Open Developer Tools: CtrlOrCmd + Option + i
-  - Open the Clear Browsing Data options: CtrlOrCmd + Shift + Delete
-  - Log in as a different user or browse as a Guest: CtrlOrCmd + Shift + m
+  - "Show or hide the Bookmarks Bar": "Cmd + Shift + B"
+  - "Open the Bookmark Manager": "Cmd + Opt + B"
+  - "Open the Settings page in a new tab": "Cmd + ,"
+  - "Open the History page in a new tab": "Cmd + Y"
+  - "Open the Downloads page in a new tab": "Cmd + Shift + J"
+  - "Open the Find Bar to search the current page": "Cmd + F"
+  - "Jump to the next match to your Find Bar search": "Cmd + G"
+  - "Jump to the previous match to your Find Bar search": "Cmd + Shift + G"
+  - "When Find Bar is open, search for selected text": "Cmd + E"
+  - "Open Developer Tools": "Cmd + Opt + I"
+  - "Open the Clear Browsing Data options": "Cmd + Shift + Delete"
+  - "Log in as a different user or browse as a Guest": "Cmd + Shift + M"
 
 Address bar shortcuts:
-  - Search with your default search engine: Type a search term + Enter
-  - Search using a different search engine: Type a search engine name + Tab
-  - Add www. and .com to a site name, and open it in the current tab: Type a site name + Control + Enter
-  - Add www. and .com to a site name, and open it in a new tab: Type a site name + Control + Shift + Enter
-  - Open the website in a new background tab: Type a web address + CtrlOrCmd + Enter
-  - Jump to the address bar: CtrlOrCmd + l
-  - Remove predictions from your address bar: Down arrow to highlight + Shift + fn + Delete
+  - "Search with your default search engine": "Type a search term + Enter"
+  - "Search using a different search engine": "Type a search engine name + Tab"
+  - "Add www. and .com to a site name, and open it in the current tab": "Type a site name + Ctrl + Enter"
+  - "Add www. and .com to a site name, and open it in a new tab": "Type a site name + Ctrl + Shift + Enter"
+  - "Open the website in a new background tab": "Type a web address + Cmd + Enter"
+  - "Jump to the address bar": "Cmd + L"
+  - "Remove predictions from your address bar": "Down Arrow (to highlight) + Shift + Fn + Delete"
 
 Webpage shortcuts:
-  - Open options to print the current page: CtrlOrCmd + p
-  - Open options to save the current page: CtrlOrCmd + s
-  - Open the Page Setup dialog: CtrlOrCmd + Option + p
-  - Email your current page: CtrlOrCmd + Shift + i
-  - Reload your current page: CtrlOrCmd + r
-  - Reload your current page, ignoring cached content: CtrlOrCmd + Shift + r
-  - Stop the page loading: Esc
-  - Browse clickable items moving forward: Tab
-  - Browse clickable items moving backward: Shift + Tab
-  - Open a file from your computer in Google Chrome: CtrlOrCmd + o + Select a file
-  - Display non-editable HTML source code for the current page: CtrlOrCmd + Option + u
-  - Open the JavaScript Console: CtrlOrCmd + Option + j
-  - Save your current webpage as a bookmark: CtrlOrCmd + d
-  - Save all open tabs as bookmarks in a new folder: CtrlOrCmd + Shift + d
-  - Turn full-screen mode on or off: CtrlOrCmd + Ctrl + f
-  - Make everything on the page bigger: CtrlOrCmd and +
-  - Make everything on the page smaller: "CtrlOrCmd and -"
-  - Return everything on the page to the default size: CtrlOrCmd + 0
-  - Scroll down a webpage, a screen at a time: Space
-  - Scroll up a webpage, a screen at a time: Shift + Space
-  - Search the web: CtrlOrCmd + Option + f
-  - Move your cursor to the front of the previous word in a text field: Option + Left arrow
-  - Move your cursor to the back of the next word in a text field: Option + Right arrow
-  - Delete the previous word in a text field: Option + Delete
-  - Open your home page in the current tab: CtrlOrCmd + Shift + h
-
-Mouse shortcuts:
-  - Open a link in a current tab (mouse only): Drag a link to a tab
-  - Open a link in new background tab: CtrlOrCmd + Click a link
-  - Open a link, and jump to it: CtrlOrCmd + Shift + Click a link
-  - Open a link, and jump to it (mouse only): Drag a link to a blank area of the tab strip
-  - Open a link in a new window: Shift + Click a link
-  - Open a tab in a new window (mouse only): Drag the tab out of the tab strip
-  - Move a tab to a current window (mouse only): Drag the tab into an existing window
-  - Return a tab to its original position: Press Esc while dragging
-  - Save the current webpage as a bookmark: Drag the web address to the Bookmarks Bar
-  - Download the target of a link: Option + Click a link
-  - Display your browsing history: Right-click Back Back or Next Next, or click & hold Back Back or Next  Next
-  - Increase the window to full height: Double-click a blank area of the tab strip
+  - "Open options to print the current page": "Cmd + P"
+  - "Open options to save the current page": "Cmd + S"
+  - "Open the Page Setup dialog": "Cmd + Opt + P"
+  - "Email your current page": "Cmd + Shift + I"
+  - "Reload your current page": "Cmd + R"
+  - "Reload your current page, ignoring cached content": "Cmd + Shift + R"
+  - "Stop the page loading": "Esc"
+  - "Browse clickable items moving forward": "Tab"
+  - "Browse clickable items moving backward": "Shift + Tab"
+  - "Open a file from your computer in Google Chrome": "Cmd + O + Select a file"
+  - "Display non-editable HTML source code for the current page": "Cmd + Opt + U"
+  - "Open the JavaScript Console": "Cmd + Opt + J"
+  - "Save your current webpage as a bookmark": "Cmd + D"
+  - "Save all open tabs as bookmarks in a new folder": "Cmd + Shift + D"
+  - "Turn full-screen mode on or off": "Cmd + Ctrl + F"
+  - "Make everything on the page bigger": "Cmd + +"
+  - "Make everything on the page smaller": "Cmd + -"
+  - "Return everything on the page to the default size":" Cmd + 0"
+  - "Scroll down a webpage, a screen at a time": "Space"
+  - "Scroll up a webpage, a screen at a time": "Shift + Space"
+  - "Search the web": "Cmd + Opt + F"
+  - "Move your cursor to the front of the previous word in a text field": "Opt + Left Arrow"
+  - "Move your cursor to the back of the next word in a text field": "Opt + Right Arrow"
+  - "Delete the previous word in a text field": "Opt + Delete"
+  - "Open your home page in the current tab": "Cmd + Shift + H"

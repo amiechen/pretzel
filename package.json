@@ -34,7 +34,7 @@
     "string-similarity": "^1.2.2"
   },
   "devDependencies": {
-    "electron": "^1.8.8",
+    "electron": "^9.4.0",
     "electron-builder": "^20.39.0"
   },
   "build": {
